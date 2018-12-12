@@ -1,0 +1,41 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #f2f2f2;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+#main-header {
+	height: 80px;
+}
+	#main-header h1 {
+		color: black;
+	}
+
+/*
+ * Logo
+ */
+#logo-header {
+	float: left;
+	padding: 25px;
+	text-decoration: none;
+}
+	#logo-header:hover {
+		color: #0b76a6;
+	}
+
+	#logo-header .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+
+	#logo-header .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #999;
+	}
