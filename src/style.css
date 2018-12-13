@@ -1,0 +1,46 @@
+h1{
+    font-family: Asap;
+    text-align: center;
+}
+#menu ul{
+    list-style-type: none;
+    text-align: center;
+ }
+.menu{
+    text-align: center;
+    display:block
+} 
+.menu li{
+    text-align: center;
+    margin-right: 70px;
+    display: inline-block;
+    position: relative;
+    z-index:100;}
+.menu li a {
+    margin-top: 30px;
+    text-align: center;
+    text-decoration:none;
+    padding:20px;
+    display:block;
+    background-color: white;
+    color:#F8BBD0;
+    font-family: Asap;
+    font-style: bold;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+ 
+.menu li a:hover, .menu li:hover > a{
+    color:#e96da3;
+    border: #F8BBD0;
+}
+h2 {
+    font-family: Asap;
+    margin-top: 90px;
+}
+p{
+    font-family: Rambla;
+}
