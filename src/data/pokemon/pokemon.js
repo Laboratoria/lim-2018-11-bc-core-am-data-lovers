@@ -5,8 +5,8 @@ var POKEMON = {
     "name": "Bulbasaur",
     "img": "http://www.serebii.net/pokemongo/pokemon/001.png",
     "type": [
-      "Grass",
-      "Poison"
+      "  Hierba",
+      " Veneno"
     ],
     "height": "0.71 m",
     "weight": "6.9 kg",
@@ -18,10 +18,10 @@ var POKEMON = {
     "spawn_time": "20:00",
     "multipliers": [1.58],
     "weaknesses": [
-      "Fire",
-      "Ice",
-      "Flying",
-      "Psychic"
+      "Fuego",
+      " Hielo",
+      " Volador",
+      " Psiquico"
     ],
     "next_evolution": [{
       "num": "002",
@@ -36,8 +36,8 @@ var POKEMON = {
     "name": "Ivysaur",
     "img": "http://www.serebii.net/pokemongo/pokemon/002.png",
     "type": [
-      "Grass",
-      "Poison"
+      "  Hierba",
+      " Veneno"
     ],
     "height": "0.99 m",
     "weight": "13.0 kg",
@@ -52,10 +52,10 @@ var POKEMON = {
       1.6
     ],
     "weaknesses": [
-      "Fire",
-      "Ice",
-      "Flying",
-      "Psychic"
+      "Fuego",
+      " Hielo",
+      " Volador",
+      " Psiquico"
     ],
     "prev_evolution": [{
       "num": "001",
@@ -71,8 +71,8 @@ var POKEMON = {
     "name": "Venusaur",
     "img": "http://www.serebii.net/pokemongo/pokemon/003.png",
     "type": [
-      "Grass",
-      "Poison"
+      "  Hierba",
+      " Veneno"
     ],
     "height": "2.01 m",
     "weight": "100.0 kg",
@@ -83,10 +83,10 @@ var POKEMON = {
     "spawn_time": "11:30",
     "multipliers": null,
     "weaknesses": [
-      "Fire",
-      "Ice",
-      "Flying",
-      "Psychic"
+      "Fuego",
+      " Hielo",
+      " Volador",
+      " Psiquico"
     ],
     "prev_evolution": [{
       "num": "001",
@@ -101,7 +101,7 @@ var POKEMON = {
     "name": "Charmander",
     "img": "http://www.serebii.net/pokemongo/pokemon/004.png",
     "type": [
-      "Fire"
+      "Fuego"
     ],
     "height": "0.61 m",
     "weight": "8.5 kg",
@@ -113,9 +113,9 @@ var POKEMON = {
     "spawn_time": "08:45",
     "multipliers": [1.65],
     "weaknesses": [
-      "Water",
-      "Ground",
-      "Rock"
+      " Agua",
+      " Tierra",
+      " Roca"
     ],
     "next_evolution": [{
       "num": "005",
@@ -130,7 +130,7 @@ var POKEMON = {
     "name": "Charmeleon",
     "img": "http://www.serebii.net/pokemongo/pokemon/005.png",
     "type": [
-      "Fire"
+      "Fuego"
     ],
     "height": "1.09 m",
     "weight": "19.0 kg",
@@ -142,9 +142,9 @@ var POKEMON = {
     "spawn_time": "19:00",
     "multipliers": [1.79],
     "weaknesses": [
-      "Water",
-      "Ground",
-      "Rock"
+      " Agua",
+      " Tierra",
+      " Roca"
     ],
     "prev_evolution": [{
       "num": "004",
@@ -160,8 +160,8 @@ var POKEMON = {
     "name": "Charizard",
     "img": "http://www.serebii.net/pokemongo/pokemon/006.png",
     "type": [
-      "Fire",
-      "Flying"
+      "Fuego",
+      " Volador"
     ],
     "height": "1.70 m",
     "weight": "90.5 kg",
@@ -172,9 +172,9 @@ var POKEMON = {
     "spawn_time": "13:34",
     "multipliers": null,
     "weaknesses": [
-      "Water",
-      "Electric",
-      "Rock"
+      " Agua",
+      "Electrico",
+      " Roca"
     ],
     "prev_evolution": [{
       "num": "004",
@@ -189,7 +189,7 @@ var POKEMON = {
     "name": "Squirtle",
     "img": "http://www.serebii.net/pokemongo/pokemon/007.png",
     "type": [
-      "Water"
+      " Agua"
     ],
     "height": "0.51 m",
     "weight": "9.0 kg",
@@ -201,8 +201,8 @@ var POKEMON = {
     "spawn_time": "04:25",
     "multipliers": [2.1],
     "weaknesses": [
-      "Electric",
-      "Grass"
+      "Electrico",
+      "  Hierba"
     ],
     "next_evolution": [{
       "num": "008",
@@ -217,7 +217,7 @@ var POKEMON = {
     "name": "Wartortle",
     "img": "http://www.serebii.net/pokemongo/pokemon/008.png",
     "type": [
-      "Water"
+      " Agua"
     ],
     "height": "0.99 m",
     "weight": "22.5 kg",
@@ -229,8 +229,8 @@ var POKEMON = {
     "spawn_time": "07:02",
     "multipliers": [1.4],
     "weaknesses": [
-      "Electric",
-      "Grass"
+      "Electrico",
+      "  Hierba"
     ],
     "prev_evolution": [{
       "num": "007",
@@ -246,7 +246,7 @@ var POKEMON = {
     "name": "Blastoise",
     "img": "http://www.serebii.net/pokemongo/pokemon/009.png",
     "type": [
-      "Water"
+      " Agua"
     ],
     "height": "1.60 m",
     "weight": "85.5 kg",
@@ -257,8 +257,8 @@ var POKEMON = {
     "spawn_time": "00:06",
     "multipliers": null,
     "weaknesses": [
-      "Electric",
-      "Grass"
+      "Electrico",
+      "  Hierba"
     ],
     "prev_evolution": [{
       "num": "007",
@@ -273,7 +273,7 @@ var POKEMON = {
     "name": "Caterpie",
     "img": "http://www.serebii.net/pokemongo/pokemon/010.png",
     "type": [
-      "Bug"
+      "Insecto"
     ],
     "height": "0.30 m",
     "weight": "2.9 kg",
@@ -285,9 +285,9 @@ var POKEMON = {
     "spawn_time": "16:35",
     "multipliers": [1.05],
     "weaknesses": [
-      "Fire",
-      "Flying",
-      "Rock"
+      "Fuego",
+      " Volador",
+      " Roca"
     ],
     "next_evolution": [{
       "num": "011",
@@ -302,7 +302,7 @@ var POKEMON = {
     "name": "Metapod",
     "img": "http://www.serebii.net/pokemongo/pokemon/011.png",
     "type": [
-      "Bug"
+      "Insecto"
     ],
     "height": "0.71 m",
     "weight": "9.9 kg",
@@ -317,9 +317,9 @@ var POKEMON = {
       3.79
     ],
     "weaknesses": [
-      "Fire",
-      "Flying",
-      "Rock"
+      "Fuego",
+      " Volador",
+      " Roca"
     ],
     "prev_evolution": [{
       "num": "010",
@@ -335,8 +335,8 @@ var POKEMON = {
     "name": "Butterfree",
     "img": "http://www.serebii.net/pokemongo/pokemon/012.png",
     "type": [
-      "Bug",
-      "Flying"
+      "Insecto",
+      " Volador"
     ],
     "height": "1.09 m",
     "weight": "32.0 kg",
@@ -347,11 +347,11 @@ var POKEMON = {
     "spawn_time": "05:23",
     "multipliers": null,
     "weaknesses": [
-      "Fire",
-      "Electric",
-      "Ice",
-      "Flying",
-      "Rock"
+      "Fuego",
+      "Electrico",
+      " Hielo",
+      " Volador",
+      " Roca"
     ],
     "prev_evolution": [{
       "num": "010",
@@ -366,8 +366,8 @@ var POKEMON = {
     "name": "Weedle",
     "img": "http://www.serebii.net/pokemongo/pokemon/013.png",
     "type": [
-      "Bug",
-      "Poison"
+      "Insecto",
+      " Veneno"
     ],
     "height": "0.30 m",
     "weight": "3.2 kg",
@@ -382,10 +382,10 @@ var POKEMON = {
       1.09
     ],
     "weaknesses": [
-      "Fire",
-      "Flying",
-      "Psychic",
-      "Rock"
+      "Fuego",
+      " Volador",
+      " Psiquico",
+      " Roca"
     ],
     "next_evolution": [{
       "num": "014",
@@ -400,8 +400,8 @@ var POKEMON = {
     "name": "Kakuna",
     "img": "http://www.serebii.net/pokemongo/pokemon/014.png",
     "type": [
-      "Bug",
-      "Poison"
+      "Insecto",
+      " Veneno"
     ],
     "height": "0.61 m",
     "weight": "10.0 kg",
@@ -416,10 +416,10 @@ var POKEMON = {
       3.41
     ],
     "weaknesses": [
-      "Fire",
-      "Flying",
-      "Psychic",
-      "Rock"
+      "Fuego",
+      " Volador",
+      " Psiquico",
+      " Roca"
     ],
     "prev_evolution": [{
       "num": "013",
@@ -435,8 +435,8 @@ var POKEMON = {
     "name": "Beedrill",
     "img": "http://www.serebii.net/pokemongo/pokemon/015.png",
     "type": [
-      "Bug",
-      "Poison"
+      "Insecto",
+      " Veneno"
     ],
     "height": "0.99 m",
     "weight": "29.5 kg",
@@ -447,10 +447,10 @@ var POKEMON = {
     "spawn_time": "04:50",
     "multipliers": null,
     "weaknesses": [
-      "Fire",
-      "Flying",
-      "Psychic",
-      "Rock"
+      "Fuego",
+      " Volador",
+      " Psiquico",
+      " Roca"
     ],
     "prev_evolution": [{
       "num": "013",
@@ -466,7 +466,7 @@ var POKEMON = {
     "img": "http://www.serebii.net/pokemongo/pokemon/016.png",
     "type": [
       "Normal",
-      "Flying"
+      " Volador"
     ],
     "height": "0.30 m",
     "weight": "1.8 kg",
@@ -481,8 +481,8 @@ var POKEMON = {
       1.92
     ],
     "weaknesses": [
-      "Electric",
-      "Rock"
+      "Electrico",
+      " Roca"
     ],
     "next_evolution": [{
       "num": "017",
@@ -498,7 +498,7 @@ var POKEMON = {
     "img": "http://www.serebii.net/pokemongo/pokemon/017.png",
     "type": [
       "Normal",
-      "Flying"
+      " Volador"
     ],
     "height": "1.09 m",
     "weight": "30.0 kg",
@@ -510,8 +510,8 @@ var POKEMON = {
     "spawn_time": "01:30",
     "multipliers": [1.79],
     "weaknesses": [
-      "Electric",
-      "Rock"
+      "Electrico",
+      " Roca"
     ],
     "prev_evolution": [{
       "num": "016",
@@ -528,7 +528,7 @@ var POKEMON = {
     "img": "http://www.serebii.net/pokemongo/pokemon/018.png",
     "type": [
       "Normal",
-      "Flying"
+      " Volador"
     ],
     "height": "1.50 m",
     "weight": "39.5 kg",
@@ -539,8 +539,8 @@ var POKEMON = {
     "spawn_time": "01:50",
     "multipliers": null,
     "weaknesses": [
-      "Electric",
-      "Rock"
+      "Electrico",
+      " Roca"
     ],
     "prev_evolution": [{
       "num": "016",
@@ -570,7 +570,7 @@ var POKEMON = {
       2.73
     ],
     "weaknesses": [
-      "Fighting"
+      "Lucha"
     ],
     "next_evolution": [{
       "num": "020",
@@ -593,7 +593,7 @@ var POKEMON = {
     "spawn_time": "01:56",
     "multipliers": null,
     "weaknesses": [
-      "Fighting"
+      "Lucha"
     ],
     "prev_evolution": [{
       "num": "019",
@@ -606,7 +606,7 @@ var POKEMON = {
     "img": "http://www.serebii.net/pokemongo/pokemon/021.png",
     "type": [
       "Normal",
-      "Flying"
+      " Volador"
     ],
     "height": "0.30 m",
     "weight": "2.0 kg",
@@ -621,8 +621,8 @@ var POKEMON = {
       2.68
     ],
     "weaknesses": [
-      "Electric",
-      "Rock"
+      "Electrico",
+      " Roca"
     ],
     "next_evolution": [{
       "num": "022",
@@ -635,7 +635,7 @@ var POKEMON = {
     "img": "http://www.serebii.net/pokemongo/pokemon/022.png",
     "type": [
       "Normal",
-      "Flying"
+      " Volador"
     ],
     "height": "1.19 m",
     "weight": "38.0 kg",
@@ -646,8 +646,8 @@ var POKEMON = {
     "spawn_time": "01:11",
     "multipliers": null,
     "weaknesses": [
-      "Electric",
-      "Rock"
+      "Electrico",
+      " Roca"
     ],
     "prev_evolution": [{
       "num": "021",
@@ -659,7 +659,7 @@ var POKEMON = {
     "name": "Ekans",
     "img": "http://www.serebii.net/pokemongo/pokemon/023.png",
     "type": [
-      "Poison"
+      " Veneno"
     ],
     "height": "2.01 m",
     "weight": "6.9 kg",
@@ -674,8 +674,8 @@ var POKEMON = {
       2.27
     ],
     "weaknesses": [
-      "Ground",
-      "Psychic"
+      " Tierra",
+      " Psiquico"
     ],
     "next_evolution": [{
       "num": "024",
@@ -687,7 +687,7 @@ var POKEMON = {
     "name": "Arbok",
     "img": "http://www.serebii.net/pokemongo/pokemon/024.png",
     "type": [
-      "Poison"
+      " Veneno"
     ],
     "height": "3.51 m",
     "weight": "65.0 kg",
@@ -698,8 +698,8 @@ var POKEMON = {
     "spawn_time": "01:50",
     "multipliers": null,
     "weaknesses": [
-      "Ground",
-      "Psychic"
+      " Tierra",
+      " Psiquico"
     ],
     "prev_evolution": [{
       "num": "023",
@@ -711,7 +711,7 @@ var POKEMON = {
     "name": "Pikachu",
     "img": "http://www.serebii.net/pokemongo/pokemon/025.png",
     "type": [
-      "Electric"
+      "Electrico"
     ],
     "height": "0.41 m",
     "weight": "6.0 kg",
@@ -723,7 +723,7 @@ var POKEMON = {
     "spawn_time": "04:00",
     "multipliers": [2.34],
     "weaknesses": [
-      "Ground"
+      " Tierra"
     ],
     "next_evolution": [{
       "num": "026",
@@ -735,7 +735,7 @@ var POKEMON = {
     "name": "Raichu",
     "img": "http://www.serebii.net/pokemongo/pokemon/026.png",
     "type": [
-      "Electric"
+      "Electrico"
     ],
     "height": "0.79 m",
     "weight": "30.0 kg",
@@ -746,7 +746,7 @@ var POKEMON = {
     "spawn_time": "23:58",
     "multipliers": null,
     "weaknesses": [
-      "Ground"
+      " Tierra"
     ],
     "prev_evolution": [{
       "num": "025",
@@ -758,7 +758,7 @@ var POKEMON = {
     "name": "Sandshrew",
     "img": "http://www.serebii.net/pokemongo/pokemon/027.png",
     "type": [
-      "Ground"
+      " Tierra"
     ],
     "height": "0.61 m",
     "weight": "12.0 kg",
@@ -770,9 +770,9 @@ var POKEMON = {
     "spawn_time": "01:58",
     "multipliers": [2.45],
     "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice"
+      " Agua",
+      "  Hierba",
+      " Hielo"
     ],
     "next_evolution": [{
       "num": "028",
@@ -784,7 +784,7 @@ var POKEMON = {
     "name": "Sandslash",
     "img": "http://www.serebii.net/pokemongo/pokemon/028.png",
     "type": [
-      "Ground"
+      " Tierra"
     ],
     "height": "0.99 m",
     "weight": "29.5 kg",
@@ -795,9 +795,9 @@ var POKEMON = {
     "spawn_time": "12:34",
     "multipliers": null,
     "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice"
+      " Agua",
+      "  Hierba",
+      " Hielo"
     ],
     "prev_evolution": [{
       "num": "027",
@@ -809,7 +809,7 @@ var POKEMON = {
     "name": "Nidoran ♀ (Female)",
     "img": "http://www.serebii.net/pokemongo/pokemon/029.png",
     "type": [
-      "Poison"
+      " Veneno"
     ],
     "height": "0.41 m",
     "weight": "7.0 kg",
@@ -824,8 +824,8 @@ var POKEMON = {
       2.48
     ],
     "weaknesses": [
-      "Ground",
-      "Psychic"
+      " Tierra",
+      " Psiquico"
     ],
     "next_evolution": [{
       "num": "030",
@@ -840,7 +840,7 @@ var POKEMON = {
     "name": "Nidorina",
     "img": "http://www.serebii.net/pokemongo/pokemon/030.png",
     "type": [
-      "Poison"
+      " Veneno"
     ],
     "height": "0.79 m",
     "weight": "20.0 kg",
@@ -855,8 +855,8 @@ var POKEMON = {
       2.48
     ],
     "weaknesses": [
-      "Ground",
-      "Psychic"
+      " Tierra",
+      " Psiquico"
     ],
     "prev_evolution": [{
       "num": "029",
@@ -872,8 +872,8 @@ var POKEMON = {
     "name": "Nidoqueen",
     "img": "http://www.serebii.net/pokemongo/pokemon/031.png",
     "type": [
-      "Poison",
-      "Ground"
+      " Veneno",
+      " Tierra"
     ],
     "height": "1.30 m",
     "weight": "60.0 kg",
@@ -884,10 +884,10 @@ var POKEMON = {
     "spawn_time": "12:35",
     "multipliers": null,
     "weaknesses": [
-      "Water",
-      "Ice",
-      "Ground",
-      "Psychic"
+      " Agua",
+      " Hielo",
+      " Tierra",
+      " Psiquico"
     ],
     "prev_evolution": [{
       "num": "029",
@@ -902,7 +902,7 @@ var POKEMON = {
     "name": "Nidoran ♂ (Male)",
     "img": "http://www.serebii.net/pokemongo/pokemon/032.png",
     "type": [
-      "Poison"
+      " Veneno"
     ],
     "height": "0.51 m",
     "weight": "9.0 kg",
@@ -917,8 +917,8 @@ var POKEMON = {
       1.7
     ],
     "weaknesses": [
-      "Ground",
-      "Psychic"
+      " Tierra",
+      " Psiquico"
     ],
     "next_evolution": [{
       "num": "033",
@@ -933,7 +933,7 @@ var POKEMON = {
     "name": "Nidorino",
     "img": "http://www.serebii.net/pokemongo/pokemon/033.png",
     "type": [
-      "Poison"
+      " Veneno"
     ],
     "height": "0.89 m",
     "weight": "19.5 kg",
@@ -945,8 +945,8 @@ var POKEMON = {
     "spawn_time": "09:02",
     "multipliers": [1.83],
     "weaknesses": [
-      "Ground",
-      "Psychic"
+      " Tierra",
+      " Psiquico"
     ],
     "prev_evolution": [{
       "num": "032",
@@ -962,8 +962,8 @@ var POKEMON = {
     "name": "Nidoking",
     "img": "http://www.serebii.net/pokemongo/pokemon/034.png",
     "type": [
-      "Poison",
-      "Ground"
+      " Veneno",
+      " Tierra"
     ],
     "height": "1.40 m",
     "weight": "62.0 kg",
@@ -974,10 +974,10 @@ var POKEMON = {
     "spawn_time": "12:16",
     "multipliers": null,
     "weaknesses": [
-      "Water",
-      "Ice",
-      "Ground",
-      "Psychic"
+      " Agua",
+      " Hielo",
+      " Tierra",
+      " Psiquico"
     ],
     "prev_evolution": [{
       "num": "032",
@@ -1007,7 +1007,7 @@ var POKEMON = {
       2.14
     ],
     "weaknesses": [
-      "Fighting"
+      "Lucha"
     ],
     "next_evolution": [{
       "num": "036",
@@ -1030,7 +1030,7 @@ var POKEMON = {
     "spawn_time": "03:29",
     "multipliers": null,
     "weaknesses": [
-      "Fighting"
+      "Lucha"
     ],
     "prev_evolution": [{
       "num": "035",
@@ -1042,7 +1042,7 @@ var POKEMON = {
     "name": "Vulpix",
     "img": "http://www.serebii.net/pokemongo/pokemon/037.png",
     "type": [
-      "Fire"
+      "Fuego"
     ],
     "height": "0.61 m",
     "weight": "9.9 kg",
@@ -1057,9 +1057,9 @@ var POKEMON = {
       2.81
     ],
     "weaknesses": [
-      "Water",
-      "Ground",
-      "Rock"
+      " Agua",
+      " Tierra",
+      " Roca"
     ],
     "next_evolution": [{
       "num": "038",
@@ -1071,7 +1071,7 @@ var POKEMON = {
     "name": "Ninetales",
     "img": "http://www.serebii.net/pokemongo/pokemon/038.png",
     "type": [
-      "Fire"
+      "Fuego"
     ],
     "height": "1.09 m",
     "weight": "19.9 kg",
@@ -1082,9 +1082,9 @@ var POKEMON = {
     "spawn_time": "01:32",
     "multipliers": null,
     "weaknesses": [
-      "Water",
-      "Ground",
-      "Rock"
+      " Agua",
+      " Tierra",
+      " Roca"
     ],
     "prev_evolution": [{
       "num": "037",
@@ -1108,7 +1108,7 @@ var POKEMON = {
     "spawn_time": "08:46",
     "multipliers": [1.85],
     "weaknesses": [
-      "Fighting"
+      "Lucha"
     ],
     "next_evolution": [{
       "num": "040",
@@ -1131,7 +1131,7 @@ var POKEMON = {
     "spawn_time": "12:28",
     "multipliers": null,
     "weaknesses": [
-      "Fighting"
+      "Lucha"
     ],
     "prev_evolution": [{
       "num": "039",
@@ -1143,8 +1143,8 @@ var POKEMON = {
     "name": "Zubat",
     "img": "http://www.serebii.net/pokemongo/pokemon/041.png",
     "type": [
-      "Poison",
-      "Flying"
+      " Veneno",
+      " Volador"
     ],
     "height": "0.79 m",
     "weight": "7.5 kg",
@@ -1159,10 +1159,10 @@ var POKEMON = {
       3.67
     ],
     "weaknesses": [
-      "Electric",
-      "Ice",
-      "Psychic",
-      "Rock"
+      "Electrico",
+      " Hielo",
+      " Psiquico",
+      " Roca"
     ],
     "next_evolution": [{
       "num": "042",
@@ -1174,8 +1174,8 @@ var POKEMON = {
     "name": "Golbat",
     "img": "http://www.serebii.net/pokemongo/pokemon/042.png",
     "type": [
-      "Poison",
-      "Flying"
+      " Veneno",
+      " Volador"
     ],
     "height": "1.60 m",
     "weight": "55.0 kg",
@@ -1186,10 +1186,10 @@ var POKEMON = {
     "spawn_time": "02:15",
     "multipliers": null,
     "weaknesses": [
-      "Electric",
-      "Ice",
-      "Psychic",
-      "Rock"
+      "Electrico",
+      " Hielo",
+      " Psiquico",
+      " Roca"
     ],
     "prev_evolution": [{
       "num": "041",
@@ -1201,8 +1201,8 @@ var POKEMON = {
     "name": "Oddish",
     "img": "http://www.serebii.net/pokemongo/pokemon/043.png",
     "type": [
-      "Grass",
-      "Poison"
+      "  Hierba",
+      " Veneno"
     ],
     "height": "0.51 m",
     "weight": "5.4 kg",
@@ -1214,10 +1214,10 @@ var POKEMON = {
     "spawn_time": "03:58",
     "multipliers": [1.5],
     "weaknesses": [
-      "Fire",
-      "Ice",
-      "Flying",
-      "Psychic"
+      "Fuego",
+      " Hielo",
+      " Volador",
+      " Psiquico"
     ],
     "next_evolution": [{
       "num": "044",
@@ -1232,8 +1232,8 @@ var POKEMON = {
     "name": "Gloom",
     "img": "http://www.serebii.net/pokemongo/pokemon/044.png",
     "type": [
-      "Grass",
-      "Poison"
+      "  Hierba",
+      " Veneno"
     ],
     "height": "0.79 m",
     "weight": "8.6 kg",
@@ -1245,10 +1245,10 @@ var POKEMON = {
     "spawn_time": "11:33",
     "multipliers": [1.49],
     "weaknesses": [
-      "Fire",
-      "Ice",
-      "Flying",
-      "Psychic"
+      "Fuego",
+      " Hielo",
+      " Volador",
+      " Psiquico"
     ],
     "prev_evolution": [{
       "num": "043",
@@ -1264,8 +1264,8 @@ var POKEMON = {
     "name": "Vileplume",
     "img": "http://www.serebii.net/pokemongo/pokemon/045.png",
     "type": [
-      "Grass",
-      "Poison"
+      "  Hierba",
+      " Veneno"
     ],
     "height": "1.19 m",
     "weight": "18.6 kg",
@@ -1276,10 +1276,10 @@ var POKEMON = {
     "spawn_time": "23:58",
     "multipliers": null,
     "weaknesses": [
-      "Fire",
-      "Ice",
-      "Flying",
-      "Psychic"
+      "Fuego",
+      " Hielo",
+      " Volador",
+      " Psiquico"
     ],
     "prev_evolution": [{
       "num": "043",
@@ -1294,8 +1294,8 @@ var POKEMON = {
     "name": "Paras",
     "img": "http://www.serebii.net/pokemongo/pokemon/046.png",
     "type": [
-      "Bug",
-      "Grass"
+      "Insecto",
+      "  Hierba"
     ],
     "height": "0.30 m",
     "weight": "5.4 kg",
@@ -1307,12 +1307,12 @@ var POKEMON = {
     "spawn_time": "01:42",
     "multipliers": [2.02],
     "weaknesses": [
-      "Fire",
-      "Ice",
-      "Poison",
-      "Flying",
-      "Bug",
-      "Rock"
+      "Fuego",
+      " Hielo",
+      " Veneno",
+      " Volador",
+      "Insecto",
+      " Roca"
     ],
     "next_evolution": [{
       "num": "047",
@@ -1324,8 +1324,8 @@ var POKEMON = {
     "name": "Parasect",
     "img": "http://www.serebii.net/pokemongo/pokemon/047.png",
     "type": [
-      "Bug",
-      "Grass"
+      "Insecto",
+      "  Hierba"
     ],
     "height": "0.99 m",
     "weight": "29.5 kg",
@@ -1336,12 +1336,12 @@ var POKEMON = {
     "spawn_time": "01:22",
     "multipliers": null,
     "weaknesses": [
-      "Fire",
-      "Ice",
-      "Poison",
-      "Flying",
-      "Bug",
-      "Rock"
+      "Fuego",
+      " Hielo",
+      " Veneno",
+      " Volador",
+      "Insecto",
+      " Roca"
     ],
     "prev_evolution": [{
       "num": "046",
@@ -1353,8 +1353,8 @@ var POKEMON = {
     "name": "Venonat",
     "img": "http://www.serebii.net/pokemongo/pokemon/048.png",
     "type": [
-      "Bug",
-      "Poison"
+      "Insecto",
+      " Veneno"
     ],
     "height": "0.99 m",
     "weight": "30.0 kg",
@@ -1369,10 +1369,10 @@ var POKEMON = {
       1.9
     ],
     "weaknesses": [
-      "Fire",
-      "Flying",
-      "Psychic",
-      "Rock"
+      "Fuego",
+      " Volador",
+      " Psiquico",
+      " Roca"
     ],
     "next_evolution": [{
       "num": "049",
@@ -1384,8 +1384,8 @@ var POKEMON = {
     "name": "Venomoth",
     "img": "http://www.serebii.net/pokemongo/pokemon/049.png",
     "type": [
-      "Bug",
-      "Poison"
+      "Insecto",
+      " Veneno"
     ],
     "height": "1.50 m",
     "weight": "12.5 kg",
@@ -1396,10 +1396,10 @@ var POKEMON = {
     "spawn_time": "23:40",
     "multipliers": null,
     "weaknesses": [
-      "Fire",
-      "Flying",
-      "Psychic",
-      "Rock"
+      "Fuego",
+      " Volador",
+      " Psiquico",
+      " Roca"
     ],
     "prev_evolution": [{
       "num": "048",
@@ -1411,7 +1411,7 @@ var POKEMON = {
     "name": "Diglett",
     "img": "http://www.serebii.net/pokemongo/pokemon/050.png",
     "type": [
-      "Ground"
+      " Tierra"
     ],
     "height": "0.20 m",
     "weight": "0.8 kg",
@@ -1423,9 +1423,9 @@ var POKEMON = {
     "spawn_time": "02:22",
     "multipliers": [2.69],
     "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice"
+      " Agua",
+      "  Hierba",
+      " Hielo"
     ],
     "next_evolution": [{
       "num": "051",
@@ -1437,7 +1437,7 @@ var POKEMON = {
     "name": "Dugtrio",
     "img": "http://www.serebii.net/pokemongo/pokemon/051.png",
     "type": [
-      "Ground"
+      " Tierra"
     ],
     "height": "0.71 m",
     "weight": "33.3 kg",
@@ -1448,9 +1448,9 @@ var POKEMON = {
     "spawn_time": "12:37",
     "multipliers": null,
     "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice"
+      " Agua",
+      "  Hierba",
+      " Hielo"
     ],
     "prev_evolution": [{
       "num": "050",
@@ -1474,7 +1474,7 @@ var POKEMON = {
     "spawn_time": "02:54",
     "multipliers": [1.98],
     "weaknesses": [
-      "Fighting"
+      "Lucha"
     ],
     "next_evolution": [{
       "num": "053",
@@ -1497,7 +1497,7 @@ var POKEMON = {
     "spawn_time": "02:44",
     "multipliers": null,
     "weaknesses": [
-      "Fighting"
+      "Lucha"
     ],
     "prev_evolution": [{
       "num": "052",
@@ -1509,7 +1509,7 @@ var POKEMON = {
     "name": "Psyduck",
     "img": "http://www.serebii.net/pokemongo/pokemon/054.png",
     "type": [
-      "Water"
+      " Agua"
     ],
     "height": "0.79 m",
     "weight": "19.6 kg",
@@ -1521,8 +1521,8 @@ var POKEMON = {
     "spawn_time": "03:41",
     "multipliers": [2.27],
     "weaknesses": [
-      "Electric",
-      "Grass"
+      "Electrico",
+      "  Hierba"
     ],
     "next_evolution": [{
       "num": "055",
@@ -1534,7 +1534,7 @@ var POKEMON = {
     "name": "Golduck",
     "img": "http://www.serebii.net/pokemongo/pokemon/055.png",
     "type": [
-      "Water"
+      " Agua"
     ],
     "height": "1.70 m",
     "weight": "76.6 kg",
@@ -1545,8 +1545,8 @@ var POKEMON = {
     "spawn_time": "23:06",
     "multipliers": null,
     "weaknesses": [
-      "Electric",
-      "Grass"
+      "Electrico",
+      "  Hierba"
     ],
     "prev_evolution": [{
       "num": "054",
@@ -1558,7 +1558,7 @@ var POKEMON = {
     "name": "Mankey",
     "img": "http://www.serebii.net/pokemongo/pokemon/056.png",
     "type": [
-      "Fighting"
+      "Lucha"
     ],
     "height": "0.51 m",
     "weight": "28.0 kg",
@@ -1573,8 +1573,8 @@ var POKEMON = {
       2.28
     ],
     "weaknesses": [
-      "Flying",
-      "Psychic",
+      " Volador",
+      " Psiquico",
       "Fairy"
     ],
     "next_evolution": [{
@@ -1587,7 +1587,7 @@ var POKEMON = {
     "name": "Primeape",
     "img": "http://www.serebii.net/pokemongo/pokemon/057.png",
     "type": [
-      "Fighting"
+      "Lucha"
     ],
     "height": "0.99 m",
     "weight": "32.0 kg",
@@ -1598,8 +1598,8 @@ var POKEMON = {
     "spawn_time": "12:33",
     "multipliers": null,
     "weaknesses": [
-      "Flying",
-      "Psychic",
+      " Volador",
+      " Psiquico",
       "Fairy"
     ],
     "prev_evolution": [{
@@ -1612,7 +1612,7 @@ var POKEMON = {
     "name": "Growlithe",
     "img": "http://www.serebii.net/pokemongo/pokemon/058.png",
     "type": [
-      "Fire"
+      "Fuego"
     ],
     "height": "0.71 m",
     "weight": "19.0 kg",
@@ -1627,9 +1627,9 @@ var POKEMON = {
       2.36
     ],
     "weaknesses": [
-      "Water",
-      "Ground",
-      "Rock"
+      " Agua",
+      " Tierra",
+      " Roca"
     ],
     "next_evolution": [{
       "num": "059",
@@ -1641,7 +1641,7 @@ var POKEMON = {
     "name": "Arcanine",
     "img": "http://www.serebii.net/pokemongo/pokemon/059.png",
     "type": [
-      "Fire"
+      "Fuego"
     ],
     "height": "1.91 m",
     "weight": "155.0 kg",
@@ -1652,9 +1652,9 @@ var POKEMON = {
     "spawn_time": "03:11",
     "multipliers": null,
     "weaknesses": [
-      "Water",
-      "Ground",
-      "Rock"
+      " Agua",
+      " Tierra",
+      " Roca"
     ],
     "prev_evolution": [{
       "num": "058",
@@ -1666,7 +1666,7 @@ var POKEMON = {
     "name": "Poliwag",
     "img": "http://www.serebii.net/pokemongo/pokemon/060.png",
     "type": [
-      "Water"
+      " Agua"
     ],
     "height": "0.61 m",
     "weight": "12.4 kg",
@@ -1681,8 +1681,8 @@ var POKEMON = {
       1.73
     ],
     "weaknesses": [
-      "Electric",
-      "Grass"
+      "Electrico",
+      "  Hierba"
     ],
     "next_evolution": [{
       "num": "061",
@@ -1697,7 +1697,7 @@ var POKEMON = {
     "name": "Poliwhirl",
     "img": "http://www.serebii.net/pokemongo/pokemon/061.png",
     "type": [
-      "Water"
+      " Agua"
     ],
     "height": "0.99 m",
     "weight": "20.0 kg",
@@ -1709,8 +1709,8 @@ var POKEMON = {
     "spawn_time": "09:14",
     "multipliers": [1.95],
     "weaknesses": [
-      "Electric",
-      "Grass"
+      "Electrico",
+      "  Hierba"
     ],
     "prev_evolution": [{
       "num": "060",
@@ -1726,8 +1726,8 @@ var POKEMON = {
     "name": "Poliwrath",
     "img": "http://www.serebii.net/pokemongo/pokemon/062.png",
     "type": [
-      "Water",
-      "Fighting"
+      " Agua",
+      "Lucha"
     ],
     "height": "1.30 m",
     "weight": "54.0 kg",
@@ -1738,10 +1738,10 @@ var POKEMON = {
     "spawn_time": "01:32",
     "multipliers": null,
     "weaknesses": [
-      "Electric",
-      "Grass",
-      "Flying",
-      "Psychic",
+      "Electrico",
+      "  Hierba",
+      " Volador",
+      " Psiquico",
       "Fairy"
     ],
     "prev_evolution": [{
@@ -1757,7 +1757,7 @@ var POKEMON = {
     "name": "Abra",
     "img": "http://www.serebii.net/pokemongo/pokemon/063.png",
     "type": [
-      "Psychic"
+      " Psiquico"
     ],
     "height": "0.89 m",
     "weight": "19.5 kg",
@@ -1772,8 +1772,8 @@ var POKEMON = {
       1.95
     ],
     "weaknesses": [
-      "Bug",
-      "Ghost",
+      "Insecto",
+      "Fantasma",
       "Dark"
     ],
     "next_evolution": [{
@@ -1789,7 +1789,7 @@ var POKEMON = {
     "name": "Kadabra",
     "img": "http://www.serebii.net/pokemongo/pokemon/064.png",
     "type": [
-      "Psychic"
+      " Psiquico"
     ],
     "height": "1.30 m",
     "weight": "56.5 kg",
@@ -1801,8 +1801,8 @@ var POKEMON = {
     "spawn_time": "11:25",
     "multipliers": [1.4],
     "weaknesses": [
-      "Bug",
-      "Ghost",
+      "Insecto",
+      "Fantasma",
       "Dark"
     ],
     "prev_evolution": [{
@@ -1819,7 +1819,7 @@ var POKEMON = {
     "name": "Alakazam",
     "img": "http://www.serebii.net/pokemongo/pokemon/065.png",
     "type": [
-      "Psychic"
+      " Psiquico"
     ],
     "height": "1.50 m",
     "weight": "48.0 kg",
@@ -1830,8 +1830,8 @@ var POKEMON = {
     "spawn_time": "12:33",
     "multipliers": null,
     "weaknesses": [
-      "Bug",
-      "Ghost",
+      "Insecto",
+      "Fantasma",
       "Dark"
     ],
     "prev_evolution": [{
@@ -1847,7 +1847,7 @@ var POKEMON = {
     "name": "Machop",
     "img": "http://www.serebii.net/pokemongo/pokemon/066.png",
     "type": [
-      "Fighting"
+      "Lucha"
     ],
     "height": "0.79 m",
     "weight": "19.5 kg",
@@ -1862,8 +1862,8 @@ var POKEMON = {
       1.65
     ],
     "weaknesses": [
-      "Flying",
-      "Psychic",
+      " Volador",
+      " Psiquico",
       "Fairy"
     ],
     "next_evolution": [{
@@ -1879,7 +1879,7 @@ var POKEMON = {
     "name": "Machoke",
     "img": "http://www.serebii.net/pokemongo/pokemon/067.png",
     "type": [
-      "Fighting"
+      "Lucha"
     ],
     "height": "1.50 m",
     "weight": "70.5 kg",
@@ -1891,8 +1891,8 @@ var POKEMON = {
     "spawn_time": "10:32",
     "multipliers": [1.7],
     "weaknesses": [
-      "Flying",
-      "Psychic",
+      " Volador",
+      " Psiquico",
       "Fairy"
     ],
     "prev_evolution": [{
@@ -1909,7 +1909,7 @@ var POKEMON = {
     "name": "Machamp",
     "img": "http://www.serebii.net/pokemongo/pokemon/068.png",
     "type": [
-      "Fighting"
+      "Lucha"
     ],
     "height": "1.60 m",
     "weight": "130.0 kg",
@@ -1920,8 +1920,8 @@ var POKEMON = {
     "spawn_time": "02:55",
     "multipliers": null,
     "weaknesses": [
-      "Flying",
-      "Psychic",
+      " Volador",
+      " Psiquico",
       "Fairy"
     ],
     "prev_evolution": [{
@@ -1937,8 +1937,8 @@ var POKEMON = {
     "name": "Bellsprout",
     "img": "http://www.serebii.net/pokemongo/pokemon/069.png",
     "type": [
-      "Grass",
-      "Poison"
+      "  Hierba",
+      " Veneno"
     ],
     "height": "0.71 m",
     "weight": "4.0 kg",
@@ -1950,10 +1950,10 @@ var POKEMON = {
     "spawn_time": "04:10",
     "multipliers": [1.57],
     "weaknesses": [
-      "Fire",
-      "Ice",
-      "Flying",
-      "Psychic"
+      "Fuego",
+      " Hielo",
+      " Volador",
+      " Psiquico"
     ],
     "next_evolution": [{
       "num": "070",
@@ -1968,8 +1968,8 @@ var POKEMON = {
     "name": "Weepinbell",
     "img": "http://www.serebii.net/pokemongo/pokemon/070.png",
     "type": [
-      "Grass",
-      "Poison"
+      "  Hierba",
+      " Veneno"
     ],
     "height": "0.99 m",
     "weight": "6.4 kg",
@@ -1981,10 +1981,10 @@ var POKEMON = {
     "spawn_time": "09:45",
     "multipliers": [1.59],
     "weaknesses": [
-      "Fire",
-      "Ice",
-      "Flying",
-      "Psychic"
+      "Fuego",
+      " Hielo",
+      " Volador",
+      " Psiquico"
     ],
     "prev_evolution": [{
       "num": "069",
@@ -2000,8 +2000,8 @@ var POKEMON = {
     "name": "Victreebel",
     "img": "http://www.serebii.net/pokemongo/pokemon/071.png",
     "type": [
-      "Grass",
-      "Poison"
+      "  Hierba",
+      " Veneno"
     ],
     "height": "1.70 m",
     "weight": "15.5 kg",
@@ -2012,10 +2012,10 @@ var POKEMON = {
     "spawn_time": "12:19",
     "multipliers": null,
     "weaknesses": [
-      "Fire",
-      "Ice",
-      "Flying",
-      "Psychic"
+      "Fuego",
+      " Hielo",
+      " Volador",
+      " Psiquico"
     ],
     "prev_evolution": [{
       "num": "069",
@@ -2030,8 +2030,8 @@ var POKEMON = {
     "name": "Tentacool",
     "img": "http://www.serebii.net/pokemongo/pokemon/072.png",
     "type": [
-      "Water",
-      "Poison"
+      " Agua",
+      " Veneno"
     ],
     "height": "0.89 m",
     "weight": "45.5 kg",
@@ -2043,9 +2043,9 @@ var POKEMON = {
     "spawn_time": "03:20",
     "multipliers": [2.52],
     "weaknesses": [
-      "Electric",
-      "Ground",
-      "Psychic"
+      "Electrico",
+      " Tierra",
+      " Psiquico"
     ],
     "next_evolution": [{
       "num": "073",
@@ -2057,8 +2057,8 @@ var POKEMON = {
     "name": "Tentacruel",
     "img": "http://www.serebii.net/pokemongo/pokemon/073.png",
     "type": [
-      "Water",
-      "Poison"
+      " Agua",
+      " Veneno"
     ],
     "height": "1.60 m",
     "weight": "55.0 kg",
@@ -2069,9 +2069,9 @@ var POKEMON = {
     "spawn_time": "23:36",
     "multipliers": null,
     "weaknesses": [
-      "Electric",
-      "Ground",
-      "Psychic"
+      "Electrico",
+      " Tierra",
+      " Psiquico"
     ],
     "prev_evolution": [{
       "num": "072",
@@ -2083,8 +2083,8 @@ var POKEMON = {
     "name": "Geodude",
     "img": "http://www.serebii.net/pokemongo/pokemon/074.png",
     "type": [
-      "Rock",
-      "Ground"
+      " Roca",
+      " Tierra"
     ],
     "height": "0.41 m",
     "weight": "20.0 kg",
@@ -2099,11 +2099,11 @@ var POKEMON = {
       1.76
     ],
     "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice",
-      "Fighting",
-      "Ground",
+      " Agua",
+      "  Hierba",
+      " Hielo",
+      "Lucha",
+      " Tierra",
       "Steel"
     ],
     "next_evolution": [{
@@ -2119,8 +2119,8 @@ var POKEMON = {
     "name": "Graveler",
     "img": "http://www.serebii.net/pokemongo/pokemon/075.png",
     "type": [
-      "Rock",
-      "Ground"
+      " Roca",
+      " Tierra"
     ],
     "height": "0.99 m",
     "weight": "105.0 kg",
@@ -2135,11 +2135,11 @@ var POKEMON = {
       1.72
     ],
     "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice",
-      "Fighting",
-      "Ground",
+      " Agua",
+      "  Hierba",
+      " Hielo",
+      "Lucha",
+      " Tierra",
       "Steel"
     ],
     "prev_evolution": [{
@@ -2156,8 +2156,8 @@ var POKEMON = {
     "name": "Golem",
     "img": "http://www.serebii.net/pokemongo/pokemon/076.png",
     "type": [
-      "Rock",
-      "Ground"
+      " Roca",
+      " Tierra"
     ],
     "height": "1.40 m",
     "weight": "300.0 kg",
@@ -2168,11 +2168,11 @@ var POKEMON = {
     "spawn_time": "12:16",
     "multipliers": null,
     "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice",
-      "Fighting",
-      "Ground",
+      " Agua",
+      "  Hierba",
+      " Hielo",
+      "Lucha",
+      " Tierra",
       "Steel"
     ],
     "prev_evolution": [{
@@ -2188,7 +2188,7 @@ var POKEMON = {
     "name": "Ponyta",
     "img": "http://www.serebii.net/pokemongo/pokemon/077.png",
     "type": [
-      "Fire"
+      "Fuego"
     ],
     "height": "0.99 m",
     "weight": "30.0 kg",
@@ -2203,9 +2203,9 @@ var POKEMON = {
       1.5
     ],
     "weaknesses": [
-      "Water",
-      "Ground",
-      "Rock"
+      " Agua",
+      " Tierra",
+      " Roca"
     ],
     "next_evolution": [{
       "num": "078",
@@ -2217,7 +2217,7 @@ var POKEMON = {
     "name": "Rapidash",
     "img": "http://www.serebii.net/pokemongo/pokemon/078.png",
     "type": [
-      "Fire"
+      "Fuego"
     ],
     "height": "1.70 m",
     "weight": "95.0 kg",
@@ -2228,9 +2228,9 @@ var POKEMON = {
     "spawn_time": "04:00",
     "multipliers": null,
     "weaknesses": [
-      "Water",
-      "Ground",
-      "Rock"
+      " Agua",
+      " Tierra",
+      " Roca"
     ],
     "prev_evolution": [{
       "num": "077",
@@ -2242,8 +2242,8 @@ var POKEMON = {
     "name": "Slowpoke",
     "img": "http://www.serebii.net/pokemongo/pokemon/079.png",
     "type": [
-      "Water",
-      "Psychic"
+      " Agua",
+      " Psiquico"
     ],
     "height": "1.19 m",
     "weight": "36.0 kg",
@@ -2255,10 +2255,10 @@ var POKEMON = {
     "spawn_time": "07:12",
     "multipliers": [2.21],
     "weaknesses": [
-      "Electric",
-      "Grass",
-      "Bug",
-      "Ghost",
+      "Electrico",
+      "  Hierba",
+      "Insecto",
+      "Fantasma",
       "Dark"
     ],
     "next_evolution": [{
@@ -2271,8 +2271,8 @@ var POKEMON = {
     "name": "Slowbro",
     "img": "http://www.serebii.net/pokemongo/pokemon/080.png",
     "type": [
-      "Water",
-      "Psychic"
+      " Agua",
+      " Psiquico"
     ],
     "height": "1.60 m",
     "weight": "78.5 kg",
@@ -2283,10 +2283,10 @@ var POKEMON = {
     "spawn_time": "02:56",
     "multipliers": null,
     "weaknesses": [
-      "Electric",
-      "Grass",
-      "Bug",
-      "Ghost",
+      "Electrico",
+      "  Hierba",
+      "Insecto",
+      "Fantasma",
       "Dark"
     ],
     "prev_evolution": [{
@@ -2299,7 +2299,7 @@ var POKEMON = {
     "name": "Magnemite",
     "img": "http://www.serebii.net/pokemongo/pokemon/081.png",
     "type": [
-      "Electric"
+      "Electrico"
     ],
     "height": "0.30 m",
     "weight": "6.0 kg",
@@ -2314,9 +2314,9 @@ var POKEMON = {
       2.17
     ],
     "weaknesses": [
-      "Fire",
-      "Water",
-      "Ground"
+      "Fuego",
+      " Agua",
+      " Tierra"
     ],
     "next_evolution": [{
       "num": "082",
@@ -2328,7 +2328,7 @@ var POKEMON = {
     "name": "Magneton",
     "img": "http://www.serebii.net/pokemongo/pokemon/082.png",
     "type": [
-      "Electric"
+      "Electrico"
     ],
     "height": "0.99 m",
     "weight": "60.0 kg",
@@ -2339,9 +2339,9 @@ var POKEMON = {
     "spawn_time": "15:25",
     "multipliers": null,
     "weaknesses": [
-      "Fire",
-      "Water",
-      "Ground"
+      "Fuego",
+      " Agua",
+      " Tierra"
     ],
     "prev_evolution": [{
       "num": "081",
@@ -2354,7 +2354,7 @@ var POKEMON = {
     "img": "http://www.serebii.net/pokemongo/pokemon/083.png",
     "type": [
       "Normal",
-      "Flying"
+      " Volador"
     ],
     "height": "0.79 m",
     "weight": "15.0 kg",
@@ -2365,8 +2365,8 @@ var POKEMON = {
     "spawn_time": "01:09",
     "multipliers": null,
     "weaknesses": [
-      "Electric",
-      "Rock"
+      "Electrico",
+      " Roca"
     ]
   }, {
     "id": 84,
@@ -2375,7 +2375,7 @@ var POKEMON = {
     "img": "http://www.serebii.net/pokemongo/pokemon/084.png",
     "type": [
       "Normal",
-      "Flying"
+      " Volador"
     ],
     "height": "1.40 m",
     "weight": "39.2 kg",
@@ -2390,8 +2390,8 @@ var POKEMON = {
       2.24
     ],
     "weaknesses": [
-      "Electric",
-      "Rock"
+      "Electrico",
+      " Roca"
     ],
     "next_evolution": [{
       "num": "085",
@@ -2404,7 +2404,7 @@ var POKEMON = {
     "img": "http://www.serebii.net/pokemongo/pokemon/085.png",
     "type": [
       "Normal",
-      "Flying"
+      " Volador"
     ],
     "height": "1.80 m",
     "weight": "85.2 kg",
@@ -2415,8 +2415,8 @@ var POKEMON = {
     "spawn_time": "02:12",
     "multipliers": null,
     "weaknesses": [
-      "Electric",
-      "Rock"
+      "Electrico",
+      " Roca"
     ],
     "prev_evolution": [{
       "num": "084",
@@ -2428,7 +2428,7 @@ var POKEMON = {
     "name": "Seel",
     "img": "http://www.serebii.net/pokemongo/pokemon/086.png",
     "type": [
-      "Water"
+      " Agua"
     ],
     "height": "1.09 m",
     "weight": "90.0 kg",
@@ -2443,8 +2443,8 @@ var POKEMON = {
       1.96
     ],
     "weaknesses": [
-      "Electric",
-      "Grass"
+      "Electrico",
+      "  Hierba"
     ],
     "next_evolution": [{
       "num": "087",
@@ -2456,8 +2456,8 @@ var POKEMON = {
     "name": "Dewgong",
     "img": "http://www.serebii.net/pokemongo/pokemon/087.png",
     "type": [
-      "Water",
-      "Ice"
+      " Agua",
+      " Hielo"
     ],
     "height": "1.70 m",
     "weight": "120.0 kg",
@@ -2468,10 +2468,10 @@ var POKEMON = {
     "spawn_time": "06:04",
     "multipliers": null,
     "weaknesses": [
-      "Electric",
-      "Grass",
-      "Fighting",
-      "Rock"
+      "Electrico",
+      "  Hierba",
+      "Lucha",
+      " Roca"
     ],
     "prev_evolution": [{
       "num": "086",
@@ -2483,7 +2483,7 @@ var POKEMON = {
     "name": "Grimer",
     "img": "http://www.serebii.net/pokemongo/pokemon/088.png",
     "type": [
-      "Poison"
+      " Veneno"
     ],
     "height": "0.89 m",
     "weight": "30.0 kg",
@@ -2495,8 +2495,8 @@ var POKEMON = {
     "spawn_time": "15:11",
     "multipliers": [2.44],
     "weaknesses": [
-      "Ground",
-      "Psychic"
+      " Tierra",
+      " Psiquico"
     ],
     "next_evolution": [{
       "num": "089",
@@ -2508,7 +2508,7 @@ var POKEMON = {
     "name": "Muk",
     "img": "http://www.serebii.net/pokemongo/pokemon/089.png",
     "type": [
-      "Poison"
+      " Veneno"
     ],
     "height": "1.19 m",
     "weight": "30.0 kg",
@@ -2519,8 +2519,8 @@ var POKEMON = {
     "spawn_time": "01:28",
     "multipliers": null,
     "weaknesses": [
-      "Ground",
-      "Psychic"
+      " Tierra",
+      " Psiquico"
     ],
     "prev_evolution": [{
       "num": "088",
@@ -2532,7 +2532,7 @@ var POKEMON = {
     "name": "Shellder",
     "img": "http://www.serebii.net/pokemongo/pokemon/090.png",
     "type": [
-      "Water"
+      " Agua"
     ],
     "height": "0.30 m",
     "weight": "4.0 kg",
@@ -2544,8 +2544,8 @@ var POKEMON = {
     "spawn_time": "07:39",
     "multipliers": [2.65],
     "weaknesses": [
-      "Electric",
-      "Grass"
+      "Electrico",
+      "  Hierba"
     ],
     "next_evolution": [{
       "num": "091",
@@ -2557,8 +2557,8 @@ var POKEMON = {
     "name": "Cloyster",
     "img": "http://www.serebii.net/pokemongo/pokemon/091.png",
     "type": [
-      "Water",
-      "Ice"
+      " Agua",
+      " Hielo"
     ],
     "height": "1.50 m",
     "weight": "132.5 kg",
@@ -2569,10 +2569,10 @@ var POKEMON = {
     "spawn_time": "02:33",
     "multipliers": null,
     "weaknesses": [
-      "Electric",
-      "Grass",
-      "Fighting",
-      "Rock"
+      "Electrico",
+      "  Hierba",
+      "Lucha",
+      " Roca"
     ],
     "prev_evolution": [{
       "num": "090",
@@ -2584,8 +2584,8 @@ var POKEMON = {
     "name": "Gastly",
     "img": "http://www.serebii.net/pokemongo/pokemon/092.png",
     "type": [
-      "Ghost",
-      "Poison"
+      "Fantasma",
+      " Veneno"
     ],
     "height": "1.30 m",
     "weight": "0.1 kg",
@@ -2597,9 +2597,9 @@ var POKEMON = {
     "spawn_time": "04:21",
     "multipliers": [1.78],
     "weaknesses": [
-      "Ground",
-      "Psychic",
-      "Ghost",
+      " Tierra",
+      " Psiquico",
+      "Fantasma",
       "Dark"
     ],
     "next_evolution": [{
@@ -2615,8 +2615,8 @@ var POKEMON = {
     "name": "Haunter",
     "img": "http://www.serebii.net/pokemongo/pokemon/093.png",
     "type": [
-      "Ghost",
-      "Poison"
+      "Fantasma",
+      " Veneno"
     ],
     "height": "1.60 m",
     "weight": "0.1 kg",
@@ -2631,9 +2631,9 @@ var POKEMON = {
       1.8
     ],
     "weaknesses": [
-      "Ground",
-      "Psychic",
-      "Ghost",
+      " Tierra",
+      " Psiquico",
+      "Fantasma",
       "Dark"
     ],
     "prev_evolution": [{
@@ -2650,8 +2650,8 @@ var POKEMON = {
     "name": "Gengar",
     "img": "http://www.serebii.net/pokemongo/pokemon/094.png",
     "type": [
-      "Ghost",
-      "Poison"
+      "Fantasma",
+      " Veneno"
     ],
     "height": "1.50 m",
     "weight": "40.5 kg",
@@ -2662,9 +2662,9 @@ var POKEMON = {
     "spawn_time": "03:55",
     "multipliers": null,
     "weaknesses": [
-      "Ground",
-      "Psychic",
-      "Ghost",
+      " Tierra",
+      " Psiquico",
+      "Fantasma",
       "Dark"
     ],
     "prev_evolution": [{
@@ -2680,8 +2680,8 @@ var POKEMON = {
     "name": "Onix",
     "img": "http://www.serebii.net/pokemongo/pokemon/095.png",
     "type": [
-      "Rock",
-      "Ground"
+      " Roca",
+      " Tierra"
     ],
     "height": "8.79 m",
     "weight": "210.0 kg",
@@ -2692,11 +2692,11 @@ var POKEMON = {
     "spawn_time": "01:18",
     "multipliers": null,
     "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice",
-      "Fighting",
-      "Ground",
+      " Agua",
+      "  Hierba",
+      " Hielo",
+      "Lucha",
+      " Tierra",
       "Steel"
     ]
   }, {
@@ -2705,7 +2705,7 @@ var POKEMON = {
     "name": "Drowzee",
     "img": "http://www.serebii.net/pokemongo/pokemon/096.png",
     "type": [
-      "Psychic"
+      " Psiquico"
     ],
     "height": "0.99 m",
     "weight": "32.4 kg",
@@ -2720,8 +2720,8 @@ var POKEMON = {
       2.09
     ],
     "weaknesses": [
-      "Bug",
-      "Ghost",
+      "Insecto",
+      "Fantasma",
       "Dark"
     ],
     "next_evolution": [{
@@ -2734,7 +2734,7 @@ var POKEMON = {
     "name": "Hypno",
     "img": "http://www.serebii.net/pokemongo/pokemon/097.png",
     "type": [
-      "Psychic"
+      " Psiquico"
     ],
     "height": "1.60 m",
     "weight": "75.6 kg",
@@ -2745,8 +2745,8 @@ var POKEMON = {
     "spawn_time": "02:17",
     "multipliers": null,
     "weaknesses": [
-      "Bug",
-      "Ghost",
+      "Insecto",
+      "Fantasma",
       "Dark"
     ],
     "prev_evolution": [{
@@ -2759,7 +2759,7 @@ var POKEMON = {
     "name": "Krabby",
     "img": "http://www.serebii.net/pokemongo/pokemon/098.png",
     "type": [
-      "Water"
+      " Agua"
     ],
     "height": "0.41 m",
     "weight": "6.5 kg",
@@ -2774,8 +2774,8 @@ var POKEMON = {
       2.4
     ],
     "weaknesses": [
-      "Electric",
-      "Grass"
+      "Electrico",
+      "  Hierba"
     ],
     "next_evolution": [{
       "num": "099",
@@ -2787,7 +2787,7 @@ var POKEMON = {
     "name": "Kingler",
     "img": "http://www.serebii.net/pokemongo/pokemon/099.png",
     "type": [
-      "Water"
+      " Agua"
     ],
     "height": "1.30 m",
     "weight": "60.0 kg",
@@ -2798,8 +2798,8 @@ var POKEMON = {
     "spawn_time": "03:44",
     "multipliers": null,
     "weaknesses": [
-      "Electric",
-      "Grass"
+      "Electrico",
+      "  Hierba"
     ],
     "prev_evolution": [{
       "num": "098",
@@ -2811,7 +2811,7 @@ var POKEMON = {
     "name": "Voltorb",
     "img": "http://www.serebii.net/pokemongo/pokemon/100.png",
     "type": [
-      "Electric"
+      "Electrico"
     ],
     "height": "0.51 m",
     "weight": "10.4 kg",
@@ -2826,7 +2826,7 @@ var POKEMON = {
       2.02
     ],
     "weaknesses": [
-      "Ground"
+      " Tierra"
     ],
     "next_evolution": [{
       "num": "101",
@@ -2838,7 +2838,7 @@ var POKEMON = {
     "name": "Electrode",
     "img": "http://www.serebii.net/pokemongo/pokemon/101.png",
     "type": [
-      "Electric"
+      "Electrico"
     ],
     "height": "1.19 m",
     "weight": "66.6 kg",
@@ -2849,7 +2849,7 @@ var POKEMON = {
     "spawn_time": "04:10",
     "multipliers": null,
     "weaknesses": [
-      "Ground"
+      " Tierra"
     ],
     "prev_evolution": [{
       "num": "100",
@@ -2861,8 +2861,8 @@ var POKEMON = {
     "name": "Exeggcute",
     "img": "http://www.serebii.net/pokemongo/pokemon/102.png",
     "type": [
-      "Grass",
-      "Psychic"
+      "  Hierba",
+      " Psiquico"
     ],
     "height": "0.41 m",
     "weight": "2.5 kg",
@@ -2877,12 +2877,12 @@ var POKEMON = {
       3.18
     ],
     "weaknesses": [
-      "Fire",
-      "Ice",
-      "Poison",
-      "Flying",
-      "Bug",
-      "Ghost",
+      "Fuego",
+      " Hielo",
+      " Veneno",
+      " Volador",
+      "Insecto",
+      "Fantasma",
       "Dark"
     ],
     "next_evolution": [{
@@ -2895,8 +2895,8 @@ var POKEMON = {
     "name": "Exeggutor",
     "img": "http://www.serebii.net/pokemongo/pokemon/103.png",
     "type": [
-      "Grass",
-      "Psychic"
+      "  Hierba",
+      " Psiquico"
     ],
     "height": "2.01 m",
     "weight": "120.0 kg",
@@ -2907,12 +2907,12 @@ var POKEMON = {
     "spawn_time": "12:34",
     "multipliers": null,
     "weaknesses": [
-      "Fire",
-      "Ice",
-      "Poison",
-      "Flying",
-      "Bug",
-      "Ghost",
+      "Fuego",
+      " Hielo",
+      " Veneno",
+      " Volador",
+      "Insecto",
+      "Fantasma",
       "Dark"
     ],
     "prev_evolution": [{
@@ -2925,7 +2925,7 @@ var POKEMON = {
     "name": "Cubone",
     "img": "http://www.serebii.net/pokemongo/pokemon/104.png",
     "type": [
-      "Ground"
+      " Tierra"
     ],
     "height": "0.41 m",
     "weight": "6.5 kg",
@@ -2937,9 +2937,9 @@ var POKEMON = {
     "spawn_time": "01:51",
     "multipliers": [1.67],
     "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice"
+      " Agua",
+      "  Hierba",
+      " Hielo"
     ],
     "next_evolution": [{
       "num": "105",
@@ -2951,7 +2951,7 @@ var POKEMON = {
     "name": "Marowak",
     "img": "http://www.serebii.net/pokemongo/pokemon/105.png",
     "type": [
-      "Ground"
+      " Tierra"
     ],
     "height": "0.99 m",
     "weight": "45.0 kg",
@@ -2962,9 +2962,9 @@ var POKEMON = {
     "spawn_time": "03:59",
     "multipliers": null,
     "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice"
+      " Agua",
+      "  Hierba",
+      " Hielo"
     ],
     "prev_evolution": [{
       "num": "104",
@@ -2976,7 +2976,7 @@ var POKEMON = {
     "name": "Hitmonlee",
     "img": "http://www.serebii.net/pokemongo/pokemon/106.png",
     "type": [
-      "Fighting"
+      "Lucha"
     ],
     "height": "1.50 m",
     "weight": "49.8 kg",
@@ -2987,8 +2987,8 @@ var POKEMON = {
     "spawn_time": "03:59",
     "multipliers": null,
     "weaknesses": [
-      "Flying",
-      "Psychic",
+      " Volador",
+      " Psiquico",
       "Fairy"
     ]
   }, {
@@ -2997,7 +2997,7 @@ var POKEMON = {
     "name": "Hitmonchan",
     "img": "http://www.serebii.net/pokemongo/pokemon/107.png",
     "type": [
-      "Fighting"
+      "Lucha"
     ],
     "height": "1.40 m",
     "weight": "50.2 kg",
@@ -3008,8 +3008,8 @@ var POKEMON = {
     "spawn_time": "05:58",
     "multipliers": null,
     "weaknesses": [
-      "Flying",
-      "Psychic",
+      " Volador",
+      " Psiquico",
       "Fairy"
     ]
   }, {
@@ -3029,7 +3029,7 @@ var POKEMON = {
     "spawn_time": "02:46",
     "multipliers": null,
     "weaknesses": [
-      "Fighting"
+      "Lucha"
     ]
   }, {
     "id": 109,
@@ -3037,7 +3037,7 @@ var POKEMON = {
     "name": "Koffing",
     "img": "http://www.serebii.net/pokemongo/pokemon/109.png",
     "type": [
-      "Poison"
+      " Veneno"
     ],
     "height": "0.61 m",
     "weight": "1.0 kg",
@@ -3049,8 +3049,8 @@ var POKEMON = {
     "spawn_time": "08:16",
     "multipliers": [1.11],
     "weaknesses": [
-      "Ground",
-      "Psychic"
+      " Tierra",
+      " Psiquico"
     ],
     "next_evolution": [{
       "num": "110",
@@ -3062,7 +3062,7 @@ var POKEMON = {
     "name": "Weezing",
     "img": "http://www.serebii.net/pokemongo/pokemon/110.png",
     "type": [
-      "Poison"
+      " Veneno"
     ],
     "height": "1.19 m",
     "weight": "9.5 kg",
@@ -3073,8 +3073,8 @@ var POKEMON = {
     "spawn_time": "12:17",
     "multipliers": null,
     "weaknesses": [
-      "Ground",
-      "Psychic"
+      " Tierra",
+      " Psiquico"
     ],
     "prev_evolution": [{
       "num": "109",
@@ -3086,8 +3086,8 @@ var POKEMON = {
     "name": "Rhyhorn",
     "img": "http://www.serebii.net/pokemongo/pokemon/111.png",
     "type": [
-      "Ground",
-      "Rock"
+      " Tierra",
+      " Roca"
     ],
     "height": "0.99 m",
     "weight": "115.0 kg",
@@ -3099,11 +3099,11 @@ var POKEMON = {
     "spawn_time": "03:21",
     "multipliers": [1.91],
     "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice",
-      "Fighting",
-      "Ground",
+      " Agua",
+      "  Hierba",
+      " Hielo",
+      "Lucha",
+      " Tierra",
       "Steel"
     ],
     "next_evolution": [{
@@ -3116,8 +3116,8 @@ var POKEMON = {
     "name": "Rhydon",
     "img": "http://www.serebii.net/pokemongo/pokemon/112.png",
     "type": [
-      "Ground",
-      "Rock"
+      " Tierra",
+      " Roca"
     ],
     "height": "1.91 m",
     "weight": "120.0 kg",
@@ -3128,11 +3128,11 @@ var POKEMON = {
     "spawn_time": "05:50",
     "multipliers": null,
     "weaknesses": [
-      "Water",
-      "Grass",
-      "Ice",
-      "Fighting",
-      "Ground",
+      " Agua",
+      "  Hierba",
+      " Hielo",
+      "Lucha",
+      " Tierra",
       "Steel"
     ],
     "prev_evolution": [{
@@ -3156,7 +3156,7 @@ var POKEMON = {
     "spawn_time": "04:46",
     "multipliers": null,
     "weaknesses": [
-      "Fighting"
+      "Lucha"
     ]
   }, {
     "id": 114,
@@ -3164,7 +3164,7 @@ var POKEMON = {
     "name": "Tangela",
     "img": "http://www.serebii.net/pokemongo/pokemon/114.png",
     "type": [
-      "Grass"
+      "  Hierba"
     ],
     "height": "0.99 m",
     "weight": "35.0 kg",
@@ -3175,11 +3175,11 @@ var POKEMON = {
     "spawn_time": "23:13",
     "multipliers": null,
     "weaknesses": [
-      "Fire",
-      "Ice",
-      "Poison",
-      "Flying",
-      "Bug"
+      "Fuego",
+      " Hielo",
+      " Veneno",
+      " Volador",
+      "Insecto"
     ]
   }, {
     "id": 115,
@@ -3198,7 +3198,7 @@ var POKEMON = {
     "spawn_time": "02:40",
     "multipliers": null,
     "weaknesses": [
-      "Fighting"
+      "Lucha"
     ]
   }, {
     "id": 116,
@@ -3206,7 +3206,7 @@ var POKEMON = {
     "name": "Horsea",
     "img": "http://www.serebii.net/pokemongo/pokemon/116.png",
     "type": [
-      "Water"
+      " Agua"
     ],
     "height": "0.41 m",
     "weight": "8.0 kg",
@@ -3218,8 +3218,8 @@ var POKEMON = {
     "spawn_time": "02:53",
     "multipliers": [2.23],
     "weaknesses": [
-      "Electric",
-      "Grass"
+      "Electrico",
+      "  Hierba"
     ],
     "next_evolution": [{
       "num": "117",
@@ -3231,7 +3231,7 @@ var POKEMON = {
     "name": "Seadra",
     "img": "http://www.serebii.net/pokemongo/pokemon/117.png",
     "type": [
-      "Water"
+      " Agua"
     ],
     "height": "1.19 m",
     "weight": "25.0 kg",
@@ -3242,8 +3242,8 @@ var POKEMON = {
     "spawn_time": "03:18",
     "multipliers": null,
     "weaknesses": [
-      "Electric",
-      "Grass"
+      "Electrico",
+      "  Hierba"
     ],
     "prev_evolution": [{
       "num": "116",
@@ -3255,7 +3255,7 @@ var POKEMON = {
     "name": "Goldeen",
     "img": "http://www.serebii.net/pokemongo/pokemon/118.png",
     "type": [
-      "Water"
+      " Agua"
     ],
     "height": "0.61 m",
     "weight": "15.0 kg",
@@ -3270,8 +3270,8 @@ var POKEMON = {
       2.2
     ],
     "weaknesses": [
-      "Electric",
-      "Grass"
+      "Electrico",
+      "  Hierba"
     ],
     "next_evolution": [{
       "num": "119",
@@ -3283,7 +3283,7 @@ var POKEMON = {
     "name": "Seaking",
     "img": "http://www.serebii.net/pokemongo/pokemon/119.png",
     "type": [
-      "Water"
+      " Agua"
     ],
     "height": "1.30 m",
     "weight": "39.0 kg",
@@ -3294,8 +3294,8 @@ var POKEMON = {
     "spawn_time": "05:21",
     "multipliers": null,
     "weaknesses": [
-      "Electric",
-      "Grass"
+      "Electrico",
+      "  Hierba"
     ],
     "prev_evolution": [{
       "num": "118",
@@ -3307,7 +3307,7 @@ var POKEMON = {
     "name": "Staryu",
     "img": "http://www.serebii.net/pokemongo/pokemon/120.png",
     "type": [
-      "Water"
+      " Agua"
     ],
     "height": "0.79 m",
     "weight": "34.5 kg",
@@ -3322,8 +3322,8 @@ var POKEMON = {
       2.41
     ],
     "weaknesses": [
-      "Electric",
-      "Grass"
+      "Electrico",
+      "  Hierba"
     ],
     "next_evolution": [{
       "num": "121",
@@ -3335,8 +3335,8 @@ var POKEMON = {
     "name": "Starmie",
     "img": "http://www.serebii.net/pokemongo/pokemon/121.png",
     "type": [
-      "Water",
-      "Psychic"
+      " Agua",
+      " Psiquico"
     ],
     "height": "1.09 m",
     "weight": "80.0 kg",
@@ -3347,10 +3347,10 @@ var POKEMON = {
     "spawn_time": "06:57",
     "multipliers": null,
     "weaknesses": [
-      "Electric",
-      "Grass",
-      "Bug",
-      "Ghost",
+      "Electrico",
+      "  Hierba",
+      "Insecto",
+      "Fantasma",
       "Dark"
     ],
     "prev_evolution": [{
@@ -3363,7 +3363,7 @@ var POKEMON = {
     "name": "Mr. Mime",
     "img": "http://www.serebii.net/pokemongo/pokemon/122.png",
     "type": [
-      "Psychic"
+      " Psiquico"
     ],
     "height": "1.30 m",
     "weight": "54.5 kg",
@@ -3374,8 +3374,8 @@ var POKEMON = {
     "spawn_time": "01:51",
     "multipliers": null,
     "weaknesses": [
-      "Bug",
-      "Ghost",
+      "Insecto",
+      "Fantasma",
       "Dark"
     ]
   }, {
@@ -3384,8 +3384,8 @@ var POKEMON = {
     "name": "Scyther",
     "img": "http://www.serebii.net/pokemongo/pokemon/123.png",
     "type": [
-      "Bug",
-      "Flying"
+      "Insecto",
+      " Volador"
     ],
     "height": "1.50 m",
     "weight": "56.0 kg",
@@ -3396,11 +3396,11 @@ var POKEMON = {
     "spawn_time": "05:43",
     "multipliers": null,
     "weaknesses": [
-      "Fire",
-      "Electric",
-      "Ice",
-      "Flying",
-      "Rock"
+      "Fuego",
+      "Electrico",
+      " Hielo",
+      " Volador",
+      " Roca"
     ]
   }, {
     "id": 124,
@@ -3408,8 +3408,8 @@ var POKEMON = {
     "name": "Jynx",
     "img": "http://www.serebii.net/pokemongo/pokemon/124.png",
     "type": [
-      "Ice",
-      "Psychic"
+      " Hielo",
+      " Psiquico"
     ],
     "height": "1.40 m",
     "weight": "40.6 kg",
@@ -3420,10 +3420,10 @@ var POKEMON = {
     "spawn_time": "05:41",
     "multipliers": null,
     "weaknesses": [
-      "Fire",
-      "Bug",
-      "Rock",
-      "Ghost",
+      "Fuego",
+      "Insecto",
+      " Roca",
+      "Fantasma",
       "Dark",
       "Steel"
     ]
@@ -3433,7 +3433,7 @@ var POKEMON = {
     "name": "Electabuzz",
     "img": "http://www.serebii.net/pokemongo/pokemon/125.png",
     "type": [
-      "Electric"
+      "Electrico"
     ],
     "height": "1.09 m",
     "weight": "30.0 kg",
@@ -3444,7 +3444,7 @@ var POKEMON = {
     "spawn_time": "04:28",
     "multipliers": null,
     "weaknesses": [
-      "Ground"
+      " Tierra"
     ]
   }, {
     "id": 126,
@@ -3452,7 +3452,7 @@ var POKEMON = {
     "name": "Magmar",
     "img": "http://www.serebii.net/pokemongo/pokemon/126.png",
     "type": [
-      "Fire"
+      "Fuego"
     ],
     "height": "1.30 m",
     "weight": "44.5 kg",
@@ -3463,9 +3463,9 @@ var POKEMON = {
     "spawn_time": "20:36",
     "multipliers": null,
     "weaknesses": [
-      "Water",
-      "Ground",
-      "Rock"
+      " Agua",
+      " Tierra",
+      " Roca"
     ]
   }, {
     "id": 127,
@@ -3473,7 +3473,7 @@ var POKEMON = {
     "name": "Pinsir",
     "img": "http://www.serebii.net/pokemongo/pokemon/127.png",
     "type": [
-      "Bug"
+      "Insecto"
     ],
     "height": "1.50 m",
     "weight": "55.0 kg",
@@ -3484,9 +3484,9 @@ var POKEMON = {
     "spawn_time": "03:25",
     "multipliers": null,
     "weaknesses": [
-      "Fire",
-      "Flying",
-      "Rock"
+      "Fuego",
+      " Volador",
+      " Roca"
     ]
   }, {
     "id": 128,
@@ -3505,7 +3505,7 @@ var POKEMON = {
     "spawn_time": "00:37",
     "multipliers": null,
     "weaknesses": [
-      "Fighting"
+      "Lucha"
     ]
   }, {
     "id": 129,
@@ -3513,7 +3513,7 @@ var POKEMON = {
     "name": "Magikarp",
     "img": "http://www.serebii.net/pokemongo/pokemon/129.png",
     "type": [
-      "Water"
+      " Agua"
     ],
     "height": "0.89 m",
     "weight": "10.0 kg",
@@ -3528,8 +3528,8 @@ var POKEMON = {
       11.8
     ],
     "weaknesses": [
-      "Electric",
-      "Grass"
+      "Electrico",
+      "  Hierba"
     ],
     "next_evolution": [{
       "num": "130",
@@ -3541,8 +3541,8 @@ var POKEMON = {
     "name": "Gyarados",
     "img": "http://www.serebii.net/pokemongo/pokemon/130.png",
     "type": [
-      "Water",
-      "Flying"
+      " Agua",
+      " Volador"
     ],
     "height": "6.50 m",
     "weight": "235.0 kg",
@@ -3553,8 +3553,8 @@ var POKEMON = {
     "spawn_time": "02:15",
     "multipliers": null,
     "weaknesses": [
-      "Electric",
-      "Rock"
+      "Electrico",
+      " Roca"
     ],
     "prev_evolution": [{
       "num": "129",
@@ -3566,8 +3566,8 @@ var POKEMON = {
     "name": "Lapras",
     "img": "http://www.serebii.net/pokemongo/pokemon/131.png",
     "type": [
-      "Water",
-      "Ice"
+      " Agua",
+      " Hielo"
     ],
     "height": "2.49 m",
     "weight": "220.0 kg",
@@ -3578,10 +3578,10 @@ var POKEMON = {
     "spawn_time": "08:59",
     "multipliers": null,
     "weaknesses": [
-      "Electric",
-      "Grass",
-      "Fighting",
-      "Rock"
+      "Electrico",
+      "  Hierba",
+      "Lucha",
+      " Roca"
     ]
   }, {
     "id": 132,
@@ -3600,7 +3600,7 @@ var POKEMON = {
     "spawn_time": "N/A",
     "multipliers": null,
     "weaknesses": [
-      "Fighting"
+      "Lucha"
     ]
   }, {
     "id": 133,
@@ -3623,7 +3623,7 @@ var POKEMON = {
       2.64
     ],
     "weaknesses": [
-      "Fighting"
+      "Lucha"
     ],
     "next_evolution": [{
       "num": "134",
@@ -3641,7 +3641,7 @@ var POKEMON = {
     "name": "Vaporeon",
     "img": "http://www.serebii.net/pokemongo/pokemon/134.png",
     "type": [
-      "Water"
+      " Agua"
     ],
     "height": "0.99 m",
     "weight": "29.0 kg",
@@ -3652,8 +3652,8 @@ var POKEMON = {
     "spawn_time": "10:54",
     "multipliers": null,
     "weaknesses": [
-      "Electric",
-      "Grass"
+      "Electrico",
+      "  Hierba"
     ],
     "prev_evolution": [{
       "num": "133",
@@ -3665,7 +3665,7 @@ var POKEMON = {
     "name": "Jolteon",
     "img": "http://www.serebii.net/pokemongo/pokemon/135.png",
     "type": [
-      "Electric"
+      "Electrico"
     ],
     "height": "0.79 m",
     "weight": "24.5 kg",
@@ -3676,7 +3676,7 @@ var POKEMON = {
     "spawn_time": "02:30",
     "multipliers": null,
     "weaknesses": [
-      "Ground"
+      " Tierra"
     ],
     "prev_evolution": [{
       "num": "133",
@@ -3688,7 +3688,7 @@ var POKEMON = {
     "name": "Flareon",
     "img": "http://www.serebii.net/pokemongo/pokemon/136.png",
     "type": [
-      "Fire"
+      "Fuego"
     ],
     "height": "0.89 m",
     "weight": "25.0 kg",
@@ -3699,9 +3699,9 @@ var POKEMON = {
     "spawn_time": "07:02",
     "multipliers": null,
     "weaknesses": [
-      "Water",
-      "Ground",
-      "Rock"
+      " Agua",
+      " Tierra",
+      " Roca"
     ],
     "prev_evolution": [{
       "num": "133",
@@ -3724,7 +3724,7 @@ var POKEMON = {
     "spawn_time": "02:49",
     "multipliers": null,
     "weaknesses": [
-      "Fighting"
+      "Lucha"
     ]
   }, {
     "id": 138,
@@ -3732,8 +3732,8 @@ var POKEMON = {
     "name": "Omanyte",
     "img": "http://www.serebii.net/pokemongo/pokemon/138.png",
     "type": [
-      "Rock",
-      "Water"
+      " Roca",
+      " Agua"
     ],
     "height": "0.41 m",
     "weight": "7.5 kg",
@@ -3745,10 +3745,10 @@ var POKEMON = {
     "spawn_time": "10:23",
     "multipliers": [2.12],
     "weaknesses": [
-      "Electric",
-      "Grass",
-      "Fighting",
-      "Ground"
+      "Electrico",
+      "  Hierba",
+      "Lucha",
+      " Tierra"
     ],
     "next_evolution": [{
       "num": "139",
@@ -3760,8 +3760,8 @@ var POKEMON = {
     "name": "Omastar",
     "img": "http://www.serebii.net/pokemongo/pokemon/139.png",
     "type": [
-      "Rock",
-      "Water"
+      " Roca",
+      " Agua"
     ],
     "height": "0.99 m",
     "weight": "35.0 kg",
@@ -3772,10 +3772,10 @@ var POKEMON = {
     "spawn_time": "05:04",
     "multipliers": null,
     "weaknesses": [
-      "Electric",
-      "Grass",
-      "Fighting",
-      "Ground"
+      "Electrico",
+      "  Hierba",
+      "Lucha",
+      " Tierra"
     ],
     "prev_evolution": [{
       "num": "138",
@@ -3787,8 +3787,8 @@ var POKEMON = {
     "name": "Kabuto",
     "img": "http://www.serebii.net/pokemongo/pokemon/140.png",
     "type": [
-      "Rock",
-      "Water"
+      " Roca",
+      " Agua"
     ],
     "height": "0.51 m",
     "weight": "11.5 kg",
@@ -3803,10 +3803,10 @@ var POKEMON = {
       2.37
     ],
     "weaknesses": [
-      "Electric",
-      "Grass",
-      "Fighting",
-      "Ground"
+      "Electrico",
+      "  Hierba",
+      "Lucha",
+      " Tierra"
     ],
     "next_evolution": [{
       "num": "141",
@@ -3818,8 +3818,8 @@ var POKEMON = {
     "name": "Kabutops",
     "img": "http://www.serebii.net/pokemongo/pokemon/141.png",
     "type": [
-      "Rock",
-      "Water"
+      " Roca",
+      " Agua"
     ],
     "height": "1.30 m",
     "weight": "40.5 kg",
@@ -3830,10 +3830,10 @@ var POKEMON = {
     "spawn_time": "23:40",
     "multipliers": null,
     "weaknesses": [
-      "Electric",
-      "Grass",
-      "Fighting",
-      "Ground"
+      "Electrico",
+      "  Hierba",
+      "Lucha",
+      " Tierra"
     ],
     "prev_evolution": [{
       "num": "140",
@@ -3845,8 +3845,8 @@ var POKEMON = {
     "name": "Aerodactyl",
     "img": "http://www.serebii.net/pokemongo/pokemon/142.png",
     "type": [
-      "Rock",
-      "Flying"
+      " Roca",
+      " Volador"
     ],
     "height": "1.80 m",
     "weight": "59.0 kg",
@@ -3857,10 +3857,10 @@ var POKEMON = {
     "spawn_time": "23:40",
     "multipliers": null,
     "weaknesses": [
-      "Water",
-      "Electric",
-      "Ice",
-      "Rock",
+      " Agua",
+      "Electrico",
+      " Hielo",
+      " Roca",
       "Steel"
     ]
   }, {
@@ -3880,7 +3880,7 @@ var POKEMON = {
     "spawn_time": "23:40",
     "multipliers": null,
     "weaknesses": [
-      "Fighting"
+      "Lucha"
     ]
   }, {
     "id": 144,
@@ -3888,8 +3888,8 @@ var POKEMON = {
     "name": "Articuno",
     "img": "http://www.serebii.net/pokemongo/pokemon/144.png",
     "type": [
-      "Ice",
-      "Flying"
+      " Hielo",
+      " Volador"
     ],
     "height": "1.70 m",
     "weight": "55.4 kg",
@@ -3900,9 +3900,9 @@ var POKEMON = {
     "spawn_time": "N/A",
     "multipliers": null,
     "weaknesses": [
-      "Fire",
-      "Electric",
-      "Rock",
+      "Fuego",
+      "Electrico",
+      " Roca",
       "Steel"
     ]
   }, {
@@ -3911,8 +3911,8 @@ var POKEMON = {
     "name": "Zapdos",
     "img": "http://www.serebii.net/pokemongo/pokemon/145.png",
     "type": [
-      "Electric",
-      "Flying"
+      "Electrico",
+      " Volador"
     ],
     "height": "1.60 m",
     "weight": "52.6 kg",
@@ -3923,8 +3923,8 @@ var POKEMON = {
     "spawn_time": "N/A",
     "multipliers": null,
     "weaknesses": [
-      "Ice",
-      "Rock"
+      " Hielo",
+      " Roca"
     ]
   }, {
     "id": 146,
@@ -3932,8 +3932,8 @@ var POKEMON = {
     "name": "Moltres",
     "img": "http://www.serebii.net/pokemongo/pokemon/146.png",
     "type": [
-      "Fire",
-      "Flying"
+      "Fuego",
+      " Volador"
     ],
     "height": "2.01 m",
     "weight": "60.0 kg",
@@ -3944,9 +3944,9 @@ var POKEMON = {
     "spawn_time": "N/A",
     "multipliers": null,
     "weaknesses": [
-      "Water",
-      "Electric",
-      "Rock"
+      " Agua",
+      "Electrico",
+      " Roca"
     ]
   }, {
     "id": 147,
@@ -3969,7 +3969,7 @@ var POKEMON = {
       1.84
     ],
     "weaknesses": [
-      "Ice",
+      " Hielo",
       "Dragon",
       "Fairy"
     ],
@@ -3998,7 +3998,7 @@ var POKEMON = {
     "spawn_time": "11:57",
     "multipliers": [2.05],
     "weaknesses": [
-      "Ice",
+      " Hielo",
       "Dragon",
       "Fairy"
     ],
@@ -4017,7 +4017,7 @@ var POKEMON = {
     "img": "http://www.serebii.net/pokemongo/pokemon/149.png",
     "type": [
       "Dragon",
-      "Flying"
+      " Volador"
     ],
     "height": "2.21 m",
     "weight": "210.0 kg",
@@ -4028,8 +4028,8 @@ var POKEMON = {
     "spawn_time": "23:38",
     "multipliers": null,
     "weaknesses": [
-      "Ice",
-      "Rock",
+      " Hielo",
+      " Roca",
       "Dragon",
       "Fairy"
     ],
@@ -4046,7 +4046,7 @@ var POKEMON = {
     "name": "Mewtwo",
     "img": "http://www.serebii.net/pokemongo/pokemon/150.png",
     "type": [
-      "Psychic"
+      " Psiquico"
     ],
     "height": "2.01 m",
     "weight": "122.0 kg",
@@ -4057,8 +4057,8 @@ var POKEMON = {
     "spawn_time": "N/A",
     "multipliers": null,
     "weaknesses": [
-      "Bug",
-      "Ghost",
+      "Insecto",
+      "Fantasma",
       "Dark"
     ]
   }, {
@@ -4067,7 +4067,7 @@ var POKEMON = {
     "name": "Mew",
     "img": "http://www.serebii.net/pokemongo/pokemon/151.png",
     "type": [
-      "Psychic"
+      " Psiquico"
     ],
     "height": "0.41 m",
     "weight": "4.0 kg",
@@ -4078,8 +4078,8 @@ var POKEMON = {
     "spawn_time": "N/A",
     "multipliers": null,
     "weaknesses": [
-      "Bug",
-      "Ghost",
+      "Insecto",
+      "Fantasma",
       "Dark"
     ]
   }]

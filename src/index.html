@@ -1,22 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Hi~</h1>
-      <p>lorem ipsum</p>
-    </header>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Pokedash</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="container-fluid">
+    <a href="index.html"><img src="img/pokemon_logo.png" alt="logo_pokemon_go"></a>
+  </header>
+
+  <div class="content container-fluid">
+    <div class="row">
+      <form>
+        <div>
+          <h4>Filtro de Pokemons</h4>
+        </div>
+        <div class="row">
+          <select id="pokemon-filters" class="filters">
+            <option value="0">ID</option>
+            <option value="1">NOMBRE</option>
+            <option value="2">TIPO</option>
+            <option value="3">DEBILIDAD</option>
+          </select>
+          <input id="input-search-text" type="text" class="input-search-text" size="20" name="">
+          <button id="btn-search" type="button" class="btn-search" value="">BUSCAR</button>
+        </div>
+        <div>
+          <h4>Ordenar por:</h4>
+        </div>
+        <div class="row">
+          <select id="pokemon-order" name="OS" class="options-of-filters">
+            <option value="00">ID ASC</option>
+            <option value="01">ID DESC</option>
+            <option value="10">A-Z</option>
+            <option value="11">Z-A</option>
+          </select>
+        </div>
+      </form>
+      <section>
+        <div id="pokemon-container" class="grid-ListFilter">
+          <!--Aquí se va mostrar imagen, nombre y numero que se esta llamando a partir de main.js -->
+        </div>
+      </section>
+    </div>
+  </div>
+  <footer>
+  </footer>
+  <script src="./data/pokemon/pokemon.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
