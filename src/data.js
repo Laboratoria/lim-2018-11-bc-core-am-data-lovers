@@ -34,22 +34,3 @@ const dataForYear = Object.values(data[0])
 
 let resultsPERU = dataForYear.filter(number => number > 1);
 console.log(resultsPERU)
-
-
-//valuePERU tiene dos elementos,el 0 es un array,1 "strings",
-//dentro de 0, UN OBJETO, con data, countryName, indicatorName
-
-//const indicatorsPeru = Object.keys(PERU);
-//console.log(indicatorsPeru)
-
-
-
-//for (let i = 0; i < PERU.length; i++){
-   //const indicators2 = PERU[i].indicators;
-/*
-   for(let j = 0; j <studentCourses.length; j++)
-    if(studentCourses[j] === number) {
-        console.log(students[i].name);
-    }else {
-    } 
-*/
