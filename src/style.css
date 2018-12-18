@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+
+
+h1, .cbx{
+  text-align: center;
+  margin: 15px;
+}
+
+.btn-types button{
+  background-color: #4CAF50; /* Green */
+  border: 1px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  
+}
+
+ul{
+  display: inline;
+ 
+}

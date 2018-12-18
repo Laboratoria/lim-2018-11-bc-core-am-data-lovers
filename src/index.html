@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Bienvenido Pokemon Lover</h1>
-    <select>
-      <option value="ascendente">Ordenar A-Z</option>
-      <option value="descendente">Ordenar Z-A</option>
-      <option value="max">Cantidad mayor de Caramelos</option>
-      <option value="min">Cantidad menor de Caramelos</option>
-    </select>
-    <button type="button" id="btn-grass">Grass</button>
-    <button type="button" id="btn-poison">Poison</button>
-    <button type="button" id="btn-fire">Fire</button>
-    <button type="button" id="btn-water">Water</button>
-    <button type="button" id="btn-flying">Flying</button>
-    <button type="button" id="btn-electric">Electric</button>
-    <button type="button" id="btn-a">ABCDEFG</button>
-    <button type="button" id="btn-b">ABCDEFG</button>
-    <button type="button" id="btn-c">ABCDEFG</button>
-    <button type="button" id="btn-d">ABCDEFG</button>
-    <button type="button" id="btn-e">ABCDEFG</button>
-    <button type="button" id="btn-f">ABCDEFG</button>
-    <div id="container-list">      
-    </div>  
-    <div id="container-list-tipo">
-    </div>
-
-
-
-    
-    <script src="./data/pokemon/pokemon.js"></script>  
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+ <head>
+   <meta charset="utf-8">
+   <title>Data Lovers</title>
+   <link rel="stylesheet" href="style.css" />
+ </head>
+ <body>
+   <h1>Bienvenido Pokemon Lover</h1>
+   <form>
+   <div class="cbx">
+   <select id="select-order">
+     <option value="ASC-NAME">Ordenar de A-Z</option>
+     <option value="DESC-NAME">Ordenar de Z-A</option>
+     <option value="ASC-ID">Por id ascendente</option>
+     <option value="DESC-ID">Por id descendente</option>
+   </select>
+ </div>
+ <div class="btn-types">
+   <button id="btn-acero" type="button">Acero</button>
+   <button id="btn-agua" type="button">Agua</button>
+   <button id="btn-bicho" type="button">Bicho</button>
+   <button id="btn-dragón" type="button">Dragón</button>
+   <button id="btn-electrico" type="button">Eléctrico</button>
+   <button id="btn-fantasma" type="button">Fantasma</button>
+   <button id="btn-fuego" type="button">Fuego</button>
+   <button id="btn-ada" type="button">Ada</button>
+   <button id="btn-hielo" type="button">Hielo</button>
+   <button id="btn-lucha" type="button">Lucha</button>
+   <button id="btn-normal" type="button">Normal</button>
+   <button id="btn-planta" type="button">Planta</button>
+   <button id="btn-psiquico" type="button">Psíquico</button>
+   <button id="btn-roca" type="button">Roca</button>
+   <button id="btn-siniestro" type="button">Siniestro</button>
+   <button id="btn-tierra" type="button">Tierra</button>
+   <button id="btn-veneno" type="button">Veneno</button>
+   <button id="btn-volador" type="button">Volador</button>
+ </div>
+ </form>
+ <div id="container-list" class="grid-ListFilter">
+ </div>
+   <script src="./data/pokemon/pokemon.js"></script>
+   <script src="data.js"></script>
+   <script src="main.js"></script>
+ </body>
 </html>
