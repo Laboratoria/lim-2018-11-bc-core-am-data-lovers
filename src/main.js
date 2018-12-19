@@ -5,14 +5,16 @@ const listData = (data) => {
  let templateListOfCards = '';
  data.forEach((pokemon) => {
    const card = `
-   <div>
-   <ul>
-     <li><img class="post-image" src="${ pokemon.img}" /> </li>
-       <li>${ pokemon.name}</li>
-       <li>Id num: ${ pokemon.num}</li>
-       <li>tipo: ${ pokemon.type} </p>
-       <li>candy ${ pokemon.candy_count}</li>
-   </ul>
+   <div class="card-link">
+    <article class="blog-card">
+      <img class="post-image" src="${ pokemon.img}" />
+        <div class="article-details">
+        <h3 class="post-name">${ pokemon.name}</h3>
+        <h4 class="post-number">Id num: ${ pokemon.num}</h4>
+        <h4 class="post-type">tipo: ${ pokemon.type} </h4>
+        <h4 class="post-cady-count">candy ${ pokemon.candy_count}</h4>
+       </div>
+    </article>
    </div>`;
    templateListOfCards += card;
  })
