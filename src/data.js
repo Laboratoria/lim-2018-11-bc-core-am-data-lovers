@@ -51,6 +51,26 @@ const sortData = (data, sortBy, sortOrder) => {
   }
   return newArraySort;
 }
+
+/* const filterData=(data)=>{
+  const newArraySort = [];
+  for (let i = 0; i < data.length; i++) {
+    newArraySort.push(Object.assign({}, data[i]));
+  }
+} */
+const filterData = (data, condition) => {
+  /* const filterTipo=POKEMON.pokemon.filter(tipo=>tipo.type[0]==='Poison' || tipo.type[1]==='Poison');
+  console.log(filterTipo) */
+  //console.log(condition);  
+  return data.filter(tipo => {
+    if (tipo.type[0] === condition || tipo.type[1] === condition) {
+      console.log('Es true');
+    }
+    return (tipo.type[0] === condition || tipo.type[1] === condition);
+  });
+}
+
 window.dataPokemon = {
-  sortData
+  sortData,
+  filterData,
 }
