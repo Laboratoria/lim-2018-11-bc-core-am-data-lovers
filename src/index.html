@@ -4,17 +4,89 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
   </head>
   <body>
-    <h1>Hoola</h1>
-    <div id="root"></div>
-    <div>HOME</div>
-    <div>ADIOS</div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
+
+    <header>
+      <h1>WORLD BANK Data Dashboard</h1>
+
+      <nav>
+        <ul class = "barra">
+          <li class = "navegar"><a class = "enlace" href="#">Quienes somos</a></li>
+          <li class = "navegar"><a class = "enlace" href="#">Países</a></li>
+          <li class = "navegar"><a class = "enlace" href="#">Indicadores de Desarrollo</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+
+      <section id = "one">
+        <p class = "intro">Analiza los principales indicadores de desarrollo de Perú, México, Brasil y Chile que necesitas para llevar a cabo tus trabajos de investigación universitaria. Aquí encontrarás data obtenida del WORLDBANK del año 1960 al año 2017, presentada en tablas y gráficas correspondientes a múltiples indicadores que hemos clasificado en cuatro tipos: población, educación, empleo y desempleo; esto con el fin de hacer mas rápida su búsqueda.</p>
+      </section>
+
+
+      <label for="select-indicator">Filtrar por tipo</label>
+      <select id ="select-indicator">
+        <option >Población</option>
+        <option >Educación nivel terciaria</option>
+        <option >Educación nivel secundaria</option>
+        <option >Empleo</option>
+        <option >Desempleo</option>
+
+      </select>
+
+      <section id="two">
+        <p class = "indicador">Indicadores de Población:</p>
+        <div>
+          <ul id = "container-list-population">
+            <!--indicadores d población-->
+          </ul>
+        </div>
+      </section>
+
+      <section id="three">
+        <p class = "indicador">Indicadores de Educación Nivel Terciaria:</p>
+        <div>
+          <ul id = "container-list-education">
+            <!--indicadores d educación-->
+          </ul>
+        </div>
+      </section>
+
+      <section id="four">
+        <p class = "indicador">Indicadores de Educación Nivel secundaria:</p>
+        <div>
+          <ul id = "container-list-secondary-education">
+            <!--indicadores d educación-->
+          </ul>
+        </div>
+      </section>
+
+      <section id="five">
+        <p class = "indicador">Indicadores de Empleo:</p>
+        <div >
+          <ul id = "container-list-employment">
+            <!--indicadores d empleo-->
+          </ul>
+        </div>
+      </section>
+
+      <section id="six">
+        <p class = "indicador">Indicadores de Desempleo:</p>
+        <div >
+          <ul id = "container-list-unemployment">
+            <!--indicadores de desempleo-->
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+
+    <script src="./data/worldbank/worldbank.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
