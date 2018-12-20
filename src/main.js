@@ -24,9 +24,10 @@ const listData = (data) => {
 listData(window.POKEMON.pokemon);
 
 const getOrderValue = () => {
+  const pokemonData = window.POKEMON.pokemon;
   const valueOrder = selectOrder.value;
   const valueOrder1 = (valueOrder.split('-'));
-  const selectByOrder = window.dataPokemon.sortData(window.POKEMON.pokemon, valueOrder1[1], valueOrder1[0]);
+  const selectByOrder = window.dataPokemon.sortData(pokemonData, valueOrder1[1], valueOrder1[0]);
   listData(selectByOrder);
 };
 selectOrder.addEventListener('change', getOrderValue);
