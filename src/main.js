@@ -1,5 +1,6 @@
 const selectOrder = document.getElementById('select-order');
 const containerList = document.getElementById('container-list');
+// const btnTipo = document.getElementById('general');
 
 const listData = (data) => {
   let templateListOfCards = '';
@@ -17,15 +18,24 @@ const listData = (data) => {
     </article>
    </div>`;
     templateListOfCards += card;
-  }),
+  });
   containerList.innerHTML = templateListOfCards;
-}
-listData(POKEMON.pokemon);
+};
+listData(window.POKEMON.pokemon);
 
 const getOrderValue = () => {
+  const pokemonData = window.POKEMON.pokemon;
   const valueOrder = selectOrder.value;
-  const valueOrder1=(valueOrder.split('-')); 
-  const selectByOrder = dataPokemon.sortData(POKEMON.pokemon,valueOrder1[1],valueOrder1[0]);
+  const valueOrder1 = (valueOrder.split('-'));
+  const selectByOrder = window.dataPokemon.sortData(pokemonData, valueOrder1[1], valueOrder1[0]);
   listData(selectByOrder);
- }
-selectOrder.addEventListener("change", getOrderValue);
+};
+selectOrder.addEventListener('change', getOrderValue);
+
+/* btnTipo.addEventListener('click', () => {
+  const dataInput = POKEMON.pokemon;
+  const valueType = btnTipo.value;
+  const valueTipo = dataPokemon.filterData(dataInput, valueType); 
+  listData(valueTipo);
+}); */
+
