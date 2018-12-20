@@ -52,8 +52,8 @@ body {
 }
  
 .menu li a:hover, .menu li:hover > a{
-    color:#e96da3;
-    border: #F8BBD0;
+    color:blue;
+    border: skyblue;
 }
 h2 {
     font-family: Asap;
