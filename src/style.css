@@ -1,0 +1,54 @@
+body {
+  font-family: 'Abel', sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #002244;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: 1em;
+}
+
+.intro {
+  font-size: 1.1em;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.indicador {
+  font-weight: bold;
+}
+
+.barra {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  background: #1F618D;
+  line-height: 3.1em;
+  overflow: auto;
+}
+
+.navegar {
+  width: 18em;
+  float: left;
+  text-align: center;
+}
+
+.enlace {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-size: 1.5em;
+}
+
+a:hover {
+  background: #121F25;
+  color: #009FDA;
+}
+
+label {
+  margin-left: 2em;
+}
