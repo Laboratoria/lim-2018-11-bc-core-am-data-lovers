@@ -1,25 +1,13 @@
-const indicatorsName = WORLDBANK.PER.indicators.map(indicator => indicator.indicatorName);
+// const indicatorsName = WORLDBANK.PER.indicators.map(indicator => indicator.indicatorName);
 
-
-const subM = document.getElementById('submenu');
-
-subM.innerHTML = indicatorsName.join();
-
-
-// convirtiendo objeto a ARRAY
 let arrayDatos = Object.entries(WORLDBANK);
 
 
-const dataCopia = clonandoDatos(arrayDatos);
-const valoresData = Object.values(dataCopia);
-
-console.log(arrayDatos)
-console.log(dataCopia)
-
+const valoresData = Object.values(arrayDatos);
 
 
 // valores por PAÍS
-/*
+
 const PERU = Object.values(valoresData[0]);
 const valuePeru = Object.values(PERU[1]);
 
@@ -35,5 +23,5 @@ const data = Object.values(indicadoresPER[0]);
 const dataForYear = Object.values(data[0]);
 
 let resultsPERU = dataForYear.filter(number => number > 1);
-console.log(resultsPERU); 
-*/
+console.log(data); 
+
