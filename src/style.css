@@ -3,7 +3,6 @@
   box-sizing: border-box;
 }
 body {
-  font-family: sans-serif;
   background-color: #BCF35D;
   padding: 20px 0 28px 0;
   margin: 0;
@@ -17,6 +16,14 @@ h1{
   text-align: center;
   margin: 15px;
 }
+
+.grid-ListFilter{
+  display: grid;
+  grid-row-gap: 10px;
+  grid-column-gap: 20px; 
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+}
 .btn-types button{
   background-color: #4CAF50; /* Green */
   border: 1px solid green;
@@ -29,21 +36,21 @@ h1{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
   
 }
-
- img {
-  max-width: 100%;
-  height: auto;
+.blog-card {
+  
+  text-align: center;
 }
-
+img {
+  
+}
 .card-link {
-  float: left;
-  font-size: 1.2em;
-  margin: 5% 3% 0 5%;
-  perspective: 800px;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
   background-color: #F5F6C3;
-  height: 180px;
-  width: 24%;
+  margin: 1px 19% 13% 18%;
+  border: 0;
+  border-radius: 23px;
+  overflow: hidden;
+
   /* max-width: 650px;
   padding: 20px;
   margin: 30px auto;
@@ -57,9 +64,7 @@ h1{
 }
 
 .post-image{
-  float: left;
-  width: 40%;
-  margin-right: 15px;
+  
  }
 
  .post-name{
@@ -67,39 +72,48 @@ h1{
    font-family: Carter One;
    font-size: 130%;
    font-weight:bold;
-   margin: 0 0 1rem 0;
+   margin: 0 0 0 0;
  }
   .post-number{
   margin: 0;
   padding: 0;
-  position: relative;
-  left: 17px;
-  font-size: 70%;
-  line-height: 1.5;
-  color: #5DAFF3;
- }
+  font-size: 100%;
+   }
 
 .post-type{
   margin: 0;
   padding: 0;
-  position: relative;
-  left: 17px;
-  font-size: 70%;
-  line-height: 1.5;
-  color: #5DAFF3;
+  font-size: 100%;
+   
   }
 .post-cady-count{
   margin: 0;
   padding: 0;
-  position: relative;
-  left: 17px;
-  font-size: 65%;
-  line-height: 1.5;
-  color: #5DAFF3;
-}
+  font-size: 100%;
+ }
 .article-details {
-  padding: 1.5rem;
-
-
+  color: #5DAFF3;
   }
+  @media only screen and (max-width: 414px){
+    
+    body {
+      margin: 0 auto;
+    }
+    
+    header img {
+      margin: 15px 0px 20px;
+      width: 50%;
+    }
+      .grid-ListFilter {
+        display: grid;
+        grid-row-gap: 10px;
+        grid-column-gap: 5px; 
+        grid-template-columns: auto;
+      }
+    
+    header {
+      text-align: center;
 
+    }
+    
+    }
