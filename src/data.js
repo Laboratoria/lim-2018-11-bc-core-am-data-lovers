@@ -1,3 +1,18 @@
+
+function filterbyType(data, condition) {
+  let listIdPokemonType = [];
+  switch (data) {
+  case 'type':
+    listIdPokemonType = window.POKEMON.pokemon.filter(compare => (compare.type[0] === condition || compare.type[1] === condition || compare.type[2] === condition));
+    break;
+  case 'egg':
+    listIdPokemonType = window.POKEMON.pokemon.filter(compare => (compare.egg === condition));
+    break;
+  default:
+  }
+  return listIdPokemonType;
+}
+
 const filterDataFunction = (data, dataFilter, condition) => {
   let dataCopy = [];
   let arrayFilter = [];
@@ -49,6 +64,7 @@ const filterDataFunction = (data, dataFilter, condition) => {
   return newArrayFilter;
 };
 
+
 const sortDataFunction = (data, sortBy, sortOrder) => {
 
   let newArrayFilter = [];
@@ -86,6 +102,7 @@ const sortDataFunction = (data, sortBy, sortOrder) => {
 window.data = {
   filterData: filterDataFunction,
   sortData: sortDataFunction,
+  filterbyType,
   //computeStats: computeStatsFunction,
 }
 
