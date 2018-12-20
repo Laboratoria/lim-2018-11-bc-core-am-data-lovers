@@ -14,6 +14,27 @@ for (var i = 0; i < dato.length; i++){
 
 const dataCopia = clonandoDatos(arrayDatos);
 const valoresData = Object.values(dataCopia);
+
+//convirtiendo objeto a ARRAY
+var arrayDatos = Object.entries(WORLDBANK);
+
+//clonando ARRAY
+const clonandoDatos = (dato) => {
+    let newArray = [];
+
+for (var i = 0; i < dato.length; i++){
+
+    newArray.push(Object.assign({},dato[i]))
+    //console.log(dato[i])
+
+    } return newArray
+} 
+
+const dataCopia = clonandoDatos(arrayDatos);
+const valoresData = Object.values(dataCopia);
+
+//valores por PAÍS
+
 const PERU = Object.values(valoresData[0]);
 const valuePeru = Object.values(PERU[1]);
 
@@ -106,3 +127,5 @@ const inscriptionsEducationChl = WORLDBANK.CHL.indicators.filter(pop => {
 const unemploymentChl = WORLDBANK.CHL.indicators.filter(pop => {
  return pop.indicatorCode.slice(0,6) === 'SL.UEM'
 });
+
+
