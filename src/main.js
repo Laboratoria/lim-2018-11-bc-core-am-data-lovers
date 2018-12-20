@@ -2,9 +2,9 @@ const selectOrder = document.getElementById('select-order');
 const containerList = document.getElementById('container-list');
 
 const listData = (data) => {
- let templateListOfCards = '';
- data.forEach((pokemon) => {
-   const card = `
+  let templateListOfCards = '';
+  data.forEach((pokemon) => {
+    const card = `
    <div class="card-link">
     <article class="blog-card">
       <img class="post-image" src="${ pokemon.img}" />
@@ -16,9 +16,9 @@ const listData = (data) => {
        </div>
     </article>
    </div>`;
-   templateListOfCards += card;
- })
- containerList.innerHTML = templateListOfCards;
+    templateListOfCards += card;
+  }),
+  containerList.innerHTML = templateListOfCards;
 }
 listData(POKEMON.pokemon);
 
