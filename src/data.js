@@ -103,6 +103,5 @@ window.data = {
   filterData: filterDataFunction,
   sortData: sortDataFunction,
   filterbyType,
-  //computeStats: computeStatsFunction,
 }
 
