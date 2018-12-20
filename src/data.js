@@ -33,7 +33,7 @@ const data = Object.values(indicadoresPER[0]);
 const dataForYear = Object.values(data[0])
 
 let resultsPERU = dataForYear.filter(number => number > 1);
-console.log(resultsPERU)
+
 
 
 //valuePERU tiene dos elementos,el 0 es un array,1 "strings",
