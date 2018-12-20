@@ -1,4 +1,5 @@
-const arrayDatos = Object.entries(WORLDBANK);
+var arrayDatos = Object.entries(WORLDBANK);
+
 const valoresData = Object.values(dataCopia);
 
 const PERU = Object.values(valoresData[0]);
@@ -14,6 +15,7 @@ const data = Object.values(indicadoresPER[0]);
 const dataForYear = Object.values(data[0])
 
 let resultsPERU = dataForYear.filter(number => number > 1);
+
 const population = WORLDBANK.PER.indicators.filter(function filterData(pop) {
  return pop.indicatorCode.slice(0,6) === 'SP.POP';
 });
@@ -79,3 +81,5 @@ const inscriptionsEducationChl = WORLDBANK.CHL.indicators.filter(pop => {
 const unemploymentChl = WORLDBANK.CHL.indicators.filter(pop => {
  return pop.indicatorCode.slice(0,6) === 'SL.UEM'
 });
+
+
