@@ -25,41 +25,40 @@ const filterDataFunction = (data, dataFilter, condition) => {
     return dataCopy;
 
   switch (condition) {
-    case 0:
-      for (let i = 0; i < dataCopy.length; i++) {
-        arrayFilter.push(dataCopy[i].num);
-        if (arrayFilter[i].indexOf(dataFilter) !== -1)
+  case 0:
+    for (let i = 0; i < dataCopy.length; i++) {
+      arrayFilter.push(dataCopy[i].num);
+      if (arrayFilter[i].indexOf(dataFilter) !== -1)
+        newArrayFilter.push(dataCopy[i]);
+    } break;
+  case 1:
+    for (let i = 0; i < dataCopy.length; i++) {
+      arrayFilter.push(dataCopy[i].name.toLowerCase());
+      if (arrayFilter[i].indexOf(dataFilter.toLowerCase()) !== -1)
+        newArrayFilter.push(dataCopy[i]);
+    }
+    break;
+  case 2:
+    for (let i = 0; i < dataCopy.length; i++) {
+      for (let j = 0; j < dataCopy[i].type.length; j++) {
+        arrayFilter.push(dataCopy[i].type[j].toLowerCase());
+        if (arrayFilter[j].indexOf(dataFilter.toLowerCase()) !== -1)
           newArrayFilter.push(dataCopy[i]);
       }
-      break;
-    case 1:
-      for (let i = 0; i < dataCopy.length; i++) {
-        arrayFilter.push(dataCopy[i].name.toLowerCase());
-        if (arrayFilter[i].indexOf(dataFilter.toLowerCase()) !== -1)
+      arrayFilter = [];
+    }
+    break;
+  case 3:
+    for (let i = 0; i < dataCopy.length; i++) {
+      for (let j = 0; j < dataCopy[i].weaknesses.length; j++) {
+        arrayFilter.push(dataCopy[i].weaknesses[j].toLowerCase());
+        if (arrayFilter[j].indexOf(dataFilter.toLowerCase()) !== -1)
           newArrayFilter.push(dataCopy[i]);
       }
-      break;
-    case 2:
-      for (let i = 0; i < dataCopy.length; i++) {
-        for (let j = 0; j < dataCopy[i].type.length; j++) {
-          arrayFilter.push(dataCopy[i].type[j].toLowerCase());
-          if (arrayFilter[j].indexOf(dataFilter.toLowerCase()) !== -1)
-            newArrayFilter.push(dataCopy[i]);
-        }
-        arrayFilter = [];
-      }
-      break;
-    case 3:
-      for (let i = 0; i < dataCopy.length; i++) {
-        for (let j = 0; j < dataCopy[i].weaknesses.length; j++) {
-          arrayFilter.push(dataCopy[i].weaknesses[j].toLowerCase());
-          if (arrayFilter[j].indexOf(dataFilter.toLowerCase()) !== -1)
-            newArrayFilter.push(dataCopy[i]);
-        }
-        arrayFilter = [];
-      }
-      break;
-    default: alert('No existe opcion');
+      arrayFilter = [];
+    }
+    break;
+  default: alert('No existe opcion');
   }
   return newArrayFilter;
 };
@@ -73,7 +72,7 @@ const sortDataFunction = (data, sortBy, sortOrder) => {
     newArrayFilter.push(Object.assign({}, data[i]));
 
   if (sortBy === 0) {
-    //Ordenas por ID
+    //Ordenar por ID
     newArrayFilter.sort(
       function (a, b) {
         if (sortOrder === 0) return a.id - b.id;
