@@ -1,12 +1,12 @@
 
-function filterbyType(data, condition) {
+function filterbyType(data, filterBy, condition) {
   let listIdPokemonType = [];
-  switch (data) {
-  case 'type':
-    listIdPokemonType = window.POKEMON.pokemon.filter(compare => (compare.type[0] === condition || compare.type[1] === condition || compare.type[2] === condition));
+  switch (filterBy) {
+  case 'Tipo':
+    listIdPokemonType = data.filter(compare => (compare.type[0] === condition || compare.type[1] === condition || compare.type[2] === condition));
     break;
-  case 'egg':
-    listIdPokemonType = window.POKEMON.pokemon.filter(compare => (compare.egg === condition));
+  case 'Huevo':
+    listIdPokemonType = data.filter(compare => (compare.egg === condition));
     break;
   default:
   }

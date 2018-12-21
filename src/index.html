@@ -17,6 +17,30 @@
   <div class="content container-fluid">
     <div class="row">
       <form>
+          <div>
+              <h4>Filtro de Pokemons</h4>
+            </div>
+          <div class="row">
+              <select class="type-select" id="pokemon-type">
+                <option>Por tipo</option>
+                <option value="Agua">Agua</option>
+                <option value="Hierba">Hierba</option>
+                <option value="Veneno">Veneno</option>
+                <option value="Fuego">Fuego</option>
+                <option value="Volador">Volador</option>
+                <option value="Bicho">Bicho</option>
+                <option value="Normal">Normal</option>
+                <option value="Electrico">Eléctrico</option>
+                <option value="Tierra">Tierra</option>
+                <option value="Lucha">Lucha</option>
+                <option value="Psiquico">Psíquico</option>
+                <option value="Roca">Roca</option>
+                <option value="Hielo">Hielo</option>
+                <option value="Fantasma">Fantasma</option>
+                <option value="Dragon">Dragón</option>
+              </select>
+            </div>
+            <div class="row">
           <div class="row">
               <select class="type-select" id="filtrar-huevos">
                 <option>Por Huevo</option>
@@ -27,7 +51,7 @@
               </select>
             </div>
         <div>
-          <h4>Filtro de Pokemons</h4>
+          <h4>Busqueda</h4>
         </div>
         <div class="row">
           <select id="pokemon-filters" class="filters">
@@ -53,7 +77,7 @@
       </form>
       <section>
         <div id="pokemon-container" class="grid-ListFilter">
-          <!--Aquí se va mostrar imagen, nombre y numero que se esta llamando a partir de main.js -->
+          <!--Aqu� se va mostrar imagen, nombre y numero que se esta llamando a partir de main.js -->
         </div>
       </section>
     </div>

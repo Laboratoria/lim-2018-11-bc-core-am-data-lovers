@@ -4,6 +4,8 @@ const pokemonCardContainer = document.getElementById('pokemon-container');
 const filtersByCategories = document.getElementById('pokemon-filters');
 const sortBy = document.getElementById('pokemon-order');
 const eggPokemon = document.getElementById('filtrar-huevos');
+const typePokemon = document.getElementById('pokemon-type');
+const typeData = window.POKEMON.pokemon;
 
 
 const functionfilter = (pokemones) => {
@@ -41,16 +43,27 @@ const functionListenFilterOrder = () => {
   return 1;
 }
 
+typePokemon.addEventListener('change', () => {
+  const typeofFilter = 'Tipo';
+  const typePokemonValue = typePokemon.value;
+  const arrTemp = data.filterbyType(typeData, typeofFilter, typePokemonValue);
+  functionfilter(data.filterbyType(arrTemp, typeofFilter, typePokemon.value));
+  });
+
+eggPokemon.addEventListener('change', () => {
+  const typeofFilter = 'Huevo';
+  const eggPokemonValue = eggPokemon.value;
+  const arrTemp = data.filterbyType(typeData, typeofFilter, eggPokemonValue);
+  functionfilter(data.filterbyType(arrTemp, 'Tipo',typePokemon.value));
+  });
+ 
+
 const functionMain = () => {
   functionListenFilterOrder();
   filtersByCategories.addEventListener("change", functionListenFilterOrder);
   sortBy.addEventListener("change", functionListenFilterOrder);
   btnSearch.addEventListener('click', functionListenFilterOrder);
-  eggPokemon.addEventListener('change', () => {
-    const typeData = 'egg';
-    const eggPokemonValue = eggPokemon.value;
-    functionfilter(data.filterbyType(typeData,eggPokemonValue));
-  });
+  
 }
 
 functionMain();
