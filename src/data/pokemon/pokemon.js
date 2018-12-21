@@ -5,7 +5,7 @@ var POKEMON = {
     "name": "Bulbasaur",
     "img": "http://www.serebii.net/pokemongo/pokemon/001.png",
     "type": [
-      " Hierba",
+      "Hierba",
       "Veneno"
     ],
     "height": "0.71 m",
@@ -36,7 +36,7 @@ var POKEMON = {
     "name": "Ivysaur",
     "img": "http://www.serebii.net/pokemongo/pokemon/002.png",
     "type": [
-      " Hierba",
+      "Hierba",
       "Veneno"
     ],
     "height": "0.99 m",
@@ -71,7 +71,7 @@ var POKEMON = {
     "name": "Venusaur",
     "img": "http://www.serebii.net/pokemongo/pokemon/003.png",
     "type": [
-      " Hierba",
+      "Hierba",
       "Veneno"
     ],
     "height": "2.01 m",
@@ -202,7 +202,7 @@ var POKEMON = {
     "multipliers": [2.1],
     "weaknesses": [
       "Electrico",
-      " Hierba"
+      "Hierba"
     ],
     "next_evolution": [{
       "num": "008",
@@ -230,7 +230,7 @@ var POKEMON = {
     "multipliers": [1.4],
     "weaknesses": [
       "Electrico",
-      " Hierba"
+      "Hierba"
     ],
     "prev_evolution": [{
       "num": "007",
@@ -258,7 +258,7 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Electrico",
-      " Hierba"
+      "Hierba"
     ],
     "prev_evolution": [{
       "num": "007",
@@ -771,7 +771,7 @@ var POKEMON = {
     "multipliers": [2.45],
     "weaknesses": [
       "Agua",
-      " Hierba",
+      "Hierba",
       "Hielo"
     ],
     "next_evolution": [{
@@ -796,7 +796,7 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Agua",
-      " Hierba",
+      "Hierba",
       "Hielo"
     ],
     "prev_evolution": [{
@@ -1201,7 +1201,7 @@ var POKEMON = {
     "name": "Oddish",
     "img": "http://www.serebii.net/pokemongo/pokemon/043.png",
     "type": [
-      " Hierba",
+      "Hierba",
       "Veneno"
     ],
     "height": "0.51 m",
@@ -1232,7 +1232,7 @@ var POKEMON = {
     "name": "Gloom",
     "img": "http://www.serebii.net/pokemongo/pokemon/044.png",
     "type": [
-      " Hierba",
+      "Hierba",
       "Veneno"
     ],
     "height": "0.79 m",
@@ -1264,7 +1264,7 @@ var POKEMON = {
     "name": "Vileplume",
     "img": "http://www.serebii.net/pokemongo/pokemon/045.png",
     "type": [
-      " Hierba",
+      "Hierba",
       "Veneno"
     ],
     "height": "1.19 m",
@@ -1295,7 +1295,7 @@ var POKEMON = {
     "img": "http://www.serebii.net/pokemongo/pokemon/046.png",
     "type": [
       "Bicho",
-      " Hierba"
+      "Hierba"
     ],
     "height": "0.30 m",
     "weight": "5.4 kg",
@@ -1325,7 +1325,7 @@ var POKEMON = {
     "img": "http://www.serebii.net/pokemongo/pokemon/047.png",
     "type": [
       "Bicho",
-      " Hierba"
+      "Hierba"
     ],
     "height": "0.99 m",
     "weight": "29.5 kg",
@@ -1424,7 +1424,7 @@ var POKEMON = {
     "multipliers": [2.69],
     "weaknesses": [
       "Agua",
-      " Hierba",
+      "Hierba",
       "Hielo"
     ],
     "next_evolution": [{
@@ -1449,7 +1449,7 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Agua",
-      " Hierba",
+      "Hierba",
       "Hielo"
     ],
     "prev_evolution": [{
@@ -1522,7 +1522,7 @@ var POKEMON = {
     "multipliers": [2.27],
     "weaknesses": [
       "Electrico",
-      " Hierba"
+      "Hierba"
     ],
     "next_evolution": [{
       "num": "055",
@@ -1546,7 +1546,7 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Electrico",
-      " Hierba"
+      "Hierba"
     ],
     "prev_evolution": [{
       "num": "054",
@@ -1682,7 +1682,7 @@ var POKEMON = {
     ],
     "weaknesses": [
       "Electrico",
-      " Hierba"
+      "Hierba"
     ],
     "next_evolution": [{
       "num": "061",
@@ -1710,7 +1710,7 @@ var POKEMON = {
     "multipliers": [1.95],
     "weaknesses": [
       "Electrico",
-      " Hierba"
+      "Hierba"
     ],
     "prev_evolution": [{
       "num": "060",
@@ -1739,7 +1739,7 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Electrico",
-      " Hierba",
+      "Hierba",
       "Volador",
       "Psiquico",
       "Fairy"
@@ -1937,7 +1937,7 @@ var POKEMON = {
     "name": "Bellsprout",
     "img": "http://www.serebii.net/pokemongo/pokemon/069.png",
     "type": [
-      " Hierba",
+      "Hierba",
       "Veneno"
     ],
     "height": "0.71 m",
@@ -1968,7 +1968,7 @@ var POKEMON = {
     "name": "Weepinbell",
     "img": "http://www.serebii.net/pokemongo/pokemon/070.png",
     "type": [
-      " Hierba",
+      "Hierba",
       "Veneno"
     ],
     "height": "0.99 m",
@@ -2000,7 +2000,7 @@ var POKEMON = {
     "name": "Victreebel",
     "img": "http://www.serebii.net/pokemongo/pokemon/071.png",
     "type": [
-      " Hierba",
+      "Hierba",
       "Veneno"
     ],
     "height": "1.70 m",
@@ -2100,7 +2100,7 @@ var POKEMON = {
     ],
     "weaknesses": [
       "Agua",
-      " Hierba",
+      "Hierba",
       "Hielo",
       "Lucha",
       "Tierra",
@@ -2136,7 +2136,7 @@ var POKEMON = {
     ],
     "weaknesses": [
       "Agua",
-      " Hierba",
+      "Hierba",
       "Hielo",
       "Lucha",
       "Tierra",
@@ -2169,7 +2169,7 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Agua",
-      " Hierba",
+      "Hierba",
       "Hielo",
       "Lucha",
       "Tierra",
@@ -2256,7 +2256,7 @@ var POKEMON = {
     "multipliers": [2.21],
     "weaknesses": [
       "Electrico",
-      " Hierba",
+      "Hierba",
       "Bicho",
       "Fantasma",
       "Dark"
@@ -2284,7 +2284,7 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Electrico",
-      " Hierba",
+      "Hierba",
       "Bicho",
       "Fantasma",
       "Dark"
@@ -2444,7 +2444,7 @@ var POKEMON = {
     ],
     "weaknesses": [
       "Electrico",
-      " Hierba"
+      "Hierba"
     ],
     "next_evolution": [{
       "num": "087",
@@ -2469,7 +2469,7 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Electrico",
-      " Hierba",
+      "Hierba",
       "Lucha",
       "Roca"
     ],
@@ -2545,7 +2545,7 @@ var POKEMON = {
     "multipliers": [2.65],
     "weaknesses": [
       "Electrico",
-      " Hierba"
+      "Hierba"
     ],
     "next_evolution": [{
       "num": "091",
@@ -2570,7 +2570,7 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Electrico",
-      " Hierba",
+      "Hierba",
       "Lucha",
       "Roca"
     ],
@@ -2693,7 +2693,7 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Agua",
-      " Hierba",
+      "Hierba",
       "Hielo",
       "Lucha",
       "Tierra",
@@ -2775,7 +2775,7 @@ var POKEMON = {
     ],
     "weaknesses": [
       "Electrico",
-      " Hierba"
+      "Hierba"
     ],
     "next_evolution": [{
       "num": "099",
@@ -2799,7 +2799,7 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Electrico",
-      " Hierba"
+      "Hierba"
     ],
     "prev_evolution": [{
       "num": "098",
@@ -2861,7 +2861,7 @@ var POKEMON = {
     "name": "Exeggcute",
     "img": "http://www.serebii.net/pokemongo/pokemon/102.png",
     "type": [
-      " Hierba",
+      "Hierba",
       "Psiquico"
     ],
     "height": "0.41 m",
@@ -2895,7 +2895,7 @@ var POKEMON = {
     "name": "Exeggutor",
     "img": "http://www.serebii.net/pokemongo/pokemon/103.png",
     "type": [
-      " Hierba",
+      "Hierba",
       "Psiquico"
     ],
     "height": "2.01 m",
@@ -2938,7 +2938,7 @@ var POKEMON = {
     "multipliers": [1.67],
     "weaknesses": [
       "Agua",
-      " Hierba",
+      "Hierba",
       "Hielo"
     ],
     "next_evolution": [{
@@ -2963,7 +2963,7 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Agua",
-      " Hierba",
+      "Hierba",
       "Hielo"
     ],
     "prev_evolution": [{
@@ -3100,7 +3100,7 @@ var POKEMON = {
     "multipliers": [1.91],
     "weaknesses": [
       "Agua",
-      " Hierba",
+      "Hierba",
       "Hielo",
       "Lucha",
       "Tierra",
@@ -3129,7 +3129,7 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Agua",
-      " Hierba",
+      "Hierba",
       "Hielo",
       "Lucha",
       "Tierra",
@@ -3164,7 +3164,7 @@ var POKEMON = {
     "name": "Tangela",
     "img": "http://www.serebii.net/pokemongo/pokemon/114.png",
     "type": [
-      " Hierba"
+      "Hierba"
     ],
     "height": "0.99 m",
     "weight": "35.0 kg",
@@ -3219,7 +3219,7 @@ var POKEMON = {
     "multipliers": [2.23],
     "weaknesses": [
       "Electrico",
-      " Hierba"
+      "Hierba"
     ],
     "next_evolution": [{
       "num": "117",
@@ -3243,7 +3243,7 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Electrico",
-      " Hierba"
+      "Hierba"
     ],
     "prev_evolution": [{
       "num": "116",
@@ -3271,7 +3271,7 @@ var POKEMON = {
     ],
     "weaknesses": [
       "Electrico",
-      " Hierba"
+      "Hierba"
     ],
     "next_evolution": [{
       "num": "119",
@@ -3295,7 +3295,7 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Electrico",
-      " Hierba"
+      "Hierba"
     ],
     "prev_evolution": [{
       "num": "118",
@@ -3323,7 +3323,7 @@ var POKEMON = {
     ],
     "weaknesses": [
       "Electrico",
-      " Hierba"
+      "Hierba"
     ],
     "next_evolution": [{
       "num": "121",
@@ -3348,7 +3348,7 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Electrico",
-      " Hierba",
+      "Hierba",
       "Bicho",
       "Fantasma",
       "Dark"
@@ -3529,7 +3529,7 @@ var POKEMON = {
     ],
     "weaknesses": [
       "Electrico",
-      " Hierba"
+      "Hierba"
     ],
     "next_evolution": [{
       "num": "130",
@@ -3579,7 +3579,7 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Electrico",
-      " Hierba",
+      "Hierba",
       "Lucha",
       "Roca"
     ]
@@ -3653,7 +3653,7 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Electrico",
-      " Hierba"
+      "Hierba"
     ],
     "prev_evolution": [{
       "num": "133",
@@ -3746,7 +3746,7 @@ var POKEMON = {
     "multipliers": [2.12],
     "weaknesses": [
       "Electrico",
-      " Hierba",
+      "Hierba",
       "Lucha",
       "Tierra"
     ],
@@ -3773,7 +3773,7 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Electrico",
-      " Hierba",
+      "Hierba",
       "Lucha",
       "Tierra"
     ],
@@ -3804,7 +3804,7 @@ var POKEMON = {
     ],
     "weaknesses": [
       "Electrico",
-      " Hierba",
+      "Hierba",
       "Lucha",
       "Tierra"
     ],
@@ -3831,7 +3831,7 @@ var POKEMON = {
     "multipliers": null,
     "weaknesses": [
       "Electrico",
-      " Hierba",
+      "Hierba",
       "Lucha",
       "Tierra"
     ],
