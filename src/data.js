@@ -48,8 +48,17 @@ const computeStats = (data) =>
 
 // console.log('valor maximo', computeStats)
 
+const filterData = (data, filterBy, condition) => {
+  let newArrayFilter = [];
+  if (filterBy) {
+    newArrayFilter = data.filter(compare => (compare.type[0] === condition || compare.type[1] === condition || compare.type[2] === condition));
+  }
+  return newArrayFilter;
+};
+
 window.dataPokemon = {
   sortData,
+  filterData,
   computeStats,
-  // filterData,
+  
 };

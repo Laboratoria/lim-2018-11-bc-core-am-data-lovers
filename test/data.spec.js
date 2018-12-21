@@ -16,8 +16,15 @@ const output2 = [
 ];
 
 const output3 = [
+
+  {'id': 1, 'num': '001', 'name': 'Bulbasaur', 'type': ['Grass', 'Poison'], 'candy_count': 25},
+  {'id': 2, 'num': '002', 'name': 'Ivysaur', 'type': ['Grass', 'Poison'], 'candy_count': 100}
+];
+ 
+const output4 = [
   { 'id': 16, 'num': '016', 'name': 'Pidgey', 'type': ['Normal', 'Flying'], 'candy_count': 12, 'spawn_chance': 15.98 }
 ];
+
 
 
 describe('dataPokemon', () => {
@@ -26,7 +33,7 @@ describe('dataPokemon', () => {
   });
 });
 
-describe('dataPokemon.sortData', () => {
+describe('window.dataPokemon.sortData', () => {
   it('debería ser una función', () => {
     expect(typeof window.dataPokemon.sortData).toBe('function');
   });
@@ -41,9 +48,21 @@ describe('dataPokemon.sortData', () => {
   });
 });
 
+
+describe('window.dataPokemon.filterData', () => {
+  it('Debería ser una función', () => {
+    expect(typeof window.dataPokemon.filterData).toBe('function');
+  });
+  it('Debería retornar un array de objetos con los pokemones que sean de tipo Veneno', () => {
+    expect(window.dataPokemon.filterData(input, 'Tipo', 'Poison')).toEqual(output3);
+  }); 
+});
+
+  
 describe('dataPokemon.computeStats', () =>  {
   it('debería ser una función', () => {
     expect(typeof window.dataPokemon.computeStats).toBe('function');
   });
   it('debería retornar una nuevo array con el pokemon de')
 }
+

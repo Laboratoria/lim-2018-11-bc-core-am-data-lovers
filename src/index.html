@@ -1,25 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
  <head>
    <meta charset="utf-8">
    <title>Data Lovers</title>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
    <link rel="stylesheet" href="style.css" />
  </head>
  <body>
    <h1>Bienvenido Pokemon Lover</h1>
    <form>
-   <div class="cbx">
-   <select id="select-order">
-     <option disabled selected value=""></option>
-     <option value="ASC-NAME">Ordenar de A-Z</option>
-     <option value="DESC-NAME">Ordenar de Z-A</option>     
-   </select>
- </div>
- <div class="btnCalculate">
-   <button type="button" id="btn-calculaMax">Calcular Max</button>  
-</div>
- <div class="btn-types" id="general">
+    <div class="cbx">
+      <select class= "order-select" id="select-order">
+      <!-- <option class="no-select" disabled selected value="">Ordenar Por Nombre</option> -->
+      <option value="">Ordenar Por Nombre</option>
+      <option value="ASC-NAME">Ordenar de A-Z</option>
+      <option value="DESC-NAME">Ordenar de Z-A</option>     
+      </select>
+      <select class="type-select" id="pokemon-type">
+        <option> Tipos</option> 
+        <option value="Water">Agua</option>
+        <option value="Bug">Bicho</option>
+        <option value="Dragon">Dragón</option>
+        <option value="Electric">Eléctrico</option>
+        <option value="Ghost">Fantasma</option>
+        <option value="Fire">Fuego</option>
+        <option value="Ice">Hielo</option>
+        <option value="Fighting">Lucha</option>
+        <option value="Normal">Normal</option>
+        <option value="Grass">Hierba</option>
+        <option value="Psychic">Psíquico</option>
+        <option value="Rock">Roca</option>
+        <option value="Ground">Tierra</option>
+        <option value="Poison">Veneno</option>
+        <option value="Flying">Volador</option>
+        </select>
+        
+          <button id="btn-calculaMax">Mayor % de aparición</button>
+          <button id="btn-calculaMin">Menor % de aparición</button>
+      
+  </div>
+ </form>
+ <!-- <div class="btn-types" id="general">
    <button id="btn-grass" value="Grass" type="button">Grass</button>
    <button id="btn-poison" value="Poison" type="button">Poison</button>
    <button id="btn-fire" value="Fire" type="button">Fire</button>
@@ -36,8 +58,7 @@
    <button id="btn-ghost" value="Ghost" type="button">Ghost</button>
    <button id="btn-dragon" value="Dragon" type="button">Dragon</button>
    <button id="btn-fairy" value="Fairy" type="button">Fairy</button>  
- </div>
- </form>
+ </div> -->
  <div id="container-list" class="grid-ListFilter">
  </div>
    <script src="./data/pokemon/pokemon.js"></script>

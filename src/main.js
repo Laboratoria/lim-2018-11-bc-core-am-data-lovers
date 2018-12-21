@@ -2,6 +2,7 @@ const selectOrder = document.getElementById('select-order');
 const containerList = document.getElementById('container-list');
 const btnCalculate = document.getElementById('btn-calculaMax');
 // const btnTipo = document.getElementById('general');
+const typePokemon = document.getElementById('pokemon-type');
 
 const listData = (data) => {
   let templateListOfCards = '';
@@ -48,3 +49,11 @@ btnCalculate.addEventListener('click', getCalculateValue);
   listData(valueTipo);
 }); */
 
+const typePokemonValue = () => {
+  const typeData = window.POKEMON.pokemon;
+  const filterCondicion = 'Tipo';
+  const typePokemonValue = typePokemon.value;
+  const selectByType = window.dataPokemon.filterData(typeData, filterCondicion, typePokemonValue);
+  listData(selectByType);
+};
+typePokemon.addEventListener('change', typePokemonValue);
