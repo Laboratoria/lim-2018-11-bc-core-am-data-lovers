@@ -1,6 +1,7 @@
 const selectOrder = document.getElementById('select-order');
 const containerList = document.getElementById('container-list');
 // const btnTipo = document.getElementById('general');
+const typePokemon = document.getElementById('pokemon-type');
 
 const listData = (data) => {
   let templateListOfCards = '';
@@ -39,3 +40,11 @@ selectOrder.addEventListener('change', getOrderValue);
   listData(valueTipo);
 }); */
 
+const typePokemonValue = () => {
+  const typeData = window.POKEMON.pokemon;
+  const filterCondicion = 'Tipo';
+  const typePokemonValue = typePokemon.value;
+  const selectByType = window.dataPokemon.filterData(typeData, filterCondicion, typePokemonValue);
+  listData(selectByType);
+};
+typePokemon.addEventListener('change', typePokemonValue);
