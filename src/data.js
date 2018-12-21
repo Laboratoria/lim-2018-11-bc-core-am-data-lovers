@@ -3,8 +3,8 @@ const sortData = (data, sortBy, sortOrder) => {
   for (let i = 0; i < data.length; i++) {
     newArraySort.push(Object.assign({}, data[i]));
   }
-  if (sortBy === 'NAME') { // nombre
-    if (sortOrder === 'ASC') { // ascendente
+  if (sortBy === 'NAME') { 
+    if (sortOrder === 'ASC') {
       newArraySort.sort((elementA, elementB) => {
         if (elementB.name > elementA.name) {
           return -1;
@@ -15,7 +15,7 @@ const sortData = (data, sortBy, sortOrder) => {
         return 0;
       });
     }
-    if (sortOrder === 'DESC') { // descendente
+    if (sortOrder === 'DESC') {
       newArraySort.sort((elementA, elementB) => {
         if (elementA.name > elementB.name) {
           return -1;
@@ -39,7 +39,14 @@ const sortData = (data, sortBy, sortOrder) => {
   });
 };
  */
-// const computeStats = (data) => {}
+const computeStats = (data) => 
+  data.reduce((pokemon1, pokemon2) =>
+    (pokemon1.spawn_chance > pokemon2.spawn_chance)
+      ? pokemon1
+      : pokemon2
+  );
+
+// console.log('valor maximo', computeStats)
 
 const filterData = (data, filterBy, condition) => {
   let newArrayFilter = [];
@@ -52,4 +59,6 @@ const filterData = (data, filterBy, condition) => {
 window.dataPokemon = {
   sortData,
   filterData,
+  computeStats,
+  
 };

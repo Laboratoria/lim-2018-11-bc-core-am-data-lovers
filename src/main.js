@@ -1,5 +1,6 @@
 const selectOrder = document.getElementById('select-order');
 const containerList = document.getElementById('container-list');
+const btnCalculate = document.getElementById('btn-calculaMax');
 // const btnTipo = document.getElementById('general');
 const typePokemon = document.getElementById('pokemon-type');
 
@@ -12,9 +13,10 @@ const listData = (data) => {
       <img class="post-image" src="${ pokemon.img}" />
         <div class="article-details">
         <h3 class="post-name">${ pokemon.name}</h3>
-        <h4 class="post-number">Id num: ${ pokemon.num}</h4>
-        <h4 class="post-type">tipo: ${ pokemon.type} </h4>
-        <h4 class="post-cady-count">candy ${ pokemon.candy_count}</h4>
+        <div class="post-number">Id num: ${ pokemon.num}</div>
+        <div class="post-type">tipo: ${ pokemon.type} </div>
+        <div class="post-cady-count">candy ${ pokemon.candy_count}</div>
+        <div class="post-cady-count">Spawn Chance ${ pokemon.spawn_chance}</div>
        </div>
     </article>
    </div>`;
@@ -27,16 +29,23 @@ listData(window.POKEMON.pokemon);
 const getOrderValue = () => {
   const pokemonData = window.POKEMON.pokemon;
   const valueOrder = selectOrder.value;
-  const valueOrder1 = (valueOrder.split('-'));
-  const selectByOrder = window.dataPokemon.sortData(pokemonData, valueOrder1[1], valueOrder1[0]);
+  const valueSelectOrder = (valueOrder.split('-'));
+  const selectByOrder = window.dataPokemon.sortData(pokemonData, valueSelectOrder[1], valueSelectOrder[0]);
   listData(selectByOrder);
 };
 selectOrder.addEventListener('change', getOrderValue);
 
+const getCalculateValue = () => {
+  const pokemonData = window.POKEMON.pokemon;
+  const pokemon = window.dataPokemon.computeStats(pokemonData);
+  listData([pokemon]);
+};
+btnCalculate.addEventListener('click', getCalculateValue);
+
 /* btnTipo.addEventListener('click', () => {
   const dataInput = POKEMON.pokemon;
   const valueType = btnTipo.value;
-  const valueTipo = dataPokemon.filterData(dataInput, valueType); 
+  const valueTipo = dataPokemon.filterData(dataInput, valueType);
   listData(valueTipo);
 }); */
 

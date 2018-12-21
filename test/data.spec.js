@@ -1,33 +1,31 @@
 require('../src/data.js');
 
 const input = [
-  {'id': 1, 'num': '001', 'name': 'Bulbasaur', 'type': ['Grass', 'Poison'], 'candy_count': 25},
-  {'id': 2, 'num': '002', 'name': 'Ivysaur', 'type': ['Grass', 'Poison'], 'candy_count': 100}
+  { 'id': 1, 'num': '001', 'name': 'Bulbasaur', 'type': ['Grass', 'Poison'], 'candy_count': 25, 'spawn_chance': 0.69 },
+  { 'id': 2, 'num': '002', 'name': 'Ivysaur', 'type': ['Grass', 'Poison'], 'candy_count': 100, 'spawn_chance': 0.042 }
 ];
 
 const output = [
-  {'id': 1, 'num': '001', 'name': 'Bulbasaur', 'type': ['Grass', 'Poison'], 'candy_count': 25},
-  {'id': 2, 'num': '002', 'name': 'Ivysaur', 'type': ['Grass', 'Poison'], 'candy_count': 100}
+  { 'id': 1, 'num': '001', 'name': 'Bulbasaur', 'type': ['Grass', 'Poison'], 'candy_count': 25, 'spawn_chance': 0.69 },
+  { 'id': 2, 'num': '002', 'name': 'Ivysaur', 'type': ['Grass', 'Poison'], 'candy_count': 100, 'spawn_chance': 0.042 }
 ];
 
 const output2 = [
-  {'id': 2, 'num': '002', 'name': 'Ivysaur', 'type': ['Grass', 'Poison'], 'candy_count': 100},
-  {'id': 1, 'num': '001', 'name': 'Bulbasaur', 'type': ['Grass', 'Poison'], 'candy_count': 25}
+  { 'id': 2, 'num': '002', 'name': 'Ivysaur', 'type': ['Grass', 'Poison'], 'candy_count': 100 },
+  { 'id': 1, 'num': '001', 'name': 'Bulbasaur', 'type': ['Grass', 'Poison'], 'candy_count': 25 }
 ];
 
 const output3 = [
+
   {'id': 1, 'num': '001', 'name': 'Bulbasaur', 'type': ['Grass', 'Poison'], 'candy_count': 25},
   {'id': 2, 'num': '002', 'name': 'Ivysaur', 'type': ['Grass', 'Poison'], 'candy_count': 100}
 ];
  
+const output4 = [
+  { 'id': 16, 'num': '016', 'name': 'Pidgey', 'type': ['Normal', 'Flying'], 'candy_count': 12, 'spawn_chance': 15.98 }
+];
 
-/* const input1 = {
-  'pokemon': [
-      
-    ],
-    'candy_count': 100,
 
-};*/
 
 describe('dataPokemon', () => {
   it('Debería ser un objeto', () => {
@@ -50,6 +48,7 @@ describe('window.dataPokemon.sortData', () => {
   });
 });
 
+
 describe('window.dataPokemon.filterData', () => {
   it('Debería ser una función', () => {
     expect(typeof window.dataPokemon.filterData).toBe('function');
@@ -58,3 +57,12 @@ describe('window.dataPokemon.filterData', () => {
     expect(window.dataPokemon.filterData(input, 'Tipo', 'Poison')).toEqual(output3);
   }); 
 });
+
+  
+describe('dataPokemon.computeStats', () =>  {
+  it('debería ser una función', () => {
+    expect(typeof window.dataPokemon.computeStats).toBe('function');
+  });
+  it('debería retornar una nuevo array con el pokemon de')
+}
+
