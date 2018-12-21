@@ -13,6 +13,7 @@ function filterbyType(data, filterBy, condition) {
   return listIdPokemonType;
 }
 
+
 const filterDataFunction = (data, dataFilter, condition) => {
   let dataCopy = [];
   let arrayFilter = [];

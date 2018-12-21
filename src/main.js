@@ -48,14 +48,14 @@ typePokemon.addEventListener('change', () => {
   const typePokemonValue = typePokemon.value;
   const arrTemp = data.filterbyType(typeData, typeofFilter, typePokemonValue);
   functionfilter(data.filterbyType(arrTemp, typeofFilter, typePokemon.value));
-  });
+});
 
 eggPokemon.addEventListener('change', () => {
   const typeofFilter = 'Huevo';
   const eggPokemonValue = eggPokemon.value;
   const arrTemp = data.filterbyType(typeData, typeofFilter, eggPokemonValue);
   functionfilter(data.filterbyType(arrTemp, 'Tipo',typePokemon.value));
-  });
+});
  
 
 const functionMain = () => {

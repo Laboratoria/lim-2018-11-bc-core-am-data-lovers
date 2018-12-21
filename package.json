@@ -7,7 +7,7 @@
     "htmlhint": "htmlhint src/*.html test/*.html",
     "eslint": "eslint --ext .js src/ test/",
     "pretest": "npm run eslint && npm run htmlhint",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "dependencies": {
     "@material/button": "^0.42.0",
