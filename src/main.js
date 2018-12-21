@@ -54,7 +54,7 @@ eggPokemon.addEventListener('change', () => {
   const typeofFilter = 'Huevo';
   const eggPokemonValue = eggPokemon.value;
   const arrTemp = data.filterbyType(typeData, typeofFilter, eggPokemonValue);
-  functionfilter(data.filterbyType(arrTemp, 'Tipo',typePokemon.value));
+  functionfilter(data.filterbyType(arrTemp, typeofFilter,eggPokemon.value));
   });
  
 
