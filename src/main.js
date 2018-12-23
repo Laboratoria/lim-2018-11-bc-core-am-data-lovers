@@ -1,7 +1,6 @@
 const selectOrder = document.getElementById('select-order');
 const containerList = document.getElementById('container-list');
-const btnCalculate = document.getElementById('btn-calculaMax');
-// const btnTipo = document.getElementById('general');
+const btnCalculate = document.getElementById('btn-calculateMax');
 const typePokemon = document.getElementById('pokemon-type');
 
 const listData = (data) => {
@@ -13,10 +12,9 @@ const listData = (data) => {
       <img class="post-image" src="${ pokemon.img}" />
         <div class="article-details">
         <h3 class="post-name">${ pokemon.name}</h3>
-        <div class="post-number">Id num: ${ pokemon.num}</div>
-        <div class="post-type">tipo: ${ pokemon.type} </div>
-        <div class="post-cady-count">candy ${ pokemon.candy_count}</div>
-        <div class="post-cady-count">Spawn Chance ${ pokemon.spawn_chance}</div>
+        <div class="post-number">Num: ${ pokemon.num}</div>
+        <div class="post-type">Tipo: ${ pokemon.type} </div>       
+        <div class="post-cady-count">Spawn Chance: ${ pokemon.spawn_chance}</div>
        </div>
     </article>
    </div>`;
@@ -41,13 +39,6 @@ const getCalculateValue = () => {
   listData([pokemon]);
 };
 btnCalculate.addEventListener('click', getCalculateValue);
-
-/* btnTipo.addEventListener('click', () => {
-  const dataInput = POKEMON.pokemon;
-  const valueType = btnTipo.value;
-  const valueTipo = dataPokemon.filterData(dataInput, valueType);
-  listData(valueTipo);
-}); */
 
 const typePokemonValue = () => {
   const typeData = window.POKEMON.pokemon;

@@ -11,8 +11,7 @@
    <h1>Bienvenido Pokemon Lover</h1>
    <form>
     <div class="cbx">
-      <select class= "order-select" id="select-order">
-      <!-- <option class="no-select" disabled selected value="">Ordenar Por Nombre</option> -->
+      <select class= "order-select" id="select-order">      
       <option value="">Ordenar Por Nombre</option>
       <option value="ASC-NAME">Ordenar de A-Z</option>
       <option value="DESC-NAME">Ordenar de Z-A</option>     
@@ -34,31 +33,12 @@
         <option value="Ground">Tierra</option>
         <option value="Poison">Veneno</option>
         <option value="Flying">Volador</option>
-        </select>
-        
-          <button id="btn-calculaMax">Mayor % de aparición</button>
-          <button id="btn-calculaMin">Menor % de aparición</button>
-      
+     </select>  
+        <button type="button" id="btn-calculateMax">Mayor % de aparición</button>  
+        <button type="button" id="btn-calculateMin">Menor % de aparición</button>      
   </div>
  </form>
- <!-- <div class="btn-types" id="general">
-   <button id="btn-grass" value="Grass" type="button">Grass</button>
-   <button id="btn-poison" value="Poison" type="button">Poison</button>
-   <button id="btn-fire" value="Fire" type="button">Fire</button>
-   <button id="btn-flying" value="Flying" type="button">Flying</button>
-   <button id="btn-water" value="Water" type="button">Water</button>
-   <button id="btn-bug" value="Bug" type="button">Bug</button>
-   <button id="btn-normal" value="Normal" type="button">Normal</button>
-   <button id="btn-electric" value="Electric" type="button">Electric</button>
-   <button id="btn-ground" value="Ground" type="button">Ground</button>
-   <button id="btn-fighting" value="Fighting" type="button">Fighting</button>
-   <button id="btn-psychic" value="Psychic" type="button">Psychic</button>
-   <button id="btn-rock" value="Rock" type="button">Rock</button>
-   <button id="btn-ica" value="Ice" type="button">Ice</button>
-   <button id="btn-ghost" value="Ghost" type="button">Ghost</button>
-   <button id="btn-dragon" value="Dragon" type="button">Dragon</button>
-   <button id="btn-fairy" value="Fairy" type="button">Fairy</button>  
- </div> -->
+ 
  <div id="container-list" class="grid-ListFilter">
  </div>
    <script src="./data/pokemon/pokemon.js"></script>
