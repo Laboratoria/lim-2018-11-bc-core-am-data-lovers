@@ -25,7 +25,7 @@ botonPeru.addEventListener('click', () => {
   paginaChile.style.display = 'none';
   paginaBrasil.style.display = 'none';
 
-  dataPeru.innerHTML = probando.join();
+  dataPeru.innerHTML = population.join();
 
 
 });
