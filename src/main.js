@@ -1,5 +1,5 @@
 const showPeru = document.getElementById('peru-menu');
-const showInicio = document.getElementById('inicio') 
+const showInicio = document.getElementById('inicio')
 showPeru.addEventListener('click',()=>{
 showInicio.style.display = 'none';
 showPeru.style.display = 'block';
