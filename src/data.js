@@ -1,6 +1,7 @@
-var arrayDatos = Object.entries(WORLDBANK);
-
-const valoresData = Object.values(dataCopia);
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
+const arrayDatos = Object.entries(WORLDBANK);
+const valoresData = Object.values(arrayDatos);
 
 const PERU = Object.values(valoresData[0]);
 const valuePeru = Object.values(PERU[1]);
@@ -9,16 +10,18 @@ const valueMex = Object.values(MEXICO[1])
 const CHILE = Object.values(valoresData[3]);
 const valueChil = Object.values(CHILE[1]);
 
-
 const indicadoresPER = Object.values(valuePeru[0]);
 const data = Object.values(indicadoresPER[0]);
-const dataForYear = Object.values(data[0])
+const dataForYear = Object.entries(data[0]);
 
-let resultsPERU = dataForYear.filter(number => number > 1);
+const dataxYear = Object.values(data[0]);
+let resultsPERU = dataxYear.filter(number => number > 1);
 
-const population = WORLDBANK.PER.indicators.filter(function filterData(pop) {
+const population = WORLDBANK.PER.indicators.filter(function filter(pop) {
  return pop.indicatorCode.slice(0,6) === 'SP.POP';
 });
+const arrPopulation = Object.entries(population);
+
 const violence = WORLDBANK.PER.indicators.filter(pop => {
  return pop.indicatorCode.slice(0,6) === 'SG.VAW';
 });
@@ -82,4 +85,8 @@ const unemploymentChl = WORLDBANK.CHL.indicators.filter(pop => {
  return pop.indicatorCode.slice(0,6) === 'SL.UEM'
 });
 
+window.example = {
+    arrayDatos,
 
+
+}
