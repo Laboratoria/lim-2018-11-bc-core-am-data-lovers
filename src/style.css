@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Asap:700|Merriweather+Sans:700|Rambla:400i");
+
+h1 {
+    margin: 0%;
+    top: 0%;
+    position: absolute;
+    font-size: 18px;
+
+    background-color: blue;
+    color: #ffffff;
+    width:100%;
+    height: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+
+
+body {
+    font-family: Asap;
+    text-align: center;
+}
+#menu ul{
+    list-style-type: none;
+    text-align: center;
+ }
+.menu{
+    text-align: center;
+    display:block
+}
+.menu li{
+    text-align: center;
+    margin-right: 70px;
+    display: inline-block;
+    position: relative;
+    z-index:100;}
+.menu li a {
+    margin-top: 30px;
+    text-align: center;
+    text-decoration:none;
+    padding:20px;
+    display:block;
+    background-color: white;
+    color:#F8BBD0;
+    font-family: Asap;
+    font-style: bold;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.menu li a:hover, .menu li:hover > a{
+    color:blue;
+    border: skyblue;
+}
+h2 {
+    font-family: Asap;
+    margin-top: 90px;
+}
+
+p{
+    font-family: Rambla;
+}
