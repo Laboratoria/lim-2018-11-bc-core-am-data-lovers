@@ -1,29 +1,50 @@
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
-/**
- * Retorna todos los datos de la muestra
- */
-const getAllData = () => {
- var arrayDatos = Object.entries(WORLDBANK);
- //console.log(arrayDatos);
-  return arrayDatos;
-};
-const getDataByCountry = (countryCode) => {
-//recuperamos la data convertida en array previamente//
- var arrayDatos = getAllData();
- //console.log(arrayDatos);
-// filtramos por codigo de pais(main js) y devolvemos la data
-var toReturn = arrayDatos.filter(el => {
-  return el[0] == countryCode } );
-console.log(toReturn);
-  return toReturn;
-};
-function printData() {
- var arrayDatos = getAllData();
-console.log(arrayDatos)
-for ( const index in arrayDatos) { // sintaxis de for each //
-  const obj = arrayDatos[index]; // obteniendo objeto en el index
-  console.log(obj[0] + " " + obj[1].indicators.length); //mostrando codigo y cantidad de indicadores
+// en esta variable se almacenan los datos
+let data = null;
+
+
+function initData() {
+
+  data = convertObjectToArray(WORLDBANK);
+
+ // console.log(data);
+
 }
+
+
+function getCountryByCode(code) {
+
+
+  return data.find(c => c[0] == code);
+
 }
-//window.getAllData = getAllData;
+
+function getAllCountries() {
+
+  return data.map(c => ({ 'code': c[0], 'name': c[1].indicators[0].countryName }));
+}
+
+
+function getNameByCode(code) {
+  const countries = getAllCountries();
+  return countries.find(c => c.code == code).name;
+}
+
+
+function getAverageByCountry(code) {
+  const country = getCountryByCode(code);
+
+
+  if (country == null) {
+    alert("No se encontró el país");
+    return 0
+  }
+
+  let averages = [];
+
+  //console.log(country);
+
+  country[1].indicators.forEach(ind => {
+
+    // se obtienen el nombre y el codigo del indicador
+    const name = ind.indicatorName;
+    const code = ind.indicatorCode;
