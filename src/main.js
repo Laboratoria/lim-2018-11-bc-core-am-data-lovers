@@ -7,6 +7,13 @@
   const typePokemon = document.getElementById('pokemon-type');
   const typeData = POKEMON.pokemon;
 
+  
+const filterInArray = (inputArray) => {
+  return inputArray.map(element => {
+    return `<label class="badge-${element}">${element}</label>`;
+  }).join(" ");
+
+}
   const functionfilter = (pokemones) => {
     let templateList = '';
 
@@ -21,8 +28,7 @@
               <p class="post-description">
                 ID: #${pokemon.num}
                 </p>
-              <p class="pokemon-type">
-              ${pokemon.type}</p>
+                <p class="type-labels">${filterInArray(pokemon.type)}</p>
               <p class="candy">${pokemon.candy}</p>
             </div>
           </article>

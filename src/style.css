@@ -32,6 +32,135 @@ header img {
   font-size: 12px;
 }
 
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight:normal;
+}
+.type-labels{
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.badge-Hierba{
+  background-color: rgb(2, 187, 2);
+  border-radius: 10px;
+  padding: 2px 10px;
+  color: #ffffff;
+  text-align: center;  
+}
+
+.badge-Veneno{
+  background-color: blueviolet;
+  border-radius: 10px;
+  padding: 2px 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.badge-Fuego{
+  background-color: red;
+  border-radius: 10px;
+  padding: 2px 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.badge-Volador{
+  background-color: cornflowerblue;
+  border-radius: 10px;
+  padding: 2px 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.badge-Agua {
+  background-color: dodgerblue;
+  border-radius: 10px;
+  padding: 2px 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.badge-Bicho {
+  background-color: darkgreen;
+  border-radius: 10px;
+  padding: 02px 10px;
+  color: #ffffff;
+  text-align: center;
+}
+.badge-Normal {
+  background-color: grey;
+  border-radius: 10px;
+  padding: 2px 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.badge-Electrico {
+  background-color: rgb(255, 187, 0);
+  border-radius: 10px;
+  padding: 2px 10px;
+  color: #333333;
+  text-align: center;
+}
+
+.badge-Tierra {
+  background-color: peru;
+  border-radius: 10px;
+  padding: 2px 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.badge-Lucha {
+  background-color: maroon;
+  border-radius: 10px;
+  padding: 2px 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.badge-Psiquico{
+  background-color: magenta;
+  border-radius: 10px;
+  padding: 2px 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.badge-Roca {
+  background-color: rgb(148, 116, 75);
+  border-radius: 10px;
+  padding: 2px 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.badge-Hielo {
+  background-color: darkturquoise;
+  border-radius: 10px;
+  padding: 2px 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.badge-Fantasma {
+  background-color: royalblue;
+  border-radius: 10px;
+  padding: 0px 10px;
+  color: #ffffff;
+  text-align: center;
+}
+.badge-Dragon {
+  background-color: mediumslateblue;
+  border-radius: 10px;
+  padding: 2px 10px;
+  color: #ffffff;
+  text-align: center;
+}
 form {
   width: 98%;
   border-radius: 5px;
