@@ -3,9 +3,11 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #BCF35D;
+  background: url("img/fondo.jpg") no-repeat center center fixed;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0 auto;
   padding: 20px 0 28px 0;
-  margin: 0;
 }
 h1{
   color: #164A99;
