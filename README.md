@@ -24,7 +24,7 @@ Un buen cazador cazador debe conocer bien  el tipo de sus pokémones para calcul
 
 ## Entrevista
 
-Comenzamos con una entrevista  a los usuarios de Pokemon Go para obtener la información sobre sus necesidades a la hora de Jugar Pokemon Go y nos ayudó  a  representar todo lo que el usuario necesitará|| ver o hacer en nuestro producto en las historias de usuarios. Formulamos las siguientes preguntas para llegar a dicha información:
+Comenzamos con una entrevista  a los usuarios de Pokemon Go para obtener la información sobre sus necesidades a la hora de Jugar Pokemon Go y nos ayudó  a  representar todo lo que el usuario necesitará ver o hacer en nuestro producto en las historias de usuarios. Formulamos las siguientes preguntas para llegar a dicha información:
 
 * **Preséntate: genera confianza.**
 Hola soy Micaela/Ivana, ¿cómo estás?
@@ -46,10 +46,14 @@ En este periodo de tiempo lo que quiero es que platiquemos acerca de  qué infor
 Conocer su nivel, tipo de ataque y si pueden evolucionar.
 2. ¿Qué necesitarías ver o saber exactamente sobre un pokemon?
 Saber qué tipo es, si de agua o fuego por ejemplo.
-Si todavía puede evolucionar?.
-Si un huevo va explotar?.
-La cantidad de caramelos para que evolucione?.
-Si determinado pokémon contrarresta a otros en el gimnasio?.
+Si todavía puede evolucionar.
+Si un huevo va explotar.
+La cantidad de caramelos para que evolucione.
+Si determinado pokémon contrarresta a otros en el gimnasio.
+
+## Historias de usuario
+
+
 
 
 ## Diseño de la Interfaz de Usuario
@@ -57,7 +61,7 @@ Si determinado pokémon contrarresta a otros en el gimnasio?.
 
 Luego de las entrevista  realizamos un sketch o boceto de lo que sería el producto teniendo en cuenta la necesidad principal del usuario que era conocer todos los tipos de pokemons y saber si un pokémon tiene más de un tipo.
 
-![Sin titulo](img/Sketch-1.PNG)
+![Sin titulo](src/img/Sketch-1.PNG)
 
 
 Teniendo los sketchs ya mencionados, creímos conveniente realizar una **segunda entrevista** para mejorar el prototipo
@@ -66,7 +70,7 @@ Para mejorar el prototipo de baja fidelidad pasamos a realizar una prueba de tes
 * Los usuarios quieren ver primero toda la lista de pokémons sin ningún filtro.
 * Un cálculo sobre que pokemones necesitan más o menos caramelos para evolucionar y se filtre justo en el mismo botón donde se filtra por Asc. A-Z.
 
-![Sin titulo](img/Sketch-2.JPG)
+![Sin titulo](src/img/Sketch-2.JPG)
 
 
 ### Prototipo de alta fidelidad
@@ -74,10 +78,10 @@ Para mejorar el prototipo de baja fidelidad pasamos a realizar una prueba de tes
 Diseñamos un prototipo con la Herramienta [_Figma_](https://www.figma.com/)
 
 
-![Sin titulo](img/Protipo-1.PNG)
+![Sin titulo](src/img/Protipo-1.PNG)
 
 
- ![Sin titulo](img/Prototipo-2.PNG)
+ ![Sin titulo](src/img/Prototipo-2.PNG)
 
 
 <!-- El objetivo principal de este proyecto es que aprendas a diseñar y construir una
