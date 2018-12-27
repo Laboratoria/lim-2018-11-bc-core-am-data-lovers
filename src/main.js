@@ -5,7 +5,7 @@
   const sortBy = document.getElementById('pokemon-order');
   const eggPokemon = document.getElementById('filtrar-huevos');
   const typePokemon = document.getElementById('pokemon-type');
-  const typeData = POKEMON.pokemon;
+  const typeData = window.POKEMON.pokemon;
 
   
 const filterInArray = (inputArray) => {
@@ -43,23 +43,21 @@ const filterInArray = (inputArray) => {
   const functionListenFilterOrder = () => {
     const listenSortBy = sortBy.options[sortBy.selectedIndex].value;
     const listenFiltersByCategories = filtersByCategories.options[filtersByCategories.selectedIndex].value;
-    const arrayInputFilter = data.filterData(POKEMON.pokemon, inputSearchText.value, parseInt(listenFiltersByCategories[0]));
-    functionfilter(data.sortData(arrayInputFilter, parseInt(listenSortBy[0]), parseInt(listenSortBy[1])));
+    const arrayInputFilter = window.data.filterData(window.POKEMON.pokemon, inputSearchText.value, parseInt(listenFiltersByCategories[0]));
+    functionfilter(window.data.sortData(arrayInputFilter, parseInt(listenSortBy[0]), parseInt(listenSortBy[1])));
     return 1;
   }
 
   typePokemon.addEventListener('change', () => {
     const typeofFilter = 'Tipo';
-    const arrTemp = data.filterbyType(typeData, typeofFilter, typePokemon.value);
-    functionfilter(data.filterbyType(arrTemp, typeofFilter, typePokemon.value));
+    const arrTemp = window.data.filterbyType(typeData, typeofFilter, typePokemon.value);
+    functionfilter(window.data.filterbyType(arrTemp, typeofFilter, typePokemon.value));
   });
 
   eggPokemon.addEventListener('change', () => {
     const typeofFilter = 'Huevo';
-    debugger
-    const arrTemp = data.filterbyType(typeData, typeofFilter, eggPokemon.value);
-    functionfilter(data.filterbyType(arrTemp, 'Tipo', typePokemon.value));
-    console.log(filterbyType);
+    const arrTemp = window.data.filterbyType(typeData, typeofFilter, eggPokemon.value);
+    functionfilter(window.data.filterbyType(arrTemp, 'Tipo', typePokemon.value));
   });
 
 
