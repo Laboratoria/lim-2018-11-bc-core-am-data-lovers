@@ -46,10 +46,10 @@ En este periodo de tiempo lo que quiero es que platiquemos acerca de  qué infor
 Conocer su nivel, tipo de ataque y si pueden evolucionar.
 2. ¿Qué necesitarías ver o saber exactamente sobre un pokemon?
 Saber qué tipo es, si de agua o fuego por ejemplo.
-Si todavía puede evolucionar?
-Si un huevo va explotar?
-La cantidad de caramelos para que evolucione?
-Si determinado pokémon contrarresta a otros en el gimnasio?
+Si todavía puede evolucionar?.
+Si un huevo va explotar?.
+La cantidad de caramelos para que evolucione?.
+Si determinado pokémon contrarresta a otros en el gimnasio?.
 
 
 ## Diseño de la Interfaz de Usuario
@@ -57,7 +57,7 @@ Si determinado pokémon contrarresta a otros en el gimnasio?
 
 Luego de las entrevista  realizamos un sketch o boceto de lo que sería el producto teniendo en cuenta la necesidad principal del usuario que era conocer todos los tipos de pokemons y saber si un pokémon tiene más de un tipo.
 
-![Sin titulo](img/sketch-1.PNG)
+![Sin titulo](img/Sketch-1.PNG)
 
 
 Teniendo los sketchs ya mencionados, creímos conveniente realizar una **segunda entrevista** para mejorar el prototipo
@@ -66,7 +66,7 @@ Para mejorar el prototipo de baja fidelidad pasamos a realizar una prueba de tes
 * Los usuarios quieren ver primero toda la lista de pokémons sin ningún filtro.
 * Un cálculo sobre que pokemones necesitan más o menos caramelos para evolucionar y se filtre justo en el mismo botón donde se filtra por Asc. A-Z.
 
-![Sin titulo](img/sketch-2.JPG)
+![Sin titulo](img/Sketch-2.JPG)
 
 
 ### Prototipo de alta fidelidad
@@ -74,7 +74,7 @@ Para mejorar el prototipo de baja fidelidad pasamos a realizar una prueba de tes
 Diseñamos un prototipo con la Herramienta [_Figma_](https://www.figma.com/)
 
 
-![Sin titulo](img/Prototipo-1.PNG)
+![Sin titulo](img/Protipo-1.PNG)
 
 
  ![Sin titulo](img/Prototipo-2.PNG)
@@ -414,8 +414,7 @@ pueden ayudar:
    asume que has instalado [Node.js](https://nodejs.org/) (que incluye [npm](https://docs.npmjs.com/)).
 4. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
    pruebas unitarias (unit tests) con el comando `npm test`.
-5. A codear se ha dicho! :rocket: --> -->
- -->
+5. A codear se ha dicho! :rocket: --> 
 <!--
 En este proyecto deberás trabajar colaborativamente. Para ello, una de las
 integrantes del equipo deberá forkear el repositorio del cohort y la otra
@@ -521,4 +520,4 @@ compañera:
 * [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
 * [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
 * [ ] UI: Permite filtrar data en base a una condición.
- --> -->
+ --> 
