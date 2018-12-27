@@ -53,8 +53,29 @@ Si determinado pokémon contrarresta a otros en el gimnasio.
 
 ## Historias de usuario
 
+**Yo como:** usuario de la página web.  
 
+**Quiero:**ver número, nombre, imagen, tipo, y probabilidad que aparezca.
 
+**Funcionalidad:** para tener una vista rápida de la información disponible de los pokemones.
+
+**Yo como**: usuario de la página web.
+
+**Quiero**: filtrar por tipo a los Pokémon.
+
+**Funcionalidad**: para identificarlo, conocerlo y para saber si un Pokémon es de más de 1 tipo.        
+
+**Yo como**: usuario de la página web.
+
+**Quiero**: ordenar  Pokémon por nombre ascendente y descendentemente.
+
+**Funcionalidad**: para conocerlos y me ayuda a aprender los nombres.
+
+**Yo como**: usuario de la página web.      
+
+**Quiero**: ver el Pokémon que tiene la mayor y menor cantidad de caramelos.    
+
+**Funcionalidad**: para conocer cuántos caramelos necesita para evolucionar.        
 
 ## Diseño de la Interfaz de Usuario
 *** 
