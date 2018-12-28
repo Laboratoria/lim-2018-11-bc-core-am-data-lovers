@@ -11,7 +11,7 @@ const typeData = window.POKEMON.pokemon;
 const filterInArray = (inputArray) => {
   return inputArray.map(element => {
     return `<label class="badge-${element}">${element}</label>`;
-  }).join('');
+  }).join(' ');
 };
 
 const functionfilter = (pokemones) => {

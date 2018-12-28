@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pokemon Go</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div>
+        <a href="index.html"><img src="img/pokemon_logo.png" alt="logo pokemon go"></a>
+      </div>
+    </header>
+    <div class="content container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-sm-2 col-xs-12">
+            <nav class="col-md-12">
+              <div class="navegador">
+                <div class="row">
+                  <h4>Ordenar Pokemones</h4>
+                </div>
+                <div class="row">
+                  <select class="type-select" id="pokemon-order">
+                    <option value="number"># de Pokedex</option>
+                    <option value="name-one">Nombre de A - Z</option>
+                    <option value="name-two">Nombre de Z - A</option>
+                  </select>
+                </div>
+                <div class="row">
+                  <h4>Filtrar Pokemones</h4>
+                </div>
+                <div class="row">
+                  <select class="type-select" id="pokemon-type">
+                    <option>Por tipo</option>
+                    <option value="Water">Agua</option>
+                    <option value="Bug">Bicho</option>
+                    <option value="Dragon">Dragón</option>
+                    <option value="Electric">Eléctrico</option>
+                    <option value="Ghost">Fantasma</option>
+                    <option value="Fire">Fuego</option>
+                    <option value="Ice">Hielo</option>
+                    <option value="Fighting">Lucha</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Grass">Hierba</option>
+                    <option value="Psychic">Psíquico</option>
+                    <option value="Rock">Roca</option>
+                    <option value="Ground">Tierra</option>
+                    <option value="Poison">Veneno</option>
+                    <option value="Flying">Volador</option>
+                  </select>
+                </div>
+                <div class="row">
+                  <select class="type-select" id="pokemon-egg">
+                    <option>Por Huevo</option>
+                    <option value="Not in Eggs">No en huevo</option>
+                    <option value="2 km">Huevo 2 km</option>
+                    <option value="5 km">Huevo 5 km</option>
+                    <option value="10 km">Huevo 10 km</option>
+                  </select>
+                </div>
+                <div class="row">
+                  <h4>Calcular # de carmelos para evolucionar</h4>
+                </div>
+                <div class="row">
+                  <input class="type-input" type="text" id="enter-text" placeholder="Ingrese nombre del Pokemon">
+                </div>
+                <div class="row">
+                  <input class="type-input" type="text" id="enter-number" placeholder="Ingrese # de caramelos">
+                </div>
+                <div class="row">
+                  <button class="type-button" type="button" id="button-calculate">Calcular</button>
+                </div>
+              </div>
+             </nav>
+        </div>
+        <section  class="col-md-9 col-sm-10 col-xs-12 ">
+          <div id="pokemon-list">
+            <!--Aquí se va mostrar imagen, nombre y numero que se esta llamando a partir de main.js -->
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="./data/pokemon/pokemon.js"></script>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -7,44 +7,157 @@ body {
   margin: 0 auto;
   background-image: url('img/background.png');
   background-attachment: fixed;
+  font-family: 'Lato', sans-serif;
+}
+
+.row {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 header {
 	text-align: center;
 }
 
+section {
+	padding: 0 !important;
+}
+
 header img {
 	margin: 15px 0px 0;
-	width: 15%;
+	width: 12%;
+}
+
+.type-input {
+  border: 1px solid #2B4D86;
+  border-radius: 5px;
+  color: #2B4D86;
+  margin-bottom: 10px;
+  padding: 10px 5px 10px 5px;
+  width: 100%;
+  text-align: left;
+}
+
+.type-button {
+  color: #fff;
+  background: linear-gradient(to right, rgb(26, 86, 175), rgb(63, 134, 241));
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  padding: 10px 5px 10px 5px;
+  width: 100%;
+}
+
+.orderby {
+  justify-content: flex-end;
+  position: relative;
+  float: right;
+  margin-right:10px;
+}
+
+.menu-ordenar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  float: right;
+  margin-right: 10px;
+}
+
+.type-select {
+  background: #2B4D86;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 10px 5px 10px 5px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .content {
 	margin-top: 20px;
 }
 
-.filters {
-  font-family: 'Lato', sans-serif;
-  background: #2B4D86;
-	border: none;
+
+nav {
+	background-color: #ffffff;
 	border-radius: 5px;
-	color: #ffffff;
-  padding: 5px 5px 10px 5px;
-  font-size: 12px;
+	box-shadow: 0 4px 7px rgba(0,0,0,0.16);
+	margin: 0 auto;
+	text-align: center;
+}
+
+.navegador {
+	padding: 0px;
+}
+
+h4 {
+	color: #2B4D86;
+	text-align: left;
+}
+
+.card-link {
+  height: 200px;
+  color: #2B4D86;
+  float: left;
+  margin-bottom: 20px;
+	background-color: #ffffff;
+	border: 0;
+  outline: 0;
+	border-radius: 5px;
+	box-shadow: 0 4px 7px rgba(0,0,0,0.16);
+  text-align: center;
+}
+
+
+form {
+  margin: 0 auto;
+  width:100%;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 15px;
+}
+
+.post-image {
+  transition: opacity 0.3s ease;
+  margin: auto;
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+}
+
+.article-details {
+  padding: 0px;
+}
+
+.post-title {
+  font-family: 'Lato', sans-serif;
+  transition: color 0.3s ease;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
 }
 
 label {
-  display: inline-block;
-  max-width: 100%;
-  margin-bottom: 5px;
   font-weight:normal;
 }
-.type-labels{
+
+.holo{
   font-size: 12px;
-  font-family: 'Roboto', sans-serif;
 
 }
 
-.badge-Hierba{
+.card-link:hover .post-title {
+  transition: color 0.3s ease;
+  color: #e04f62;
+}
+
+.card-link:hover .post-image {
+  transition: opacity 0.3s ease;
+  opacity: 0.9;
+}
+
+.badge-Hierba {
   background-color: rgb(2, 187, 2);
   border-radius: 10px;
   padding: 2px 10px;
@@ -52,7 +165,7 @@ label {
   text-align: center;  
 }
 
-.badge-Veneno{
+.badge-Veneno {
   background-color: blueviolet;
   border-radius: 10px;
   padding: 2px 10px;
@@ -60,7 +173,7 @@ label {
   text-align: center;
 }
 
-.badge-Fuego{
+.badge-Fuego {
   background-color: red;
   border-radius: 10px;
   padding: 2px 10px;
@@ -68,7 +181,7 @@ label {
   text-align: center;
 }
 
-.badge-Volador{
+.badge-Volador {
   background-color: cornflowerblue;
   border-radius: 10px;
   padding: 2px 10px;
@@ -91,6 +204,7 @@ label {
   color: #ffffff;
   text-align: center;
 }
+
 .badge-Normal {
   background-color: grey;
   border-radius: 10px;
@@ -123,7 +237,7 @@ label {
   text-align: center;
 }
 
-.badge-Psiquico{
+.badge-Psiquico {
   background-color: magenta;
   border-radius: 10px;
   padding: 2px 10px;
@@ -154,6 +268,7 @@ label {
   color: #ffffff;
   text-align: center;
 }
+
 .badge-Dragon {
   background-color: mediumslateblue;
   border-radius: 10px;
@@ -161,149 +276,7 @@ label {
   color: #ffffff;
   text-align: center;
 }
-form {
-  width: 98%;
-  border-radius: 5px;
-  text-align: center;
-  font-family: 'Lato' sans-serif;
-  font-size:12px;
-}
-
-
-h4 {
-  margin-left: 50px;
-  font-family: 'Lato', sans-serif;
-  font-size: 12px;  
-}
-
-.options-of-filters{
-  background: #2B4D86;
-	border: none;
-	border-radius: 5px;
-	color: #ffffff;
-  padding: 5px 5px 10px 5px;
-  font-size: 12px;
-  margin-left:50px;
-}
-
-.input-search-text{
-  border: 1px solid #e8e5e0;
-	border-radius: 5px;
-  padding: 5px 5px 10px 5px;
-
-}
-
-.btn-search {
-    background-color: #2B4D86;
-    border: transparent;
-    border-radius: 5px;
-    color: #fff;
-    padding: 5px 5px 10px 5px;
-    font-family: 'Lato', sans-serif;
-    font-size: 12px;
-}
-
-
-.blog-card {
-  display: flex;
-  flex-direction: row;
-  background: #F6F5F5;
-  box-shadow: 0 0.1875rem 1.5rem rgba(0, 0, 0, 0.2);
-  border-radius: 0.375rem;
-  overflow: hidden;
-
-}
-
-.card-link {
-  color: #2B4D86;
-}
-
-
-.grid-ListFilter{
-  display: grid;
-  grid-row-gap: 20px;
-  grid-column-gap: 20px; 
-  grid-template-columns: auto auto auto auto;
-  padding: 20px;
-}
-
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.card-link:hover .post-title {
-  transition: color 0.3s ease;
-  transform: scale(1.2);
-  color: #e04f62;
-}
-.card-link:hover .post-image {
-  transition: opacity 0.3s ease;
-  opacity: 0.9;
-}
-
-
-.post-image {
-  transition: opacity 0.3s ease;
-  display: block;
-  width: 120px;
-  height: 120px;
-  object-fit: contain;
-}
-
-.article-details {
-  padding: 1.5rem;
-}
-
-.post-category {
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.0625rem;
-  margin: 0 0 0.75rem 0;
-  padding: 0 0 0.25rem 0;
-  border-bottom: 0.125rem solid #ebebeb;
-}
-
-.post-title {
-  font-family: 'Lato', sans-serif;
- transition: color 0.3s ease;
-  font-size: 1.125rem;
-  line-height: 1.4;
-  color: #121212;
-  font-weight: 700;
-  margin: 0 0 0.5rem 0;
-}
-
-.candy{
-  font-size:11px;
-  font-family: 'Lato', sans-serif;
-}
-
-.pokemon-type{
-background-color: #b97f34;
-color: #fff;
-text-align: center;
-padding-left: 10px;
-padding-right: 10px;
-font-size: 13px;
-font-family: 'Roboto', sans-serif;
-
-}
-.post-author {
-  font-size: 0.875rem;
-  line-height: 1;
-  margin: 1.125rem 0 0 0;
-  padding: 1.125rem 0 0 0;
-  border-top: 0.0625rem solid #ebebeb;
-}
-
-
+ 
 
 @media only screen and (max-width: 414px){
     
@@ -315,17 +288,13 @@ header img {
 	margin: 15px 0px 20px;
 	width: 50%;
 }
-  .grid-ListFilter {
-    display: grid;
-    grid-row-gap: 10px;
-    grid-column-gap: 5px; 
-    grid-template-columns: auto;
-  }
 
-header {
-	text-align: center;
+.col-xs-6 {
+  width: 100%;
+}
+
+#pokemon-container{
+  margin-top: 30px;
 }
 
 }
-
-
