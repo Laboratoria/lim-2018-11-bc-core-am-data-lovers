@@ -55,9 +55,11 @@ Si determinado pokémon contrarresta a otros en el gimnasio.
 
 **Yo como:** usuario de la página web.  
 
-**Quiero:**ver número, nombre, imagen, tipo, y probabilidad que aparezca.
+**Quiero:** ver número, nombre, imagen, tipo, y probabilidad que aparezca.
 
 **Funcionalidad:** para tener una vista rápida de la información disponible de los pokemones.
+
+***
 
 **Yo como**: usuario de la página web.
 
@@ -65,17 +67,22 @@ Si determinado pokémon contrarresta a otros en el gimnasio.
 
 **Funcionalidad**: para identificarlo, conocerlo y para saber si un Pokémon es de más de 1 tipo.        
 
+***
+
 **Yo como**: usuario de la página web.
 
 **Quiero**: ordenar  Pokémon por nombre ascendente y descendentemente.
 
 **Funcionalidad**: para conocerlos y me ayuda a aprender los nombres.
 
+***
+
 **Yo como**: usuario de la página web.      
 
 **Quiero**: ver el Pokémon que tiene la mayor y menor cantidad de caramelos.    
 
 **Funcionalidad**: para conocer cuántos caramelos necesita para evolucionar.        
+***
 
 ## Diseño de la Interfaz de Usuario
 *** 
@@ -104,6 +111,16 @@ Diseñamos un prototipo con la Herramienta [_Figma_](https://www.figma.com/)
 
  ![Sin titulo](src/img/Prototipo-2.PNG)
 
+
+Al testear nuestro protrotipo lo usarios nos sugirieron las siguientes las siguientes mejoras: 
+
+* Hacer más interactivo el prototipo en especial la forma del select porque parecian ser varios select o botones.
+* Eliminar el botón de buscar porque al dar click en las opciones del select automáticamente se ordena.
+* Y por ultimo dar un color mas oscuro al los botones de tipos de pokemones para hacer mas contrastes con las letras.
+
+![Sin titulo](src/img/prototipo.gif)
+
+![Sin titulo](src/img/mobile.gif)
 
 <!-- El objetivo principal de este proyecto es que aprendas a diseñar y construir una
 interfaz web donde se pueda visualizar y manipular data, entendiendo lo que el
