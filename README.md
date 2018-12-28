@@ -112,8 +112,7 @@ Diseñamos un prototipo con la Herramienta [_Figma_](https://www.figma.com/)
  ![Sin titulo](src/img/Prototipo-2.PNG)
 
 
-Al testear nuestro protrotipo lo usarios nos sugirieron las siguientes las siguientes mejoras: 
-
+Al testear nuestro protrotipo lo usarios nos sugirieron las siguientes mejoras: 
 * Hacer más interactivo el prototipo en especial la forma del select porque parecian ser varios select o botones.
 * Eliminar el botón de buscar porque al dar click en las opciones del select automáticamente se ordena.
 * Y por ultimo dar un color mas oscuro al los botones de tipos de pokemones para hacer mas contrastes con las letras.
