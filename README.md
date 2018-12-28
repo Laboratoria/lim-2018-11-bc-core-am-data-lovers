@@ -1,6 +1,6 @@
 # Data Lovers
 
-## Índice
+<!-- ## Índice
 
 * [Preámbulo](#preámbulo)
 * [Descripción](#resumen-del-proyecto)
@@ -14,87 +14,114 @@
 * [Checklist](#checklist)
 
 ***
-
+ -->
 ## Preámbulo
 
-Según un [estudio de IBM](https://www-01.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=WRL12345USEN),
-el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
-Cada día generamos 2.5 trillones de bytes de datos, una cifra sin precedentes.
+Dos años después, la emoción del juego Pokemon Go sigue con más poder en los aficionado que en cualquier otro momento desde el lanzamiento del juego del verano 2016. El cazador como se le llama al usuario en el juego,  busca, captura y  en entrena a los pokémones escondidos en el mundo real, para luchar por el control de "gimnasios" virtuales desplegados en lugares del mundo real que aparecen en los mapas de los smartphones. En este juego los creadores consideraron meter a solo 151 pokemones originales porque habría sido muy intrincado para atraer a nuevos fans meter a los  726 que hay en total.
 
-No obstante, los datos por sí mismos son de poca utilidad. Para que esas
-grandes cantidades de datos se conviertan en **información** fácil de leer para
-los usuarios, necesitamos entender y procesar estos datos. Una manera simple de
-hacerlo es creando _interfaces_ y _visualizaciones_.
+En total hay 18 tipos de pokémon, cada tipo generalmente corresponde a un hábitat específica, de manera que los pokémons de tipo agua está precisamente en un hábitat con agua.
+Un buen cazador cazador debe conocer bien  el tipo de sus pokémones para calcular cual es más fuerte o débil frente a otro en una batalla. No obstante puede ser un poco confuso para los novatos por la gran cantidad de pokemones.
 
-En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
-izquierda se puede construir una interfaz amigable y entendible por el usuario.
+## Entrevista
 
-![json-interfaz](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
+Comenzamos con una entrevista  a los usuarios de Pokemon Go para obtener la información sobre sus necesidades a la hora de Jugar Pokemon Go y nos ayudó  a  representar todo lo que el usuario necesitará ver o hacer en nuestro producto en las historias de usuarios. Formulamos las siguientes preguntas para llegar a dicha información:
 
-\* Puedes ver el datalle de la data en este [link](https://gist.github.com/lalogf/dd4aa3017a9f8aa8f90dfbca382c4dc9#file-student-json)
-y la interfaz construida en este [link](https://app.talento.laboratoria.la/profile/HFOoMpOreBU2psCcjjLg5O2EWEv2).
+* **Preséntate: genera confianza.**
+Hola soy Micaela/Ivana, ¿cómo estás?
+¿De dónde eres?, ¿cómo fue tu día hoy?
+Este periodo de tiempo, lo que quiero es que conversemos acerca de qué necesitarías para ser mejor entrenador Pokémon.
 
-## Resumen del proyecto
+* **Busca historias.**
+	¿Me puedes platicar cuál es tu manera de elegir un Pokemon?
+¿Qué necesitarías ver o saber exactamente de los Pokemones? ¿por qué?
 
-En este proyecto **construirás una _página web_ para visualizar un
-_conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
-necesita.
+* **Hablen sobre sentimientos.**
+	¿Cuéntame sobre tu última experiencia que jugaste Pokemon Go? ¿fue buena, mala? ¿por qué dices eso?
 
-Esta vez te proponemos una serie de datos de diferentes _temáticas_ para que
-explores y decidas con qué temática te interesa trabajar. Hemos elegido
-específicamente estos sets de datos porque creemos que se adecúan bien a esta
-etapa de tu aprendizaje.
+* **Preguntas más específicas para profundizar más sobre las necesidades del usuario en el juego de Pokemon.**
 
-Una vez que definas tu área de interés, entiende quién es tu usuario y qué
-necesita saber o ver exactamente; luego podrás construir la interfaz que le
-ayude a interactuar y entender mejor esos datos.
+En este periodo de tiempo lo que quiero es que platiquemos acerca de  qué información necesitarías para ser mejor jugador Pokémon.
 
-Estos son datos que te proponemos:
+1. ¿Cuáles son tus maneras de elegir un pokemon?
+Conocer su nivel, tipo de ataque y si pueden evolucionar.
+2. ¿Qué necesitarías ver o saber exactamente sobre un pokemon?
+Saber qué tipo es, si de agua o fuego por ejemplo.
+Si todavía puede evolucionar.
+Si un huevo va explotar.
+La cantidad de caramelos para que evolucione.
+Si determinado pokémon contrarresta a otros en el gimnasio.
 
-* Indicadores de desarrollo del Banco Mundial de algunos países (Brasil, Chile, 
-  México y Perú). Estos datos incluyen indicadores demográficos, económicos y 
-  comerciales.
-* [Pokémon](src/data/pokemon/pokemon.json):
-  En este set encontrarás una lista con los 151 Pokémon de la región de Kanto,
-  junto con sus respectivas estadísticas usadas en el juego [Pokémon GO](pokemongolive.com).
-* [Steam noticias](src/data/steam/steam.json):
-  Lista noticias relacionadas a los videojuegos presentes en la
-  plataforma de [Steam](https://store.steampowered.com/).
-* [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  Este set de datos muestra la lista de jugadores en una liga del
-  juego League of Legends (LoL), puedes revisar la documentación de su API en
-  este [link](https://developer.riotgames.com/api-methods/).
-* [Personas heridas por medio de transporte en EEUU](src/data/injuries/injuries.json).
-  Este set nos muestra el número de personas heridas en accidentes de
-  transporte, con data anual desde 1960 y categorizada por tipo de transporte
-  (aire, barco, automóvil, moto, bicileta, ...).
+## Historias de usuario
 
-Como entregable final tendrás una página web que permita **visualizar la data,
-filtrarla, ordenarla y hacer algún calculo agregado**. Como aclaración,
-con cálculo agregado nos referimos a distintos cálculos que puedes hacer con
-la data que tienes para mostrar información aún más relevante a los usuarios.
-Una opción serían cálculos estadísticos como el promedio, el máximo o el mínimo,
-por ejemplo, si tenemos una colección que representa a un grupo de personas,
-y cada persona está representada como un _objeto_ con una _propiedad_ `altura`,
-podríamos elegir calcular la altura promedio en el grupo entre otras cosas.
+**Yo como:** usuario de la página web.  
 
-Cada set de datos tiene una identidad gráfica que deberás utilizar en la
-interfaz. La identidad gráfica; o también conocido como guía de estilos en
-diseño, de cada set la podrás encontrar en el siguiente
-[link](https://drive.google.com/open?id=1eeWFqrWpy-OYOH4EHDckFGunyrm9iNeE).
+**Quiero:** ver número, nombre, imagen, tipo, y probabilidad que aparezca.
 
-## Consideraciones generales
+**Funcionalidad:** para tener una vista rápida de la información disponible de los pokemones.
 
-* Este proyecto se debe resolver en duplas.
-* El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
-* Tiempo para completarlo: Toma como referencia 3 semanas. Trabaja durante el
-  primer Sprint (una semana) y al  final, decide en cuántas semanas lo
-  terminarás.
+***
 
-## Objetivos de aprendizaje
+**Yo como**: usuario de la página web.
 
-El objetivo principal de este proyecto es que aprendas a diseñar y construir una
+**Quiero**: filtrar por tipo a los Pokémon.
+
+**Funcionalidad**: para identificarlo, conocerlo y para saber si un Pokémon es de más de 1 tipo.        
+
+***
+
+**Yo como**: usuario de la página web.
+
+**Quiero**: ordenar  Pokémon por nombre ascendente y descendentemente.
+
+**Funcionalidad**: para conocerlos y me ayuda a aprender los nombres.
+
+***
+
+**Yo como**: usuario de la página web.      
+
+**Quiero**: ver el Pokémon que tiene la mayor y menor cantidad de caramelos.    
+
+**Funcionalidad**: para conocer cuántos caramelos necesita para evolucionar.        
+***
+
+## Diseño de la Interfaz de Usuario
+*** 
+
+Luego de las entrevista  realizamos un sketch o boceto de lo que sería el producto teniendo en cuenta la necesidad principal del usuario que era conocer todos los tipos de pokemons y saber si un pokémon tiene más de un tipo.
+
+![Sin titulo](src/img/Sketch-1.PNG)
+
+
+Teniendo los sketchs ya mencionados, creímos conveniente realizar una **segunda entrevista** para mejorar el prototipo
+Para mejorar el prototipo de baja fidelidad pasamos a realizar una prueba de testeo y detectamos los siguientes problemas:
+
+* Los usuarios quieren ver primero toda la lista de pokémons sin ningún filtro.
+* Un cálculo sobre que pokemones necesitan más o menos caramelos para evolucionar y se filtre justo en el mismo botón donde se filtra por Asc. A-Z.
+
+![Sin titulo](src/img/Sketch-2.JPG)
+
+
+### Prototipo de alta fidelidad
+
+Diseñamos un prototipo con la Herramienta [_Figma_](https://www.figma.com/)
+
+
+![Sin titulo](src/img/Protipo-1.PNG)
+
+
+ ![Sin titulo](src/img/Prototipo-2.PNG)
+
+
+Al testear nuestro protrotipo lo usarios nos sugirieron las siguientes mejoras: 
+* Hacer más interactivo el prototipo en especial la forma del select porque parecian ser varios select o botones.
+* Eliminar el botón de buscar porque al dar click en las opciones del select automáticamente se ordena.
+* Y por ultimo dar un color mas oscuro al los botones de tipos de pokemones para hacer mas contrastes con las letras.
+
+![Sin titulo](src/img/prototipo.gif)
+
+![Sin titulo](src/img/mobile.gif)
+
+<!-- El objetivo principal de este proyecto es que aprendas a diseñar y construir una
 interfaz web donde se pueda visualizar y manipular data, entendiendo lo que el
 usuario necesita.
 
@@ -294,15 +321,15 @@ Por ejemplo, si descomentamos la siguiente línea:
 
 ```html
 <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-```
+<!-- ```
 
-La línea quedaría así:
+<!-- <!-- La línea quedaría así:
 
 ```html
 <script src="./data/worldbank/worldbank.js"></script>
-```
+``` -->
 
-Y ahora tendríamos la variable global `WORLDBANK` disponible en nuestros otros
+<!-- Y ahora tendríamos la variable global `WORLDBANK` disponible en nuestros otros
 scripts (como `src/data.js` o `src/main.js`).
 
 ### `src/main.js`
@@ -350,9 +377,9 @@ cuando lo completes:
 
 | Característica/Habilidad |
 |--------------------------|
-| Completitud |
+| Completitud | -->
 
-### Tech
+<!-- ### Tech
 
 | Habilidad |
 |-----------|
@@ -401,9 +428,9 @@ cuando lo completes:
 | Comunicación eficaz |
 | Presentaciones |
 
-***
+*** -->
 
-## Pistas sobre cómo empezar a trabajar en el proyecto
+<!-- ## Pistas sobre cómo empezar a trabajar en el proyecto
 
 Antes de empezar a escribir código, debes definir qué deberá hacer el producto
 en base al conocimiento que puedas obtener de tu usuario. Estas preguntas te
@@ -413,8 +440,8 @@ pueden ayudar:
 * ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
 * ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
 * ¿Cuándo utilizan o utilizarían el producto?
-
-Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
+ -->
+<!-- Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 
 1. Una de las integrantes del equipo debe realizar un :fork_and_knife:
    [fork](https://help.github.com/articles/fork-a-repo/) del repo de tu cohort,
@@ -428,8 +455,7 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
    asume que has instalado [Node.js](https://nodejs.org/) (que incluye [npm](https://docs.npmjs.com/)).
 4. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
    pruebas unitarias (unit tests) con el comando `npm test`.
-5. A codear se ha dicho! :rocket:
-
+5. A codear se ha dicho! :rocket: --> 
 <!--
 En este proyecto deberás trabajar colaborativamente. Para ello, una de las
 integrantes del equipo deberá forkear el repositorio del cohort y la otra
@@ -478,7 +504,7 @@ compañera:
   original.
 -->
 
-***
+<!-- ***
 
 ## Contenido de referencia
 
@@ -535,3 +561,4 @@ compañera:
 * [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
 * [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
 * [ ] UI: Permite filtrar data en base a una condición.
+ --> 
