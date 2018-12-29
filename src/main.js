@@ -12,9 +12,9 @@ const listData = (data) => {
       <img class="post-image" src="${ pokemon.img}" />
         <div class="article-details">
         <h3 class="post-name">${ pokemon.name}</h3>
-        <div class="post-number">Num: ${ pokemon.num}</div>
-        <div class="post-type">Tipo: ${ pokemon.type} </div>       
-        <div class="post-cady-count">Spawn Chance: ${ pokemon.spawn_chance}</div>
+        <p class="post-number">Num: ${ pokemon.num}</p>
+        <p class="post-type">Tipo: ${ pokemon.type} </p>       
+        <p class="post-cady-count">Spawn Chance: ${ pokemon.spawn_chance} %</p>
        </div>
     </article>
    </div>`;

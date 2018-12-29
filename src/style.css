@@ -7,6 +7,7 @@
   padding:0px;
   margin: 0px;
 }
+
 header img { 
   max-width: 30%;
   height: auto; 
@@ -22,13 +23,7 @@ body {
   padding: 20px 0 28px 0;
 }
 
-h1 {
-  color: #164A99;
-  font-family: Carter One;
-  text-align: center;
-}
-
-.cbx {
+.options {
   text-align: center;
   margin: 15px;
 }
@@ -36,9 +31,9 @@ h1 {
 select {
   background: #1f33a6;;
   border-radius: 6px;
-  font-size: 90%;
+  font-size: 80%;
   color: white;
-  font-family: roboto;
+  font-family: Roboto;
   padding: 10px 5px 10px 5px;
   width: 14%;
 }
@@ -47,8 +42,8 @@ button {
   text-decoration: none;
   padding: 10px;
   font-weight: 14%;
-  font-family: Roboto;
   font-size: 80%;
+  font-family: Roboto;
   color: #1f33a6;
   background-color: #FFEB3B;
   border-radius: 6px;
@@ -87,60 +82,44 @@ button {
 
 .post-name {
    color: #164A99;
-   font-family: Carter One;
+   font-family: Roboto;
    font-size: 130%;
    font-weight:bold;
    margin: 0 0 0 0;
  }
 
-.post-number {
+.post-number, .post-type, .post-cady-count {
   margin: 0;
   padding: 0;
   font-size: 100%;
    }
 
-.post-type{
-  margin: 0;
-  padding: 0;
-  font-size: 100%;   
-  }
 
-.post-cady-count{
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
- }
- 
 .article-details {
   color: #000000;
   }
-  @media only screen and (max-width: 414px){    
+
+@media only screen and (max-width: 414px){    
     body {
       margin: 0 auto;
-    }
-    
+    }    
     header img {
-      margin: 15px 0px 20px;
-      width: 50%;
+      max-width: 30%;
+      height: auto; 
+      margin:10px auto;
+      display:block;
     }
-      .grid-ListFilter {
+    .grid-ListFilter {
         display: grid;
         grid-row-gap: 10px;
         grid-column-gap: 5px; 
         grid-template-columns: auto;
-      }
+     }
     
-    header {
-      text-align: center;
-    }
-    header {
-      text-align: center;
-    }
     select {
       width: 45%;
     }
     button {
       width: 38%;
-    }
- 
-    }
+    } 
+  }
