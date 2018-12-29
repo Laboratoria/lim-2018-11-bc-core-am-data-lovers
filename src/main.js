@@ -13,7 +13,7 @@ const listData = (data) => {
         <div class="article-details">
         <h3 class="post-name">${ pokemon.name}</h3>
         <p class="post-number">Num: ${ pokemon.num}</p>
-        <p class="post-type">Tipo: ${ pokemon.type} </p>       
+        <p class="post-type">Tipo: ${ pokemon.type.join(' & ')} </p>       
         <p class="post-spaw-chance">Spawn Chance: ${ pokemon.spawn_chance} %</p>
        </div>
     </article>
