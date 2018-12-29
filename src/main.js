@@ -14,7 +14,7 @@ const listData = (data) => {
         <h3 class="post-name">${ pokemon.name}</h3>
         <p class="post-number">Num: ${ pokemon.num}</p>
         <p class="post-type">Tipo: ${ pokemon.type} </p>       
-        <p class="post-cady-count">Spawn Chance: ${ pokemon.spawn_chance} %</p>
+        <p class="post-spaw-chance">Spawn Chance: ${ pokemon.spawn_chance} %</p>
        </div>
     </article>
    </div>`;

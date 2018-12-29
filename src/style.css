@@ -33,7 +33,7 @@ select {
   border-radius: 6px;
   font-size: 80%;
   color: white;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   padding: 10px 5px 10px 5px;
   width: 14%;
 }
@@ -43,7 +43,7 @@ button {
   padding: 10px;
   font-weight: 14%;
   font-size: 80%;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;;
   color: #1f33a6;
   background-color: #FFEB3B;
   border-radius: 6px;
@@ -69,7 +69,7 @@ button {
 
 .card-link {
   box-sizing: border-box;
-  background-color: #89c3f3;
+  background-color: #dbd9ff;
   margin: 1px 19% 13% 18%;
   border: 0;
   height: 90%;
@@ -83,26 +83,21 @@ button {
 }
 
 .post-name {
-   color: #164A99;
-   font-family: Roboto;
+   color: #1f33a6;
+   font-family: 'Roboto', sans-serif;;
    font-size: 130%;
    font-weight:bold;
    margin: 0 0 0 0;
  }
 
-.post-number, .post-type, .post-cady-count {
+.post-number, .post-type, .post-spaw-chance {
   margin: 0;
   padding: 0;
   font-size: 100%;
+  color: #314352
    }
 
-
-.article-details {
-  color: #000000;
-  font: bold;
-  }
-
-  @media only screen and (max-width: 650px){
+   @media only screen and (max-width: 650px){
     .grid-ListFilter {
       display: grid;
       grid-row-gap: 40px;
