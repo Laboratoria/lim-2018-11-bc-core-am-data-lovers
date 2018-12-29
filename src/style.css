@@ -57,9 +57,9 @@ button {
 
 .grid-ListFilter {
   display: grid;
-  grid-row-gap: 10px;
+  grid-row-gap: 50px;
   grid-column-gap: 20px; 
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 32% 32% 32%;
   padding: 20px;
 }
 
@@ -72,6 +72,8 @@ button {
   background-color: #89c3f3;
   margin: 1px 19% 13% 18%;
   border: 0;
+  height: 90%;
+  width: 65%;
   border-radius: 23px;
   overflow: hidden;  
 }
@@ -97,21 +99,34 @@ button {
 
 .article-details {
   color: #000000;
+  font: bold;
+  }
+
+  @media only screen and (max-width: 650px){
+    .grid-ListFilter {
+      display: grid;
+      grid-row-gap: 40px;
+      grid-column-gap: 10px; 
+      grid-template-columns: auto auto;
+    }
+    select {
+      width: 45%;
+    }
+    button {
+      width: 38%;
+    }
   }
 
 @media only screen and (max-width: 414px){    
     body {
       margin: 0 auto;
     }    
-    header img {
-      max-width: 30%;
-      height: auto; 
-      margin:10px auto;
-      display:block;
+    header img {     
+      width: 50%;
     }
     .grid-ListFilter {
         display: grid;
-        grid-row-gap: 10px;
+        grid-row-gap: 40px;
         grid-column-gap: 5px; 
         grid-template-columns: auto;
      }
