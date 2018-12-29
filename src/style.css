@@ -150,5 +150,14 @@ button {
       text-align: center;
 
     }
-    
+    header {
+      text-align: center;
+    }
+    select {
+      width: 45%;
+    }
+    button {
+      width: 38%;
+    }
+ 
     }
