@@ -1,7 +1,7 @@
 const selectOrder = document.getElementById('select-order');
 const containerList = document.getElementById('container-list');
 const btnCalculate = document.getElementById('btn-calculateMax');
-const typePokemon = document.getElementById('pokemon-type');
+const selectPokemonType = document.getElementById('select-pokemon-type');
 
 const listData = (data) => {
   let templateListOfCards = '';
@@ -28,23 +28,25 @@ const getOrderValue = () => {
   const pokemonData = window.POKEMON.pokemon;
   const valueOrder = selectOrder.value;
   const valueSelectOrder = (valueOrder.split('-'));
-  const selectByOrder = window.dataPokemon.sortData(pokemonData, valueSelectOrder[1], valueSelectOrder[0]);
+  const selectByOrder = window.dataPokemon.sortData(pokemonData, valueSelectOrder[0], valueSelectOrder[1]);
   listData(selectByOrder);
 };
 selectOrder.addEventListener('change', getOrderValue);
+
+const typePokemonValue = function() {
+  const typeData = window.POKEMON.pokemon;
+  const filterCondicion = 'Tipo';
+  const typePokemonValue = selectPokemonType.value;
+  const selectByType = window.dataPokemon.filterData(typeData, filterCondicion, typePokemonValue);
+  listData(selectByType);
+};
+selectPokemonType.addEventListener('change', typePokemonValue);
 
 const getCalculateValue = () => {
   const pokemonData = window.POKEMON.pokemon;
   const pokemon = window.dataPokemon.computeStats(pokemonData);
   listData([pokemon]);
 };
-btnCalculate.addEventListener('click', getCalculateValue);
+btnCalculate.addEventListener('click', getCalculateValue); 
 
-const typePokemonValue = () => {
-  const typeData = window.POKEMON.pokemon;
-  const filterCondicion = 'Tipo';
-  const typePokemonValue = typePokemon.value;
-  const selectByType = window.dataPokemon.filterData(typeData, filterCondicion, typePokemonValue);
-  listData(selectByType);
-};
-typePokemon.addEventListener('change', typePokemonValue);
+ 
