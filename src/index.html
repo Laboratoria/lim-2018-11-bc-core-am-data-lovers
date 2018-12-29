@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
- <head>
-   <meta charset="utf-8">
-   <title>Data Lovers</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-   <link rel="stylesheet" href="style.css" />
- </head>
- <body>
-   <h1>Bienvenido Pokemon Lover</h1>
-   <form>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <img src="img/logo.png">
+  </header>
+  <form>
     <div class="cbx">
-      <select class= "order-select" id="select-order">      
-      <option value="">Ordenar Por Nombre</option>
-      <option value="ASC-NAME">Ordenar de A-Z</option>
-      <option value="DESC-NAME">Ordenar de Z-A</option>     
+      <select class="order-select" id="select-order">
+        <option value="">Ordenar por nombre:</option>
+        <option value="NAME-ASC">A-Z</option>
+        <option value="NAME-DESC">Z-A</option>
       </select>
-      <select class="type-select" id="pokemon-type">
-        <option> Tipos</option> 
+      <select class="type-select" id="select-pokemon-type">
+        <option>Tipos:</option>
         <option value="Water">Agua</option>
         <option value="Bug">Bicho</option>
         <option value="Dragon">Dragón</option>
@@ -33,16 +37,16 @@
         <option value="Ground">Tierra</option>
         <option value="Poison">Veneno</option>
         <option value="Flying">Volador</option>
-     </select>  
-        <button type="button" id="btn-calculateMax">Mayor % de aparición</button>  
-        <button type="button" id="btn-calculateMin">Menor % de aparición</button>      
+      </select>
+      <button type="button" id="btn-calculateMax">Mayor % de aparición</button>
+      <button type="button" id="btn-calculateMin">Menor % de aparición</button>
+    </div>
+  </form>
+  <div id="container-list" class="grid-ListFilter">
   </div>
- </form>
- 
- <div id="container-list" class="grid-ListFilter">
- </div>
-   <script src="./data/pokemon/pokemon.js"></script>
-   <script src="data.js"></script>
-   <script src="main.js"></script>
- </body>
+  <script src="./data/pokemon/pokemon.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>

@@ -2,114 +2,98 @@
 * {
   box-sizing: border-box;
 }
-body {
-  background: url("img/fondo.jpg") no-repeat center center fixed;
+
+* {
+  padding:0px;
+  margin: 0px;
+}
+header img { 
+  max-width: 30%;
+  height: auto; 
+  margin:10px auto;
+  display:block;
+}
+
+body {  
+  background-image:url('img/fondo3.jpg');
   background-attachment: fixed;
   background-size: cover;
   margin: 0 auto;
   padding: 20px 0 28px 0;
 }
-h1{
+
+h1 {
   color: #164A99;
   font-family: Carter One;
   text-align: center;
 }
-.cbx{
+
+.cbx {
   text-align: center;
   margin: 15px;
 }
+
 select {
-	background: #4CAF50;;
+  background: #1f33a6;;
   border-radius: 6px;
   font-size: 90%;
   color: white;
-  font-family: Carter One;
-	padding: 10px 5px 10px 5px;
-	width: 14%;
+  font-family: roboto;
+  padding: 10px 5px 10px 5px;
+  width: 14%;
 }
-/* .no-select{
-	background: #4CAF50;;
-  border-radius: 6px;
-  font-size: 90%;
-  color: white;
-  font-family: Carter One;
-	padding: 10px 5px 10px 5px;
-	width: 14%;
-} */
+
 button {
-	text-decoration: none;
+  text-decoration: none;
   padding: 10px;
   font-weight: 14%;
-  font-family: Carter One;
+  font-family: Roboto;
   font-size: 80%;
-  color: #1883ba;
-  background-color: #ffffff;
+  color: #1f33a6;
+  background-color: #FFEB3B;
   border-radius: 6px;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   width: 14%;
   }
-  button:hover{
+  button:hover {
     color: #ffffff;
-    background-color: #1883ba;
+    background-color: #6db9e6;
 }
-.grid-ListFilter{
+
+.grid-ListFilter {
   display: grid;
   grid-row-gap: 10px;
   grid-column-gap: 20px; 
   grid-template-columns: auto auto auto;
   padding: 20px;
 }
-/* .btn-types button{
-  background-color: #4CAF50; Green 
- /*  border: 1px solid green;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
-  
-} */
-.blog-card {
-  
+
+.blog-card {  
   text-align: center;
 }
-/* img {
-  
-} */
+
 .card-link {
   box-sizing: border-box;
-  background-color: #F5F6C3;
+  background-color: #89c3f3;
   margin: 1px 19% 13% 18%;
   border: 0;
   border-radius: 23px;
-  overflow: hidden;
-
-  /* max-width: 650px;
-  padding: 20px;
-  margin: 30px auto;
-  background-color: #fff;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
-  overflow: hidden; */
+  overflow: hidden;  
 }
 
 .card-link h3 {
   margin: 0 0 6px 0;
 }
 
-/* .post-image{
-  
- } */
-
- .post-name{
+.post-name {
    color: #164A99;
    font-family: Carter One;
    font-size: 130%;
    font-weight:bold;
    margin: 0 0 0 0;
  }
-  .post-number{
+
+.post-number {
   margin: 0;
   padding: 0;
   font-size: 100%;
@@ -118,19 +102,19 @@ button {
 .post-type{
   margin: 0;
   padding: 0;
-  font-size: 100%;
-   
+  font-size: 100%;   
   }
+
 .post-cady-count{
   margin: 0;
   padding: 0;
   font-size: 100%;
  }
+ 
 .article-details {
-  color: #5DAFF3;
+  color: #000000;
   }
-  @media only screen and (max-width: 414px){
-    
+  @media only screen and (max-width: 414px){    
     body {
       margin: 0 auto;
     }
@@ -148,7 +132,6 @@ button {
     
     header {
       text-align: center;
-
     }
     header {
       text-align: center;

@@ -30,12 +30,6 @@ const sortData = (data, sortBy, sortOrder) => {
   return newArraySort;
 };
 
-const computeStats = (data) =>
-  data.reduce((acum, element) =>
-    (acum.spawn_chance > element.spawn_chance)
-      ? acum :
-      element);
-
 const filterData = (data, filterBy, condition) => {
   let newArrayFilter = [];
   if (filterBy) {
@@ -43,6 +37,11 @@ const filterData = (data, filterBy, condition) => {
   }
   return newArrayFilter;
 };
+const computeStats = (data) =>
+  data.reduce((acum, element) =>
+    (acum.spawn_chance > element.spawn_chance)
+      ? acum :
+      element); 
 
 window.dataPokemon = {
   sortData,
