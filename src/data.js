@@ -1,31 +1,16 @@
 const sortData = (data, sortBy, sortOrder) => {
-  const newArraySort = [];
-  for (let i = 0; i < data.length; i++) {
-    newArraySort.push(Object.assign({}, data[i]));
-  }
-  if (sortBy === 'NAME') {
-    if (sortOrder === 'ASC') {
-      newArraySort.sort((elementA, elementB) => {
-        if (elementB.name > elementA.name) {
-          return -1;
-        }
-        if (elementB.name < elementA.name) {
-          return 1;
-        }
-        return 0;
-      });
+  let newArraySort = [];
+  switch (sortOrder) {
+  case 'ASC':
+    if (sortBy === 'NAME') {
+      newArraySort = data.sort((elementA, elementB) => (elementA.name > elementB.name ? 1 : -1));
     }
-    if (sortOrder === 'DESC') {
-      newArraySort.sort((elementA, elementB) => {
-        if (elementA.name > elementB.name) {
-          return -1;
-        }
-        if (elementA.name < elementB.name) {
-          return 1;
-        }
-        return 0;
-      });
+    break;
+  case 'DESC':
+    if (sortBy === 'NAME') {
+      newArraySort = data.sort((elementA, elementB) => (elementA.name < elementB.name ? 1 : -1));
     }
+    break;
   }
   return newArraySort;
 };
@@ -37,11 +22,12 @@ const filterData = (data, filterBy, condition) => {
   }
   return newArrayFilter;
 };
+
 const computeStats = (data) =>
   data.reduce((acum, element) =>
     (acum.spawn_chance > element.spawn_chance)
       ? acum :
-      element); 
+      element);
 
 window.dataPokemon = {
   sortData,
