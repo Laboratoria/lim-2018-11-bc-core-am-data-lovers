@@ -52,6 +52,7 @@ La cantidad de caramelos para que evolucione.
 Si determinado pokémon contrarresta a otros en el gimnasio.
 
 ### Encuesta 
+***
 
 Para complementar más las investigación sobre la necesidades de los usuarios del juego Pokemon Go, hicimos una **encuesta** con la herramienta google forms para jerarquizar la información más relevante que desea saber el público objetivo.
 
@@ -61,7 +62,8 @@ Para complementar más las investigación sobre la necesidades de los usuarios d
 
 ![Sin titulo](src/img/encuesta-2.png)
 
-Obtuvimos los siguientes resultados:
+
+**Obtuvimos los siguientes resultados:**
 
 ![Sin titulo](src/img/estadistica.jpg)
 ![Sin titulo](src/img/descripcion-de-respuestas.jpg)
@@ -100,7 +102,7 @@ Obtuvimos los siguientes resultados:
 ***
 
 ## Diseño de la Interfaz de Usuario
-*** 
+
 
 Luego de las entrevista  realizamos un sketch o boceto de lo que sería el producto teniendo en cuenta la necesidad principal del usuario que era conocer todos los tipos de pokemons y saber si un pokémon tiene más de un tipo.
 
@@ -136,9 +138,10 @@ Al testear nuestro protrotipo lo usarios nos sugirieron las siguientes mejoras:
 
 ![Sin titulo](src/img/mobile.gif)
 
-#### Paleta de Colores
+### Paleta de Colores
+***
 
-Muchos usuarios y compañeras nos recomendaron elegir una paleta de colores para ser más amigable. Utilizamos la herramienta de Adobe Color CC. Se importe la imagen del logo para obtener sus colores, y en base a esos colores obtuvismos las paleta de colores.
+Muchos usuarios y compañeras nos recomendaron elegir una paleta de colores para ser más amigable. Utilizamos la herramienta de Adobe Color CC. Se importo la imagen del logo para obtener sus colores, y en base a esos colores obtuvismos las paleta de colores.
 
 ![Sin titulo](src/img/Paleta-logo.png)
 
