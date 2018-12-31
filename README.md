@@ -51,6 +51,21 @@ Si un huevo va explotar.
 La cantidad de caramelos para que evolucione.
 Si determinado pokémon contrarresta a otros en el gimnasio.
 
+### Encuesta 
+
+Para complementar más las investigación sobre la necesidades de los usuarios del juego Pokemon Go, hicimos una **encuesta** con la herramienta google forms para jerarquizar la información más relevante que desea saber el público objetivo.
+
+[Encuesta](https://docs.google.com/forms/d/e/1FAIpQLSeosWC9LZtFqn39gnxNlxbC6KX5aiEcmkozPMS-CCaWYBS4Dw/viewform)
+
+![Sin titulo](src/img/encuesta.png)
+
+![Sin titulo](src/img/encuesta-2.png)
+
+Obtuvimos los siguientes resultados:
+
+![Sin titulo](src/img/estadistica.jpg)
+![Sin titulo](src/img/descripcion-de-respuestas.jpg)
+
 ## Historias de usuario
 
 **Yo como:** usuario de la página web.  
@@ -120,6 +135,14 @@ Al testear nuestro protrotipo lo usarios nos sugirieron las siguientes mejoras:
 ![Sin titulo](src/img/prototipo.gif)
 
 ![Sin titulo](src/img/mobile.gif)
+
+#### Paleta de Colores
+
+Muchos usuarios y compañeras nos recomendaron elegir una paleta de colores para ser más amigable. Utilizamos la herramienta de Adobe Color CC. Se importe la imagen del logo para obtener sus colores, y en base a esos colores obtuvismos las paleta de colores.
+
+![Sin titulo](src/img/Paleta-logo.png)
+
+![Sin titulo](src/img/Paleta-logo-2.png)
 
 <!-- El objetivo principal de este proyecto es que aprendas a diseñar y construir una
 interfaz web donde se pueda visualizar y manipular data, entendiendo lo que el
