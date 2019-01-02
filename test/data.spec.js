@@ -2,34 +2,34 @@ require('../src/data.js');
 
 const input =
 [
-  {'id': 1, 'name': 'Bulbasaur', 'type': ['Hierba', 'Veneno'], 'egg': '2 km'},
-  {'id': 2, 'name': 'Ivysaur', 'type': ['Hierba', 'Veneno'], 'egg': 'Not in Eggs'},
-  {'id': 3, 'name': 'Venusaur', 'type': ['Hierba', 'Veneno'], 'egg': 'Not in Eggs'},
-  {'id': 4, 'name': 'Charmander', 'type': ['Fuego'], 'egg': '2 km'}
+  {'id': 1, 'num': '001', 'name': 'Bulbasaur', 'type': ['Hierba', 'Veneno'], 'egg': '2 km', 'weaknesses': ['Fuego', 'Hielo', 'Volador', 'Psiquico']},
+  {'id': 2, 'num': '002', 'name': 'Ivysaur', 'type': ['Hierba', 'Veneno'], 'egg': 'Not in Eggs', 'weaknesses': ['Fuego', 'Hielo', 'Volador', 'Psiquico']},
+  {'id': 3, 'num': '003', 'name': 'Venusaur', 'type': ['Hierba', 'Veneno'], 'egg': 'Not in Eggs', 'weaknesses': ['Fuego', 'Hielo', 'Volador', 'Psiquico']},
+  {'id': 4, 'num': '004', 'name': 'Charmander', 'type': ['Fuego'], 'egg': '2 km', 'weaknesses': ['Agua', 'Tierra', 'Roca']}
 ];
 
 const inputOrderName =
 [
-  {'id': 63, 'name': 'Abra', 'type': ['Psiquico'], 'egg': '5 km'},
-  {'id': 69, 'name': 'Bellsprout', 'type': ['Hierba', 'Veneno'], 'egg': '5 km'},
-  {'id': 10, 'name': 'Caterpie', 'type': ['Bicho'], 'egg': '2 km'},
-  {'id': 87, 'name': 'Dewgong', 'type': ['Agua', 'Hielo'], 'egg': 'Not in Eggs'}
+  {'id': 63, 'num': '063', 'name': 'Abra', 'type': ['Psiquico'], 'egg': '5 km', 'weaknesses': ['Bicho', 'Fantasma', 'Dark']},
+  {'id': 69, 'num': '069', 'name': 'Bellsprout', 'type': ['Hierba', 'Veneno'], 'egg': '5 km', 'weaknesses': ['Fuego', 'Hielo', 'Volador', 'Psiquico']},
+  {'id': 10, 'num': '010', 'name': 'Caterpie', 'type': ['Bicho'], 'egg': '2 km', 'weaknesses': ['Fuego', 'Volador', 'Roca']},
+  {'id': 87, 'num': '087', 'name': 'Dewgong', 'type': ['Agua', 'Hielo'], 'egg': 'Not in Eggs', 'weaknesses': ['Electrico', 'Hierba', 'Lucha', 'Roca']}
 ];
 
 const ouputOrderNameAZ =
 [
-  {'id': 63, 'name': 'Abra', 'type': ['Psiquico'], 'egg': '5 km'},
-  {'id': 69, 'name': 'Bellsprout', 'type': ['Hierba', 'Veneno'], 'egg': '5 km'},
-  {'id': 10, 'name': 'Caterpie', 'type': ['Bicho'], 'egg': '2 km'},
-  {'id': 87, 'name': 'Dewgong', 'type': ['Agua', 'Hielo'], 'egg': 'Not in Eggs'}
+  {'id': 63, 'num': '063', 'name': 'Abra', 'type': ['Psiquico'], 'egg': '5 km', 'weaknesses': ['Bicho', 'Fantasma', 'Dark']},
+  {'id': 69, 'num': '069', 'name': 'Bellsprout', 'type': ['Hierba', 'Veneno'], 'egg': '5 km', 'weaknesses': ['Fuego', 'Hielo', 'Volador', 'Psiquico']},
+  {'id': 10, 'num': '010', 'name': 'Caterpie', 'type': ['Bicho'], 'egg': '2 km', 'weaknesses': ['Fuego', 'Volador', 'Roca']},
+  {'id': 87, 'num': '087', 'name': 'Dewgong', 'type': ['Agua', 'Hielo'], 'egg': 'Not in Eggs', 'weaknesses': ['Electrico', 'Hierba', 'Lucha', 'Roca']}
 ];
 
 const ouputOrderNameZA =
 [
-  {'id': 87, 'name': 'Dewgong', 'type': ['Agua', 'Hielo'], 'egg': 'Not in Eggs'},
-  {'id': 10, 'name': 'Caterpie', 'type': ['Bicho'], 'egg': '2 km'},
-  {'id': 69, 'name': 'Bellsprout', 'type': ['Hierba', 'Veneno'], 'egg': '5 km'},
-  {'id': 63, 'name': 'Abra', 'type': ['Psiquico'], 'egg': '5 km'}
+  {'id': 87, 'num': '087', 'name': 'Dewgong', 'type': ['Agua', 'Hielo'], 'egg': 'Not in Eggs', 'weaknesses': ['Electrico', 'Hierba', 'Lucha', 'Roca']},
+  {'id': 10, 'num': '010', 'name': 'Caterpie', 'type': ['Bicho'], 'egg': '2 km', 'weaknesses': ['Fuego', 'Volador', 'Roca']},
+  {'id': 69, 'num': '069', 'name': 'Bellsprout', 'type': ['Hierba', 'Veneno'], 'egg': '5 km', 'weaknesses': ['Fuego', 'Hielo', 'Volador', 'Psiquico']},
+  {'id': 63, 'num': '063', 'name': 'Abra', 'type': ['Psiquico'], 'egg': '5 km', 'weaknesses': ['Bicho', 'Fantasma', 'Dark']}
 ];
 
 
@@ -57,16 +57,18 @@ const ouputOrderDesc =
   {'id': 1, 'num': '001', 'name': 'Bulbasaur'},
 ];
 
+
 const ouput4 =
 [
-  {'id': 4, 'name': 'Charmander', 'type': ['Fuego'], 'egg': '2 km'},
+  {'id': 4, 'num': '004', 'name': 'Charmander', 'type': ['Fuego'], 'egg': '2 km', 'weaknesses': ['Agua', 'Tierra', 'Roca']},
 ];
 
 const ouput5 =
 [
-  {'id': 1, 'name': 'Bulbasaur', 'type': ['Hierba', 'Veneno'], 'egg': '2 km'},
-  {'id': 4, 'name': 'Charmander', 'type': ['Fuego'], 'egg': '2 km'},
+  {'id': 1, 'num': '001', 'name': 'Bulbasaur', 'type': ['Hierba', 'Veneno'], 'egg': '2 km', 'weaknesses': ['Fuego', 'Hielo', 'Volador', 'Psiquico']},
+  {'id': 4, 'num': '004', 'name': 'Charmander', 'type': ['Fuego'], 'egg': '2 km', 'weaknesses': ['Agua', 'Tierra', 'Roca']},
 ];
+
 
 describe('data', () => {
   it('Debería ser un objeto', () => {
@@ -92,20 +94,34 @@ describe('data.sortData', () => {
   });
 });
 
-describe('data.filterbyType', () => {
-  it('Debería ser una función', () => {
-    expect(typeof window.data.filterbyType).toBe('function');
-  });
-  it('Debería retornar un array de objetos con los pokemones que sean de tipo Fuego', () => {
-    expect(window.data.filterbyType(input, 'Tipo', 'Fuego')).toEqual(ouput4);
-  });
-  it('Debería retornar un array de objetos con los pokemones que se encuentren en Huevos de 2 km', () => {
-    expect(window.data.filterbyType(input, 'Huevo', '2 km')).toEqual(ouput5);
-  });
-});
-
 describe('data.filterData', () => {
   it('Debería ser una función', () => {
     expect(typeof window.data.filterData).toBe('function');
+  });
+  it('Debería retornar un array de objetos con los pokemones que sean de tipo Fuego', () => {
+    expect(window.data.filterData(input, 'Type', 'Fuego')).toEqual(ouput4);
+  });
+  it('Debería retornar un array de objetos con los pokemones que se encuentren en Huevos de 2 km', () => {
+    expect(window.data.filterData(input, 'Egg', '2 km')).toEqual(ouput5);
+  });
+});
+
+describe('data.searchByFilter', () => {
+  it('Debería ser una función', () => {
+    expect(typeof window.data.searchByFilter).toBe('function');
+  });
+
+  it('Debería retornar un array de objetos con los pokemones que sean de tipo Fuego, si elijo opc Tipo y input=Fuego', () => {
+    expect(window.data.searchByFilter(ouput5, 'Fuego', 2)).toEqual(ouput4);
+  });
+
+  it('Debería retornar un array de objetos con el pokemon, si elijo opc ID y input=4', () => {
+    expect(window.data.searchByFilter(ouput5, '004', 0)).toEqual(ouput4);
+  });
+  it('Debería retornar un array de objetos con el pokemon, si elijo opc Nombre y input=Charmander', () => {
+    expect(window.data.searchByFilter(ouput5, 'Charmander', 1)).toEqual(ouput4);
+  });
+  it('Debería retornar un array de objetos con el pokemon, si elijo opc Debilidad y input=Agua Tierra Roca', () => {
+    expect(window.data.searchByFilter(ouput5, 'Agua', 3)).toEqual(ouput4);
   });
 });
