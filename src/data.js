@@ -1,10 +1,11 @@
+
 // en esta variable se almacenan los datos
 let data = null;
 
 
 function initData() {
 
-  data = convertObjectToArray(WORLDBANK);
+data = convertObjectToArray(WORLDBANK);
 
  // console.log(data);
 
@@ -28,23 +29,3 @@ function getNameByCode(code) {
   const countries = getAllCountries();
   return countries.find(c => c.code == code).name;
 }
-
-
-function getAverageByCountry(code) {
-  const country = getCountryByCode(code);
-
-
-  if (country == null) {
-    alert("No se encontró el país");
-    return 0
-  }
-
-  let averages = [];
-
-  //console.log(country);
-
-  country[1].indicators.forEach(ind => {
-
-    // se obtienen el nombre y el codigo del indicador
-    const name = ind.indicatorName;
-    const code = ind.indicatorCode;
