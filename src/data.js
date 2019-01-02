@@ -1,32 +1,40 @@
-
-function filterbyType(data, filterBy, condition) {
-  let listIdPokemonType = [];
+// Filtrar
+function filterData(data, filterBy, condition) {
+  let arrFilter = [];
   switch (filterBy) {
-  case 'Tipo':
+  case 'Type':
     if (condition === 'all') {
-      listIdPokemonType = data;
+      arrFilter = data;
     } else {
-      listIdPokemonType = data.filter(compare => (compare.type[0] === condition || compare.type[1] === condition ||
-          compare.type[2] === condition));
+      arrFilter = data.filter(compare => (compare.type[0] === condition || compare.type[1] === condition));
     }
     break;
-  case 'Huevo':
+  case 'Egg':
     if (condition === 'all') {
-      listIdPokemonType = data;
+      arrFilter = data;
     } else {
-      listIdPokemonType = data.filter(compare => (compare.egg === condition));
+      arrFilter = data.filter(compare => (compare.egg === condition));
     }
     break;
   default:
   }
-  return listIdPokemonType;
+  return arrFilter;
 }
 
-
-const filterDataFunction = (data, dataFilter, condition) => {
+const filterNum = (data, dataFilter) => {
   let dataCopy = [];
-  let arrayFilter = [];
-  let newArrayFilter = [];
+  let arrFilter = [];
+  for (let i = 0; i < data.length; i++) dataCopy.push(Object.assign({}, data[i]));
+  arrFilter = data.filter(
+    element => element.num.indexOf(dataFilter) > -1);
+  return arrFilter;
+}; 
+
+// Buscar
+const searchByFilter = (data, dataFilter, condition) => {
+  let dataCopy = [];
+  let arrFilter = [];
+  let saveObject = [];
 
   for (let i = 0; i < data.length; i++)
     dataCopy.push(Object.assign({}, data[i]));
@@ -36,71 +44,81 @@ const filterDataFunction = (data, dataFilter, condition) => {
 
   switch (condition) {
   case 0:
-    for (let i = 0; i < dataCopy.length; i++) {
-      arrayFilter.push(dataCopy[i].num);
-      if (arrayFilter[i].indexOf(dataFilter) !== -1)
-        newArrayFilter.push(dataCopy[i]);
-    } break;
+    arrFilter = filterNum(data, dataFilter);
+    break;
   case 1:
-    for (let i = 0; i < dataCopy.length; i++) {
-      arrayFilter.push(dataCopy[i].name.toLowerCase());
-      if (arrayFilter[i].indexOf(dataFilter.toLowerCase()) !== -1)
-        newArrayFilter.push(dataCopy[i]);
-    }
+    arrFilter = dataCopy.filter(
+      element => element.name.toUpperCase().indexOf(dataFilter.toUpperCase()) !== -1);
     break;
   case 2:
-    for (let i = 0; i < dataCopy.length; i++) {
-      for (let j = 0; j < dataCopy[i].type.length; j++) {
-        arrayFilter.push(dataCopy[i].type[j].toLowerCase());
-        if (arrayFilter[j].indexOf(dataFilter.toLowerCase()) !== -1)
-          newArrayFilter.push(dataCopy[i]);
-      }
-      arrayFilter = [];
-    }
+    arrFilter = dataCopy.filter(
+      element => element.type.filter(ele => ele.toUpperCase().indexOf(dataFilter.toUpperCase()) !== -1).length);
     break;
   case 3:
-    for (let i = 0; i < dataCopy.length; i++) {
-      for (let j = 0; j < dataCopy[i].weaknesses.length; j++) {
-        arrayFilter.push(dataCopy[i].weaknesses[j].toLowerCase());
-        if (arrayFilter[j].indexOf(dataFilter.toLowerCase()) !== -1)
-          newArrayFilter.push(dataCopy[i]);
-      }
-      arrayFilter = [];
-    }
+    arrFilter = dataCopy.filter(
+      element => element.weaknesses.filter(ele => ele.toUpperCase().indexOf(dataFilter.toUpperCase()) !== -1).length);
     break;
+  case 4:
+    saveObject = filterNum(dataCopy, dataFilter);
+    arrFilter = Object.keys(saveObject[0]).map(element => {
+      if (element === 'prev_evolution') {
+        return (saveObject[0].prev_evolution.map(element => {
+          const newObject = {};
+          newObject.name = filterNum(dataCopy, element.num)[0].name;
+          newObject.img = filterNum(dataCopy, element.num)[0].img;
+          newObject.num = filterNum(dataCopy, element.num)[0].num;
+          return newObject;
+        }));
+      }
+    }).filter(element => element);
+    return arrFilter;
+    
+  case 5:
+    saveObject = filterNum(dataCopy, dataFilter);
+    arrFilter = Object.keys(saveObject[0]).map(element => {
+      if (element === 'next_evolution') {
+        return (saveObject[0].next_evolution.map(element => {
+          const newObject = {};
+          newObject.name = filterNum(dataCopy, element.num)[0].name;
+          newObject.img = filterNum(dataCopy, element.num)[0].img;
+          newObject.num = filterNum(dataCopy, element.num)[0].num;
+          return newObject;
+        }));
+      }
+    }).filter(element => element);
+    return arrFilter;
   default: 
   }
-  return newArrayFilter;
+  return arrFilter;
 };
 
-
-const sortDataFunction = (data, sortBy, sortOrder) => {
-  let newArrayFilter = [];
+// Ordenar
+const sortData = (data, sortBy, sortOrder) => {
+  let arrFilter = [];
 
   for (let i = 0; i < data.length; i++)
-    newArrayFilter.push(Object.assign({}, data[i]));
+    arrFilter.push(Object.assign({}, data[i]));
   if (sortBy === 0) {
-    newArrayFilter.sort((idOne, idTwo) => {
-      if (sortOrder === 0) return idOne.id - idTwo.id;
-      else return idTwo.id - idOne.id;
+    arrFilter.sort((idA, idB) => {
+      if (sortOrder === 0) return idA.id - idB.id;
+      else return idB.id - idA.id;
     });
   } else {
-    newArrayFilter.sort((namea, nameb) => {
+    arrFilter.sort((nameA, nameB) => {
       if (sortOrder === 0) {
-        if (namea.name > nameb.name) return 1 ;
+        if (nameA.name > nameB.name) return 1 ;
         else return -1;
       } else {
-        if (namea.name < nameb.name) return 1 ;
+        if (nameA.name < nameB.name) return 1 ;
         else return -1;
       }
     });
   }
-  return newArrayFilter ;
+  return arrFilter ;
 };
 
 window.data = {
-  filterData: filterDataFunction,
-  sortData: sortDataFunction,
-  filterbyType,
+  searchByFilter,
+  sortData,
+  filterData,
 };
-
