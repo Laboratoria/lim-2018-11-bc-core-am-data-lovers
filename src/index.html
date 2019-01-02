@@ -16,16 +16,14 @@
   <div class="content container-fluid">
     <div class="row">
       <form class="row">
-        <div class="menu-ordenar">
-          <div class="orderby">
-            <label> Ordenar por: </label>
-            <select id="pokemon-order" name="OS" class="type-select">
-              <option value="00">ID ASC</option>
-              <option value="01">ID DESC</option>
-              <option value="10">A-Z</option>
-              <option value="11">Z-A</option>
-            </select>
-          </div>
+        <div class="orderby">
+          <label> Ordenar por: </label>
+          <select id="pokemon-order" name="OS" class="type-select">
+            <option value="00">ID ASC</option>
+            <option value="01">ID DESC</option>
+            <option value="10">A-Z</option>
+            <option value="11">Z-A</option>
+          </select>
         </div>
       </form>
       <div class="col-md-3 col-sm-2 col-xs-12">
@@ -43,16 +41,16 @@
               </select>
             </div>
             <div class="row">
-              <input id="input-search-text" type="text" class="type-input" size="20" name="">
+              <input id="input-search-text" type="text" class="type-input">
             </div>
             <div class="row">
-              <button id="btn-search" type="button" class="type-button" value="">BUSCAR</button>
+              <button id="btn-search" type="button" class="type-button">Buscar</button>
             </div>
             <div class="row">
               <h4>Filtro de Pokemons</h4>
             </div>
             <div class="row">
-              <select class="type-select" id="pokemon-type">
+              <select class="type-select" id="type-filter">
                 <option value="all">Por tipo</option>
                 <option value="Agua">Agua</option>
                 <option value="Hierba">Hierba</option>
@@ -72,7 +70,7 @@
               </select>
             </div>
             <div class="row">
-              <select class="type-select" id="filtrar-huevos">
+              <select class="type-select" id="egg-filter">
                 <option value="all">Por Huevo</option>
                 <option value="Not in Eggs">No en huevo</option>
                 <option value="2 km">Huevo 2 km</option>
@@ -84,7 +82,7 @@
         </nav>
       </div>
       <section class="col-md-9 col-sm-10 col-xs-12">
-        <div id="pokemon-container" class="grid-ListFilter ">
+        <div id="pokemon-container" class="cards-container">
         </div>
       </section>
     </div>
