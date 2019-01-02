@@ -58,9 +58,9 @@ Para complementar más las investigación sobre la necesidades de los usuarios d
 
 [Encuesta](https://docs.google.com/forms/d/e/1FAIpQLSeosWC9LZtFqn39gnxNlxbC6KX5aiEcmkozPMS-CCaWYBS4Dw/viewform)
 
-![Sin titulo](src/img/encuesta.png)
+![Sin titulo](src/img/Captura-encuesta.PNG)
 
-![Sin titulo](src/img/encuesta-2.png)
+![Sin titulo](src/img/Captura-encuesta-2.PNG)
 
 
 **Obtuvimos los siguientes resultados:**
@@ -144,6 +144,10 @@ Al testear nuestro protrotipo lo usarios nos sugirieron las siguientes mejoras:
 Muchos usuarios y compañeras nos recomendaron elegir una paleta de colores para ser más amigable. Utilizamos la herramienta de Adobe Color CC. Se importo la imagen del logo para obtener sus colores, y en base a esos colores obtuvismos las paleta de colores.
 
 ![Sin titulo](src/img/Paleta-logo.png)
+
+
+Y sus códigos Hex son:
+
 
 ![Sin titulo](src/img/Paleta-logo-2.png)
 
