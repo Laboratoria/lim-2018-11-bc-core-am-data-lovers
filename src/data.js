@@ -1,13 +1,13 @@
 const sortData = (data, sortBy, sortOrder) => {
   let newArraySort = [];
   switch (sortOrder) {
-  case 'ASC':
-    if (sortBy === 'NAME') {
+  case 'asc':
+    if (sortBy === 'name') {
       newArraySort = data.sort((elementA, elementB) => (elementA.name > elementB.name ? 1 : -1));
     }
     break;
-  case 'DESC':
-    if (sortBy === 'NAME') {
+  case 'desc':
+    if (sortBy === 'name') {
       newArraySort = data.sort((elementA, elementB) => (elementA.name < elementB.name ? 1 : -1));
     }
     break;
