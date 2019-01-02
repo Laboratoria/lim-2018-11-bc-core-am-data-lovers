@@ -92,4 +92,3 @@ const inscriptionsEducationChl = WORLDBANK.CHL.indicators.filter(pop => {
 const unemploymentChl = WORLDBANK.CHL.indicators.filter(pop => {
  return pop.indicatorCode.slice(0,6) === 'SL.UEM'
 });
-

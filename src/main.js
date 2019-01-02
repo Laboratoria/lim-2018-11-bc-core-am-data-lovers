@@ -49,5 +49,3 @@ brslb.addEventListener('click',() => {
     chl. style.display = 'none';
     brsl.style.display = 'block';
 })
-  
-  
