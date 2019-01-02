@@ -1,10 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Asap');
-.bar {
-    position: absolute;
-    right: 0px;
-    bottom: 805px;
-}
-
 .logo-worldbank{
     position: absolute;
     width: 30%;
@@ -30,7 +24,7 @@
     width: 40%;
     height: 12%;
     left: 0%;
-    bottom: 45%;
+    bottom: 55%;
     background: rgba(0, 0, 0, 0.82);
 }
 
@@ -40,14 +34,14 @@
     width: 55%;
     height: 11%;
     left: 1%;
-    top: 45%;
+    top: 35%;
     font-family: Arial;
     font-size: 25px;
     color: white;
     opacity: 1;
 }
 
-.inicio {
+#inicio {
     position: absolute;
     left: 37.5%;
     right: 57.89%;
@@ -63,7 +57,7 @@
     mix-blend-mode: normal;
 }
 
-.brasil-menu {
+#brasil-menu {
     position: absolute;
     left: 71.09%;
     right: 24.06%;
@@ -77,7 +71,7 @@
     color: #0071BC;
 }
 
-.chile-menu {
+#chile-menu {
     position: absolute;
     left: 62.89%;
     right: 32.89%;
@@ -91,7 +85,7 @@
     color: #0071BC;
 }
 
-.mexico-menu {
+#mexico-menu {
     position: absolute;
     left: 53.12%;
     right: 41.17%;
@@ -105,7 +99,7 @@
     color: #0071BC;
 }
 
-.peru-menu {
+#peru-menu {
     position: absolute;
     left: 45.31%;
     right: 50.86%;
@@ -119,12 +113,22 @@
     color: #0071BC;
 }
 
+#table-container {
+    position: absolute;
+    top: 13%;
+    right: 0%;
+    width: 77%;
+    height: 130%;
+    background: #e4e4e4;
+    font-family: arial;
+}
+
 .search-box {
     position: relative;
     right: 0%;
     top: 3%;
     height: 24%;
-    background: white;
+    background: gray;
 }
 
 .search-icon {
@@ -141,7 +145,7 @@
     z-index: 1;
     position: absolute;
     width: 100%;
-    height: 45%;
+    height: 35%;
     left: 0px;
     top: 13%;
     background: url(https://i.ibb.co/xMM20hy/sentisis-inside-feb17-grano01.png);
@@ -173,11 +177,11 @@
 }
 .mision-container {
     background-color: #009fda;
-    bottom: 20.8%;
+    bottom: 37%;
     left: 0%;
     position: absolute;
     width: 100%;
-    height: 25%;
+    height: 20%;
     font-size: 33px;
     text-align: center;
     font-family: Asap;
@@ -185,18 +189,18 @@
 
 }
 .objetivo {
-    bottom: 12.5%;
+    bottom: 30%;
     left: 0%;
     position: absolute;
     width: 100%;
-    height: 25%;
+    height: 20%;
     font-size: 23px;
     text-align: center;
     font-family: Asap;
     color: white;
 }
 .text-mision {
-    bottom: 24%;
+    bottom: 38%;
     left: 0%;
     position: absolute;
     width: 100%;
@@ -205,11 +209,98 @@
     font-family: Arial;
     color: white;
 }
-#catg {
-    font-family: Asap;
-    text-align: center;
-    color: #0e2f53;
 
+.pagina-peru {
+    display: none;
+}
+
+.collage-image {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 63%;
+    left: 0%;
+}
+
+.lateral-bar {
+    position: absolute;
+    width: 305px;
+    height: 130%;
+    left: 0%;
+    top: 13%;
+    background: #0e2f53;
+    mix-blend-mode: normal;
+
+}
+
+.bandera-peru, .bandera-mexico, 
+.bandera-chile, .bandera-brasil {
+    position: absolute;
+    width: 207px;
+    height: 113px;
+    left: 49px;
+    top: 135px;
+    mix-blend-mode: normal;
+}
+
+.texto-peru, .texto-mexico,
+.texto-chile, .texto-brasil {
+    position: absolute;
+    width: 20%;
+    height: 29px;
+    left: 122px;
+    top: 258px;
+    color: white;
+    font-family: Asap;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+}
+
+.texto-mexico {
+    position: absolute;
+    width: 20%;
+    height: 29px;
+    left: 122px;
+    top: 258px;
+    color: white;
+    font-family: Asap;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+}
+.descripcion-peru, .descripcion-mexico, 
+.descripcion-chile, .descripcion-brasil {
+    position: absolute;
+    width: 278px;
+    height: 94px;
+    left: 13px;
+    top: 297px;
+    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+}
+
+#catg {
+    position: absolute;
+    color: white;
+    top: 60%;
+    left: 4%;
+    font-family: arial;
+}
+
+#order {
+    position: absolute;
+    color: white;
+    top: 120%;
+    left: 4%;
+    font-family: arial;
 }
 
 #pie-de-pagina {
@@ -217,7 +308,8 @@
     width: 100%;
     height: 8%;
     left: 0%;
-    top: 100%;
+    bottom: 0%;
+    top: 140%;
     background: #000000;
 }
 
@@ -227,11 +319,11 @@
 
 .texto-footer {
     z-index: 5;
-    bottom: 100%;
+    bottom: 40%;
+    left: 70%;
     position: absolute;
     color: white;
     font-size: 12px;
     font-family: Arial;
     right: 0%;
-
 }
