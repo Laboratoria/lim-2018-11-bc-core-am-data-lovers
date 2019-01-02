@@ -1,12 +1,14 @@
 require('../src/data.js');
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe('arrayDatos', () => {
+  it('Es un array', () => {
+    expect(typeof arrayDatos).toBe('array');
   });
+});
 
-  it('returns `example`', () => {
+/*  it('returns `example`', () => {
     expect(example()).toBe('example');
   });
 });
+*/

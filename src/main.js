@@ -1,93 +1,51 @@
-console.table(WORLDBANK)
-var slideIndex = 1;
-showSlides(slideIndex);
+const inicial = document.getElementById('pagina-inicio');
+const per = document.getElementById('pagina-peru');
+const mex = document.getElementById('pagina-mexico');
+const chl = document.getElementById('pagina-chile');
+const brsl = document.getElementById('pagina-brasil');
 
-<<<<<<< HEAD
-const botonInicial = document.getElementById('boton-inicio');
-const botonPeru = document.getElementById('btn-peru');
-const botonMexico = document.getElementById('btn-mexico');
-const botonChile = document.getElementById('btn-chile');
-const botonBrasil = document.getElementById('btn-brasil');
+const inicialb = document.getElementById('inicio');
+const perub = document.getElementById('peru-menu');
+const mexb = document.getElementById('mexico-menu');
+const chlb = document.getElementById('chile-menu');
+const brslb = document.getElementById('brasil-menu');
 
-const paginaInicio = document.getElementById('Pagina-Inicio');
-const paginaPeru = document.getElementById('Pagina-Peru');
-const paginaMexico = document.getElementById('Pagina-Mexico');
-const paginaChile = document.getElementById('Pagina-Chile');
-const paginaBrasil = document.getElementById('Pagina-Brasil');
-const dataPeru = document.getElementById("mostrarData");
+inicialb.addEventListener('click',() => {
+    inicial.style.display = 'block';
+    per.style.display = 'none';
+    mex.style.display = 'none';
+    chl. style.display = 'none';
+    brsl.style.display = 'none';
+})
 
-paginaPeru.style.display = 'none';
-paginaMexico.style.display = 'none';
-paginaChile.style.display = 'none';
-paginaBrasil.style.display = 'none';
+perub.addEventListener('click',() => {
+    inicial.style.display = 'none';
+    per.style.display = 'block';
+    mex.style.display = 'none';
+    chl. style.display = 'none';
+    brsl.style.display = 'none';
+})
 
+mexb.addEventListener('click',() => {
+    inicial.style.display = 'none';
+    per.style.display = 'none';
+    mex.style.display = 'block';
+    chl. style.display = 'none';
+    brsl.style.display = 'none';
+})
 
-botonPeru.addEventListener('click', () => {
-  paginaInicio.style.display = 'none';
-  paginaPeru.style.display = 'block';
-  paginaMexico.style.display = 'none';
-  paginaChile.style.display = 'none';
-  paginaBrasil.style.display = 'none';
+chlb.addEventListener('click',() => {
+    inicial.style.display = 'none';
+    per.style.display = 'none';
+    mex.style.display = 'none';
+    chl. style.display = 'block';
+    brsl.style.display = 'none';
+})
 
-  dataPeru.innerHTML = population.join();
-
-
-});
-
-botonMexico.addEventListener('click', () => {
-  paginaInicio.style.display = 'none';
-  paginaPeru.style.display = 'none';
-  paginaMexico.style.display = 'block';
-  paginaPeru.style.display = 'none';
-  paginaChile.style.display = 'none';
-  paginaBrasil.style.display = 'none';
-});
-
-botonChile.addEventListener('click', () => {
-  paginaMexico.style.display = 'none';
-  paginaChile.style.display = 'block';
-  paginaPeru.style.display = 'none';
-  paginaBrasil.style.display = 'none';
-  paginaInicio.style.display = 'none';
-});
-
-botonBrasil.addEventListener('click', () => {
-  paginaBrasil.style.display = 'block';
-  paginaMexico.style.display = 'none';
-  paginaPeru.style.display = 'none';
-  paginaChile.style.display = 'none';
-  paginaInicio.style.display = 'none';
-});
-
-botonInicial.addEventListener('click', () => {
-  paginaInicio.style.display = 'block';
-  paginaMexico.style.display = 'none';
-  paginaPeru.style.display = 'none';
-  paginaChile.style.display = 'none';
-  paginaBrasil.style.display = 'none';
-});
-=======
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
->>>>>>> 2547c29648f7ea92062b2e044291ec22ef7ccd24
+brslb.addEventListener('click',() => {
+    inicial.style.display = 'none';
+    per.style.display = 'none';
+    mex.style.display = 'none';
+    chl. style.display = 'none';
+    brsl.style.display = 'block';
+})
