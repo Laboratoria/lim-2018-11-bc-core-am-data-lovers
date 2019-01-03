@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <div id="chart_div"></div>
 </head>
 
 <body>
@@ -78,11 +80,17 @@
                 <option value="10 km">Huevo 10 km</option>
               </select>
             </div>
+            <div class="row">
+              <h4>Estadísticas</h4>
+            </div>
+            <div class="row">
+              <button class="type-select" type="button" id="button-percentage">% de Pokemones por tipo</button>
+            </div>
           </div>
         </nav>
       </div>
       <section class="col-md-9 col-sm-10 col-xs-12">
-        <div id="pokemon-container" class="cards-container">
+        <div id="pokemon-container" class="cards-container" style=" height: 500px;">
         </div>
       </section>
     </div>

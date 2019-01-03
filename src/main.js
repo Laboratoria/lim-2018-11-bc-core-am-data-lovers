@@ -8,6 +8,7 @@ const typePokemon = document.getElementById('type-filter');
 const typeData = window.POKEMON.pokemon;
 const arrkeys = Object.values(window.POKEMON.pokemon);
 
+
 const filterInArray = (inputArray) => {
   return inputArray.map(element => {
     return `<label class="badge-${element}">${element}</label>`;
@@ -123,6 +124,44 @@ const functionListenFilterOrder = () => {
   functionfilter(window.data.sortData(arrayInputFilter, parseInt(listenSortBy[0]), parseInt(listenSortBy[1])));
   return 1;
 };
+
+document.getElementById('button-percentage').addEventListener('click', () => {
+  const arrTypePokemon = ['Agua', 'Bicho', 'Dragon', 'Electrico', 'Fantasma', 'Fuego', 'Hielo', 'Lucha', 'Normal', 'Hierba', 'Psiquico', 'Roca', 'Tierra', 'Veneno', 'Volador'];
+  const arrPromedio2 = window.data.stats(typeData, arrTypePokemon);
+
+
+  google.charts.load('current', {'packages': ['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+
+    const data = google.visualization.arrayToDataTable([
+      ['Tipo de Pokémon', '% del total', {role: 'style'}],
+      ['Agua', arrPromedio2[0], 'color: #414449'],
+      ['Hierba', arrPromedio2[1], 'color: #558720'],
+      ['Tierra', arrPromedio2[2], 'color: #671502'],
+      ['Hielo', arrPromedio2[3], 'color: #6c72f3'], 
+      ['Bicho', arrPromedio2[4], 'color: #16d45d'],
+      ['Psíquico', arrPromedio2[5], 'color: #af5ed9'],
+      ['Fantasma', arrPromedio2[6], 'color: #612baa'],
+      ['Dragón', arrPromedio2[7], 'color: #612baa'],
+      ['Veneno', arrPromedio2[8], 'color: #4d215e'],
+      ['Lucha', arrPromedio2[9], 'color: #fc1f1f'],
+      ['Fuego', arrPromedio2[10], 'color: #ff8400'],
+      ['Volador', arrPromedio2[11], 'color: #45a4a3'],
+      ['Roca', arrPromedio2[12], 'color: #a2def4'],
+      ['Eléctrico', arrPromedio2[13], 'color: #faf329'],
+      ['Normal', arrPromedio2[14], 'color: #a8aaae']  
+    ]);
+
+    const options = {
+      title: 'Porcentaje de Pokemones por Tipo'
+    };
+
+    const chart = new google.visualization.PieChart(document.getElementById('pokemon-container'));
+    document.getElementById('pokemon-container').classList.add('min-heigth-table');
+    chart.draw(data, options);
+}
+});
 
 typePokemon.addEventListener('change', () => {
   const typeofFilter = 'Type';

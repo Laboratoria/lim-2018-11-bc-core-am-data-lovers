@@ -243,6 +243,10 @@ form {
   font-weight: 700;
   margin: 0 0 0.5rem 0;
 }
+.min-heigth-table {
+	max-height: 65vh;
+	width: 100%;
+}
 
 label {
   font-weight:normal;
