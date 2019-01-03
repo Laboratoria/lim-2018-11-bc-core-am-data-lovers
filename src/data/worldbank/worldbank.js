@@ -593,7 +593,7 @@ var WORLDBANK = {
         "countryName": "Perú",
         "countryCode": "PER",
         "indicatorName": "Tasa de población activa, mujeres (% de la población femenina mayor de 15 años) (estimación modelado OIT)",
-        "indicatorCode": "SL.TLF.CACT.FE.ZS"
+        "indicatorCode": "SL. }TLF.CACT.FE.ZS"
       },
       {
         "data": {

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Asap');
-
 .bar {
     position: absolute;
     right: 0px;
@@ -74,6 +73,29 @@
 
 #inicio {
     position: absolute;
+    z-index: 2;
+    width: 40%;
+    height: 12%;
+    left: 0%;
+    bottom: 55%;
+    background: rgba(0, 0, 0, 0.82);
+}
+
+.text-bar-3 {
+    z-index: 3;
+    position: absolute;
+    width: 55%;
+    height: 11%;
+    left: 1%;
+    top: 35%;
+    font-family: Arial;
+    font-size: 25px;
+    color: white;
+    opacity: 1;
+}
+
+#inicio {
+    position: absolute;
     left: 37.5%;
     right: 57.89%;
     top: 4.5%;
@@ -84,7 +106,6 @@
     line-height: normal;
     font-size: 18px;
     color: #0071BC;
-
     mix-blend-mode: normal;
 }
 
@@ -142,24 +163,6 @@
     line-height: normal;
     font-size: 18px;
     color: #0071BC;
-}
-
-.search-box {
-    position: relative;
-    right: 0%;
-    top: 3%;
-    height: 24%;
-    background: gray;
-}
-
-.search-icon {
-    z-index: 4;
-    position: absolute;
-    width: 2%;
-    height: 3.5%;
-    left: 96%;
-    top: 3.44%;
-    bottom: 92.78%;
 }
 
 .image-banner {
@@ -254,7 +257,7 @@
 
 }
 
-.bandera-peru, .bandera-mexico,
+.bandera-peru, .bandera-mexico, 
 .bandera-chile, .bandera-brasil {
     position: absolute;
     width: 207px;
@@ -279,20 +282,7 @@
     font-size: 24px;
 }
 
-.texto-mexico {
-    position: absolute;
-    width: 20%;
-    height: 29px;
-    left: 122px;
-    top: 258px;
-    color: white;
-    font-family: Asap;
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-    font-size: 24px;
-}
-.descripcion-peru, .descripcion-mexico,
+.descripcion-peru, .descripcion-mexico, 
 .descripcion-chile, .descripcion-brasil {
     position: absolute;
     width: 278px;
@@ -320,6 +310,7 @@
     position: absolute;
     color: white;
     top: 105%;
+    top: 120%;
     left: 4%;
     font-family: arial;
 }
@@ -347,5 +338,4 @@
     font-size: 12px;
     font-family: Arial;
     right: 0%;
-
 }

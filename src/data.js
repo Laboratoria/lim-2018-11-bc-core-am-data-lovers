@@ -7,11 +7,6 @@ const population = WORLDBANK.PER.indicators.filter((pop) => {
 for(indicador of population) {
    document.getElementById("table-container").innerHTML += indicador.indicatorName;
 }
-
-const violence = WORLDBANK.PER.indicators.filter(pop => {
- return pop.indicatorCode.slice(0,6) === 'SG.VAW';
-});
-
 for(indicador of violence) {
    document.getElementById("table-container").innerHTML += indicador.indicatorName;
 }
@@ -173,7 +168,6 @@ for(indicador of unemploymentChl) {
    document.getElementById("table-containerChile").innerHTML += indicador.indicatorName;
 }
 
-
 //FILTRO DE INDICADORES EN BRASIL
 
 const populationBrasil = WORLDBANK.BRA.indicators.filter(pop => {
@@ -237,3 +231,4 @@ window.example = {
 
 
 }
+

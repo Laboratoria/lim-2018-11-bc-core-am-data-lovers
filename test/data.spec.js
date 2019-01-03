@@ -2,13 +2,12 @@ require('../src/data.js');
 
 
 describe('arrayDatos', () => {
-  it('Es un array', () => {
+
+  it('es un array de objetos', () => {
     expect(typeof arrayDatos).toBe('array');
   });
 });
-
-/*  it('returns `example`', () => {
+  /*it('returns `example`', () => {
     expect(example()).toBe('example');
   });
-});
-*/
+});*/
