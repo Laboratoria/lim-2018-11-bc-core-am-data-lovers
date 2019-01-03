@@ -17,17 +17,12 @@ const dataForYear = Object.entries(data[0]);
 const dataxYear = Object.values(data[0]);
 let resultsPERU = dataxYear.filter(number => number > 1);
 
-const indicatorName = WORLDBANK.PER.indicators.map(indicator => indicator.indicatorName);
-indicatorName.forEach((elemento) => {
-    document.getElementById("table-container").innerHTML = elemento;
-return elemento.indicatorCode.slice(0,6) === 'SP.POP';
-});
-
-
-const population = WORLDBANK.PER.indicators.filter(function filter(pop) {
+const population = WORLDBANK.PER.indicators.filter(pop => {
  return pop.indicatorCode.slice(0,6) === 'SP.POP';
 });
-const arrPopulation = Object.values(population);
+for(indicador of population) {
+    document.getElementById("cell").innerHTML += indicador.indicatorName;
+}
 
 const violence = WORLDBANK.PER.indicators.filter(pop => {
  return pop.indicatorCode.slice(0,6) === 'SG.VAW';
