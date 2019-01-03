@@ -133,7 +133,6 @@ document.getElementById('button-percentage').addEventListener('click', () => {
   google.charts.load('current', {'packages': ['corechart']});
   google.charts.setOnLoadCallback(drawChart);
   function drawChart() {
-
     const data = google.visualization.arrayToDataTable([
       ['Tipo de Pokémon', '% del total', {role: 'style'}],
       ['Agua', arrPromedio2[0], 'color: #414449'],
@@ -160,7 +159,7 @@ document.getElementById('button-percentage').addEventListener('click', () => {
     const chart = new google.visualization.PieChart(document.getElementById('pokemon-container'));
     document.getElementById('pokemon-container').classList.add('min-heigth-table');
     chart.draw(data, options);
-}
+  }
 });
 
 typePokemon.addEventListener('change', () => {

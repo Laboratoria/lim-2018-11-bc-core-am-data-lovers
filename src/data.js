@@ -123,15 +123,16 @@ const sortData = (data, sortBy, sortOrder) => {
    const porcentaje = ((cantXType / 151) * 100);
    arrPorcentaje.push(porcentaje); 
 */
-function stats(data, condition) {
+
+const stats = (data, condition) => {
   let arrPorcentaje = [];
   for (let i = 0; i < condition.length; i++) { 
     const arrFilterPokemonType = data.filter(compare => (compare.type[0] === condition[i] || compare.type[1] === condition[i]));    
-    const cantXType = arrFilterPokemonType.length;
-    arrPorcentaje.push(cantXType);   
+    const cantXType = arrFilterPokemonType.length; 
+    arrPorcentaje.push(cantXType);  
   }
   return arrPorcentaje; 
-}
+};
 
 window.data = {
   searchByFilter,

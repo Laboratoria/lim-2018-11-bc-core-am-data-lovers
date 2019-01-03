@@ -69,6 +69,15 @@ const ouput5 =
   {'id': 4, 'num': '004', 'name': 'Charmander', 'type': ['Fuego'], 'egg': '2 km', 'weaknesses': ['Agua', 'Tierra', 'Roca']},
 ];
 
+const inputStats =
+[
+  {'id': 147, 'num': '147', 'name': 'Dratini', 'type': ['Dragon']},
+  {'id': 148, 'num': '148', 'name': 'Dragonair', 'type': ['Dragon']},
+  {'id': 149, 'num': '149', 'name': 'Dragonite', 'type': ['Dragon', 'Volador']},
+];
+
+const inputStats2 = ['Dragon'];
+
 
 describe('data', () => {
   it('Debería ser un objeto', () => {
@@ -111,17 +120,26 @@ describe('data.searchByFilter', () => {
     expect(typeof window.data.searchByFilter).toBe('function');
   });
 
-  it('Debería retornar un array de objetos con los pokemones que sean de tipo Fuego, si elijo opc Tipo y input=Fuego', () => {
+  it('Debería retornar un array de objetos con los pokemones que sean de tipo Fuego, si elijo opc Tipo e inputText = Fuego', () => {
     expect(window.data.searchByFilter(ouput5, 'Fuego', 2)).toEqual(ouput4);
   });
 
   it('Debería retornar un array de objetos con el pokemon, si elijo opc ID y input=4', () => {
     expect(window.data.searchByFilter(ouput5, '004', 0)).toEqual(ouput4);
   });
-  it('Debería retornar un array de objetos con el pokemon, si elijo opc Nombre y input=Charmander', () => {
+  it('Debería retornar un array de objetos con el pokemon, si elijo opc Nombre e inputText = Charmander', () => {
     expect(window.data.searchByFilter(ouput5, 'Charmander', 1)).toEqual(ouput4);
   });
-  it('Debería retornar un array de objetos con el pokemon, si elijo opc Debilidad y input=Agua Tierra Roca', () => {
+  it('Debería retornar un array de objetos con el pokemon, si elijo opc Debilidad e inputText = Agua', () => {
     expect(window.data.searchByFilter(ouput5, 'Agua', 3)).toEqual(ouput4);
+  });
+});
+
+describe('data.stats', () => {
+  it('Debería ser una función', () => {
+    expect(typeof window.data.stats).toBe('function');
+  });
+  it('Debería retornar la cantidad de pokemones de tipo Dragon', () => {
+    expect(window.data.stats(inputStats, inputStats2)).toEqual([3]);
   });
 });
