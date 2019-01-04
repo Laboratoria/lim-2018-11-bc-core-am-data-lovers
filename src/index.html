@@ -7,34 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <div id="chart_div"></div>
 </head>
 
 <body>
   <header class="container-fluid">
     <a href="index.html"><img src="img/pokemon_logo.png" alt="logo_pokemon_go"></a>
   </header>
-
   <div class="content container-fluid">
     <div class="row">
-      <form>
-        <div>
-          <h4>Filtro de Pokemons</h4>
-        </div>
-        <div class="row">
-          <select id="pokemon-filters" class="filters">
-            <option value="0">ID</option>
-            <option value="1">NOMBRE</option>
-            <option value="2">TIPO</option>
-            <option value="3">DEBILIDAD</option>
-          </select>
-          <input id="input-search-text" type="text" class="input-search-text" size="20" name="">
-          <button id="btn-search" type="button" class="btn-search" value="">BUSCAR</button>
-        </div>
-        <div>
-          <h4>Ordenar por:</h4>
-        </div>
-        <div class="row">
-          <select id="pokemon-order" name="OS" class="options-of-filters">
+      <form class="row">
+        <div class="orderby">
+          <label> Ordenar por: </label>
+          <select id="pokemon-order" name="OS" class="type-select">
             <option value="00">ID ASC</option>
             <option value="01">ID DESC</option>
             <option value="10">A-Z</option>
@@ -42,9 +28,69 @@
           </select>
         </div>
       </form>
-      <section>
-        <div id="pokemon-container" class="grid-ListFilter">
-          <!--Aquí se va mostrar imagen, nombre y numero que se esta llamando a partir de main.js -->
+      <div class="col-md-3 col-sm-2 col-xs-12">
+        <nav class="col-md-12">
+          <div class="navegador">
+            <div class="row">
+              <h4> Buscar por: </h4>
+            </div>
+            <div class="row">
+              <select id="pokemon-filters" class="type-select">
+                <option value="0">ID</option>
+                <option value="1">NOMBRE</option>
+                <option value="2">TIPO</option>
+                <option value="3">DEBILIDAD</option>
+              </select>
+            </div>
+            <div class="row">
+              <input id="input-search-text" type="text" class="type-input">
+            </div>
+            <div class="row">
+              <button id="btn-search" type="button" class="type-button">Buscar</button>
+            </div>
+            <div class="row">
+              <h4>Filtro de Pokemons</h4>
+            </div>
+            <div class="row">
+              <select class="type-select" id="type-filter">
+                <option value="all">Por tipo</option>
+                <option value="Agua">Agua</option>
+                <option value="Hierba">Hierba</option>
+                <option value="Veneno">Veneno</option>
+                <option value="Fuego">Fuego</option>
+                <option value="Volador">Volador</option>
+                <option value="Bicho">Bicho</option>
+                <option value="Normal">Normal</option>
+                <option value="Electrico">Eléctrico</option>
+                <option value="Tierra">Tierra</option>
+                <option value="Lucha">Lucha</option>
+                <option value="Psiquico">Psíquico</option>
+                <option value="Roca">Roca</option>
+                <option value="Hielo">Hielo</option>
+                <option value="Fantasma">Fantasma</option>
+                <option value="Dragon">Dragón</option>
+              </select>
+            </div>
+            <div class="row">
+              <select class="type-select" id="egg-filter">
+                <option value="all">Por Huevo</option>
+                <option value="Not in Eggs">No en huevo</option>
+                <option value="2 km">Huevo 2 km</option>
+                <option value="5 km">Huevo 5 km</option>
+                <option value="10 km">Huevo 10 km</option>
+              </select>
+            </div>
+            <div class="row">
+              <h4>Estadísticas</h4>
+            </div>
+            <div class="row">
+              <button class="type-select" type="button" id="button-percentage">% de Pokemones por tipo</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <section class="col-md-9 col-sm-10 col-xs-12">
+        <div id="pokemon-container" class="cards-container" style=" height: 500px;">
         </div>
       </section>
     </div>

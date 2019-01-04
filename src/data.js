@@ -1,7 +1,40 @@
-const filterDataFunction = (data, dataFilter, condition) => {
+// Filtrar
+function filterData(data, filterBy, condition) {
+  let arrFilter = [];
+  switch (filterBy) {
+  case 'Type':
+    if (condition === 'all') {
+      arrFilter = data;
+    } else {
+      arrFilter = data.filter(compare => (compare.type[0] === condition || compare.type[1] === condition));
+    }
+    break;
+  case 'Egg':
+    if (condition === 'all') {
+      arrFilter = data;
+    } else {
+      arrFilter = data.filter(compare => (compare.egg === condition));
+    }
+    break;
+  default:
+  }
+  return arrFilter;
+}
+
+const filterNum = (data, dataFilter) => {
   let dataCopy = [];
-  let arrayFilter = [];
-  let newArrayFilter = [];
+  let arrFilter = [];
+  for (let i = 0; i < data.length; i++) dataCopy.push(Object.assign({}, data[i]));
+  arrFilter = data.filter(
+    element => element.num.indexOf(dataFilter) > -1);
+  return arrFilter;
+}; 
+
+// Buscar
+const searchByFilter = (data, dataFilter, condition) => {
+  let dataCopy = [];
+  let arrFilter = [];
+  let saveObject = [];
 
   for (let i = 0; i < data.length; i++)
     dataCopy.push(Object.assign({}, data[i]));
@@ -10,82 +43,100 @@ const filterDataFunction = (data, dataFilter, condition) => {
     return dataCopy;
 
   switch (condition) {
-    case 0:
-      for (let i = 0; i < dataCopy.length; i++) {
-        arrayFilter.push(dataCopy[i].num);
-        if (arrayFilter[i].indexOf(dataFilter) !== -1)
-          newArrayFilter.push(dataCopy[i]);
+  case 0:
+    arrFilter = data.filter(
+      element => element.num.indexOf(dataFilter) > -1);
+    break;
+  case 1:
+    arrFilter = dataCopy.filter(
+      element => element.name.toUpperCase().indexOf(dataFilter.toUpperCase()) !== -1);
+    break;
+  case 2:
+    arrFilter = dataCopy.filter(
+      element => element.type.filter(ele => ele.toUpperCase().indexOf(dataFilter.toUpperCase()) !== -1).length);
+    break;
+  case 3:
+    arrFilter = dataCopy.filter(
+      element => element.weaknesses.filter(ele => ele.toUpperCase().indexOf(dataFilter.toUpperCase()) !== -1).length);
+    break; 
+  case 4:
+    saveObject = filterNum(dataCopy, dataFilter);
+    arrFilter = Object.keys(saveObject[0]).map(element => { 
+      if (element === 'prev_evolution') {
+        return (saveObject[0].prev_evolution.map(element => {
+          const newObject = {};
+          newObject.name = filterNum(dataCopy, element.num)[0].name;
+          newObject.img = filterNum(dataCopy, element.num)[0].img;
+          newObject.num = filterNum(dataCopy, element.num)[0].num;
+          return newObject;
+        }));
       }
-      break;
-    case 1:
-      for (let i = 0; i < dataCopy.length; i++) {
-        arrayFilter.push(dataCopy[i].name.toLowerCase());
-        if (arrayFilter[i].indexOf(dataFilter.toLowerCase()) !== -1)
-          newArrayFilter.push(dataCopy[i]);
+    }).filter(element => element);
+    return arrFilter;
+    
+  case 5:
+    saveObject = filterNum(dataCopy, dataFilter);
+    arrFilter = Object.keys(saveObject[0]).map(element => {
+      if (element === 'next_evolution') {
+        return (saveObject[0].next_evolution.map(element => {
+          const newObject = {};
+          newObject.name = filterNum(dataCopy, element.num)[0].name;
+          newObject.img = filterNum(dataCopy, element.num)[0].img;
+          newObject.num = filterNum(dataCopy, element.num)[0].num;
+          return newObject;
+        }));
       }
-      break;
-    case 2:
-      for (let i = 0; i < dataCopy.length; i++) {
-        for (let j = 0; j < dataCopy[i].type.length; j++) {
-          arrayFilter.push(dataCopy[i].type[j].toLowerCase());
-          if (arrayFilter[j].indexOf(dataFilter.toLowerCase()) !== -1)
-            newArrayFilter.push(dataCopy[i]);
-        }
-        arrayFilter = [];
-      }
-      break;
-    case 3:
-      for (let i = 0; i < dataCopy.length; i++) {
-        for (let j = 0; j < dataCopy[i].weaknesses.length; j++) {
-          arrayFilter.push(dataCopy[i].weaknesses[j].toLowerCase());
-          if (arrayFilter[j].indexOf(dataFilter.toLowerCase()) !== -1)
-            newArrayFilter.push(dataCopy[i]);
-        }
-        arrayFilter = [];
-      }
-      break;
-    default: alert('No existe opcion');
+    }).filter(element => element);
+    return arrFilter;
+  default: 
   }
-  return newArrayFilter;
+  return arrFilter;
 };
 
-const sortDataFunction = (data, sortBy, sortOrder) => {
-
-  let newArrayFilter = [];
+// Ordenar
+const sortData = (data, sortBy, sortOrder) => {
+  let arrFilter = [];
 
   for (let i = 0; i < data.length; i++)
-    newArrayFilter.push(Object.assign({}, data[i]));
-
+    arrFilter.push(Object.assign({}, data[i]));
   if (sortBy === 0) {
-    //Ordenas por ID
-    newArrayFilter.sort(
-      function (a, b) {
-        if (sortOrder === 0) return a.id - b.id;
-        else return b.id - a.id;
+    arrFilter.sort((idA, idB) => {
+      if (sortOrder === 0) return idA.id - idB.id;
+      else return idB.id - idA.id;
+    });
+  } else {
+    arrFilter.sort((nameA, nameB) => {
+      if (sortOrder === 0) {
+        if (nameA.name > nameB.name) return 1 ;
+        else return -1;
+      } else {
+        if (nameA.name < nameB.name) return 1 ;
+        else return -1;
       }
-    );
+    });
   }
-  else {
-    //Ordenar por A-Z
-    newArrayFilter.sort(
-      function (a, b) {
-        if (sortOrder === 0) {
-          if (a.name > b.name) return 1;
-          else return -1;
-        }
-        else {
-          if (a.name < b.name) return 1;
-          else return -1;
-        }
-      }
-    );
+  return arrFilter ;
+};
+
+// % de Pokemon x tipo
+/* const cantXType = arrFilterPokemonType.length;
+   const porcentaje = ((cantXType / 151) * 100);
+   arrPorcentaje.push(porcentaje); 
+*/
+
+const stats = (data, condition) => {
+  let arrPorcentaje = [];
+  for (let i = 0; i < condition.length; i++) { 
+    const arrFilterPokemonType = data.filter(compare => (compare.type[0] === condition[i] || compare.type[1] === condition[i]));    
+    const cantXType = arrFilterPokemonType.length; 
+    arrPorcentaje.push(cantXType);  
   }
-  return newArrayFilter;
-}
+  return arrPorcentaje; 
+};
 
 window.data = {
-  filterData: filterDataFunction,
-  sortData: sortDataFunction,
-  //computeStats: computeStatsFunction,
-}
-
+  searchByFilter,
+  sortData,
+  filterData,
+  stats,
+};
