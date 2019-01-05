@@ -9,6 +9,24 @@ const population = WORLDBANK.PER.indicators.filter((pop) => {
 for (indicador of population) {
   document.getElementById('table-container').innerHTML += indicador.indicatorName;
 }
+
+const sortData = population.sort(function (prev, next) {
+  if (prev.indicatorName > next.indicatorName) {
+    return 1;
+  }
+  if (prev.indicatorName < next.indicatorName) {
+    return -1;
+  }
+  return 0;
+})
+
+console.log(population)
+console.log(ordenar)
+
+const violence = WORLDBANK.PER.indicators.filter(pop => {
+  return pop.indicatorCode.slice(0, 6) === 'SG.VAW';
+});
+
 for (indicador of violence) {
   document.getElementById('table-container').innerHTML += indicador.indicatorName;
 }
@@ -231,4 +249,3 @@ window.example = {
 
 
 };
-
