@@ -1,14 +1,18 @@
 /* eslint-disable no-undef */
-
+/* global WORLDBANK*/
 // FILTRO DE INDICADORES EN PERÚ POR CATEGORIA: POBLACIÓN, VIOLENCIA, EDUCACIÓN Y EMPLEO.
-
-const population = WORLDBANK.PER.indicators.filter((pop) => {
-  return pop.indicatorCode.slice(0, 6) === 'SP.POP';
+const population = WORLDBANK.PER.indicators.filter(pop => {
+  return pop.indicatorCode.slice(0, 6) === 'SE.POP';
 });
 
 for (indicador of population) {
   document.getElementById('table-container').innerHTML += indicador.indicatorName;
 }
+
+const violence = WORLDBANK.PER.indicators.filter(pop => {
+  return pop.indicatorCode.slice(0, 6) === 'SG.VAW';
+});
+
 for (indicador of violence) {
   document.getElementById('table-container').innerHTML += indicador.indicatorName;
 }
@@ -50,6 +54,14 @@ const unemployment = WORLDBANK.PER.indicators.filter(pop => {
 });
 
 for (indicador of unemployment) {
+  document.getElementById('table-container').innerHTML += indicador.indicatorName;
+}
+
+const literacy = WORLDBANK.PER.indicators.filter(pop => {
+  return pop.indicatorCode.slice(0, 6) === 'SE.ADT';
+});
+
+for (indicador of literacy) {
   document.getElementById('table-container').innerHTML += indicador.indicatorName;
 }
 
@@ -111,6 +123,13 @@ for (indicador of unemploymentMex) {
   document.getElementById('table-containerMex').innerHTML += indicador.indicatorName;
 }
 
+const literacyMex = WORLDBANK.PER.indicators.filter(pop => {
+  return pop.indicatorCode.slice(0, 6) === 'SE.ADT';
+});
+
+for (indicador of literacyMex) {
+  document.getElementById('table-containerMex').innerHTML += indicador.indicatorName;
+}
 // FILTRO DE INDICADORES EN CHILE
 
 
@@ -170,6 +189,13 @@ for (indicador of unemploymentChl) {
   document.getElementById('table-containerChile').innerHTML += indicador.indicatorName;
 }
 
+const literacyChl = WORLDBANK.PER.indicators.filter(pop => {
+  return pop.indicatorCode.slice(0, 6) === 'SE.ADT';
+});
+
+for (indicador of literacyChl) {
+  document.getElementById('table-containerChile').innerHTML += indicador.indicatorName;
+}
 // FILTRO DE INDICADORES EN BRASIL
 
 const populationBrasil = WORLDBANK.BRA.indicators.filter(pop => {
@@ -227,8 +253,15 @@ const unemploymentBrasil = WORLDBANK.BRA.indicators.filter(pop => {
 for (indicador of unemploymentBrasil) {
   document.getElementById('table-containerBra').innerHTML += indicador.indicatorName;
 }
-window.example = {
 
+const literacyBrasil = WORLDBANK.PER.indicators.filter(pop => {
+  return pop.indicatorCode.slice(0, 6) === 'SE.ADT';
+});
 
+for (indicador of literacyBrasil) {
+  document.getElementById('table-containerBra').innerHTML += indicador.indicatorName;
+}
+
+window.Worldbank = {
+  population,
 };
-

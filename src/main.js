@@ -1,3 +1,6 @@
+/* global WORLDBANK*/
+
+// MENÚ DE NAVEGACIÓN
 const inicial = document.getElementById('pagina-inicio');
 const per = document.getElementById('pagina-peru');
 const mex = document.getElementById('pagina-mexico');
@@ -49,3 +52,5 @@ brslb.addEventListener('click', () => {
   chl. style.display = 'none';
   brsl.style.display = 'block';
 });
+
+// MENÚ DE CATEGORÍAS
