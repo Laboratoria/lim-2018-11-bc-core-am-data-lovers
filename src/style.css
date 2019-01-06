@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Asap');
+
 .logo-worldbank{
     position: absolute;
     width: 30%;
@@ -95,9 +96,9 @@
     color: #0071BC;
 }
 
-#inicio:hover, #peru-menu:hover, #mexico-menu:hover, 
+#inicio:hover, #peru-menu:hover, #mexico-menu:hover,
 #chile-menu:hover, #brasil-menu:hover {
-   color: #0e2f53; 
+   color: #0e2f53;
 }
 
 #table-container, #table-containerMex, #table-containerBra, #table-containerChile {
@@ -110,10 +111,10 @@
   padding-top: 2%;
 }
 
-.boton-population, .boton-violence, .boton-unemployment, .boton-alfabetizacion, .boton-job, .boton-education,
-.boton-populationMex, .boton-violenceMex, .boton-unemploymentMex, .boton-alfabetizacionMex, .boton-jobMex, .boton-educationMex,
-.boton-populationChil, .boton-violenceChil, .boton-unemploymentChil, .boton-alfabetizacionChil, .boton-jobChil, .boton-educationChil,
-.boton-populationBra, .boton-violenceBra, .boton-unemploymentBra, .boton-alfabetizacionBra, .boton-jobBra, .boton-educationBra {
+#boton-population, #boton-violence, #boton-unemployment, #boton-alfabetizacion, #boton-education,
+#boton-populationMex, #boton-violenceMex, #boton-unemploymentMex, #boton-alfabetizacionMex, #boton-educationMex,
+#boton-populationChil, #boton-violenceChil, #boton-unemploymentChil, #boton-alfabetizacionChil, #boton-educationChil,
+#boton-populationBra, #boton-violenceBra, #boton-unemploymentBra, #boton-alfabetizacionBra, #boton-educationBra {
   margin: 30px 1px 6px;
   text-decoration: none;
   padding: 15px;
@@ -216,7 +217,7 @@
 
 }
 
-.bandera-peru, .bandera-mexico, 
+.bandera-peru, .bandera-mexico,
 .bandera-chile, .bandera-brasil {
     position: absolute;
     width: 207px;
@@ -241,7 +242,7 @@
     font-size: 24px;
 }
 
-.descripcion-peru, .descripcion-mexico, 
+.descripcion-peru, .descripcion-mexico,
 .descripcion-chile, .descripcion-brasil {
     position: absolute;
     width: 278px;
@@ -265,7 +266,7 @@
     font-family: arial;
 }
 
-#order {
+#order, #order-2, #order-3, #order-4 {
     position: absolute;
     color: white;
     top: 105%;
