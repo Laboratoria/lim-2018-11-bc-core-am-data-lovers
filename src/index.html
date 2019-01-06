@@ -1,54 +1,62 @@
+
 <!DOCTYPE html>
 <html lang= "es">
-  <!-- TITULO -->
+
+<!-- TITULO -->
    <head>
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
       <title>FIDL - Fuente Informativa de Desarrollo Latinoamericano</title>
       <link rel="stylesheet" href="style.css" />
    </head>
-   <!-- CUERPO -->
+
+<!-- CUERPO -->
    <body>
-     <!-- encabezado -->
-     <section>
+
+<!-- ENCABEZADO -->
+    <section>
         <div class = "bar"></div>
-        <div class = 'bar-2'></div>
-        <img src ="https://i.ibb.co/KWCqSQK/logo-wordbank.png" class = 'logo-worldbank'alt ='logo'>
+        <div class = "bar-2"></div>
+        <img src ="https://i.ibb.co/KWCqSQK/logo-wordbank.png" class = "logo-worldbank" alt ="logo">
         <nav>
             <ul>
-               <li><a href= '#' id = 'inicio'>INICIO</a></li>
-               <li><a href= '#' id ='peru-menu'>PERÚ</a></li>
-               <li><a href= '#' id = 'mexico-menu'>MÉXICO</a></li>
-               <li><a href= '#' id = 'chile-menu'>CHILE</a></li>
-               <li><a href= '#' id = 'brasil-menu'>BRASIL</a></li>
+               <li><a href= "#" id = "inicio">INICIO</a></li>
+               <li><a href= "#" id ="peru-menu">PERÚ</a></li>
+               <li><a href= "#" id = "mexico-menu">MÉXICO</a></li>
+               <li><a href= "#" id = "chile-menu">CHILE</a></li>
+               <li><a href= "#" id = "brasil-menu">BRASIL</a></li>
             </ul>
          </nav>
-      </section>
-      <!-- PAGINA DE INICIO O ENTRADA-->
+    </section>
+
+<!-- PAGINA DE INICIO O ENTRADA-->
       <section id = "pagina-inicio">
          <div class = "bar-3"></div>
          <div class = "text-bar-3">INDICADORES DE DESARROLLO <br> HUMANO</div>
          <div class = "image-banner"></div>
-         <div class = "mision-container"><br><strong>Nuestra Misión </div>
+         <div class = "mision-container"><strong><br>Nuestra Misión</strong></div>
          <div class = "objetivo"><strong><br>Tenemos como objetivo:</strong></div>
          <div class = "text-mision">Brindar datos actualizados sobre los indicadores de Desarrollo Humano.</div>
-         <img class = "collage-image" src= "https://i.ibb.co/GpDkvL9/collage-new.jpg" alt = 'collage'>
+         <img class = "collage-image" src= "https://i.ibb.co/GpDkvL9/collage-new.jpg" alt = "collage">
       </section>
-      <!-- PAGINA DE LA BASE DE DATOS DE PERÚ-->
-      <section id = 'pagina-peru' >
+
+<!-- PAGINA DE LA BASE DE DATOS DE PERÚ-->
+      <section id = "pagina-peru" >
+
          <div class = "lateral-bar"></div>
          <img class = "bandera-peru" src="https://i.ibb.co/6gsDZWF/peru.jpg" alt="peru" >
          <div class = "texto-peru">PERÚ</div>
-         <div class = "descripcion-peru">Es una Nación situada en el lado correspondiente al occidente del continente americano,
-           más precisamente en América del Sur. Más información: <a href = "http://bit.ly/2AhZ5E2" target="_blank">aquí</a>
+
+         <div class = "descripcion-peru">Es una Nación situada en el lado correspondiente al occidente del
+			        continente americano, más precisamente en América del Sur. Más información: <a href = "http://bit.ly/2AhZ5E2" target="_blank">aquí</a>
             <h4>FILTRAR POR:</h4>
-            <button class="boton-population" type="button">POBLACIÓN</button>
-            <button class="boton-violence" type="button">VIOLENCIA</button>
-            <button class="boton-education" type="button">EDUCACIÓN</button>
-            <button class="boton-job" type="button">TRABAJO</button>
-            <button class="boton-unemployment" type="button">DESEMPLEO</button>
-            <button class="boton-alfabetizacion" type="button">ALFABETIZACIÓN</button>
+            <button id = "boton-population" type="button">POBLACIÓN</button>
+            <button id = "boton-violence" type="button">VIOLENCIA</button>
+            <button id = "boton-education" type="button">EDUCACIÓN</button>
+            <button id = "boton-unemployment" type="button">DESEMPLEO</button>
+            <button id = "boton-alfabetizacion" type="button">ALFABETIZACIÓN</button>
          </div>
+
          <form id = "order" name="formulario" method="post">
             Ordenar por:
             <select name="ordenar">
@@ -56,213 +64,125 @@
                <option value="2">Descendente</option>
             </select>
          </form>
-         <div id="table-container"></div>
-      </section>
-      <!-- PAGINA DE LA BASE DE DATOS DE MÉXICO-->
-         </form>
-         <div id = "table-container">
 
-	<div class="limiter">
-		<div class="container-table100">
-			<div class="wrap-table100">
-					<div class="table">
+            <div id="table-peruPop"></div>
+            <div id="table-peruVio"></div>
+            <div id="table-peruEdu"></div>
+            <div id="table-peruUnem"></div>
+            <div id="table-peruAlf"></div>
 
-						<div class="row header">
-							<div class="cell">
-								Indicador
-							</div>
-							<div class="cell">
-								Data por año
-							</div>
-							<div class="cell">
-								Promedio
-							</div>
-						</div>
 
-						<div class="row">
-							<div id="cell" data-title="Indicador">
+       </section>
+<!-- PAGINA DE LA BASE DE DATOS DE MÉXICO-->
 
-							</div>
-							<div id="cell" data-title="Data-por-año">
-
-							</div>
-							<div id="cell" data-title="Promedio">
-
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Indicador">
-
-							</div>
-							<div class="cell" data-title="Data-por-año">
-
-							</div>
-							<div class="cell" data-title="Promedio">
-
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Indicador">
-
-							</div>
-							<div class="cell" data-title="Data-por-año">
-
-							</div>
-							<div class="cell" data-title="Promedio">
-
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Indicador">
-
-							</div>
-							<div class="cell" data-title="Data-por-año">
-
-							</div>
-							<div class="cell" data-title="Promedio">
-
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Indicador">
-
-							</div>
-							<div class="cell" data-title="Data-por-año">
-
-							</div>
-							<div class="cell" data-title="Promedio">
-
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Indicador">
-
-							</div>
-							<div class="cell" data-title="Data-por-año">
-
-							</div>
-							<div class="cell" data-title="Promedio">
-
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Indicador">
-
-							</div>
-							<div class="cell" data-title="Data-por-año">
-
-							</div>
-							<div class="cell" data-title="Promedio">
-
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Indicador">
-
-							</div>
-							<div class="cell" data-title="Data-por-año">
-
-							</div>
-							<div class="cell" data-title="Promedio">
-
-							</div>
-						</div>
-
-					</div>
-			</div>
-		</div>
-	</div>
-
-         </div>
-
-         <div id = "table-container"></div>
-      </section>
       <section id = "pagina-mexico" >
         <div class = "lateral-bar"></div>
         <div class = "texto-mexico">MÉXICO</div>
         <img class = "bandera-mexico" src="https://i.ibb.co/8mtJNQR/mexico.png" alt="mexico">
-        <div class = "descripcion-mexico">México es un país que se encuentra en la parte meridional de América del
-            Norte. Su nombre completo es Estados Unidos Mexicanos. Más información:<a href = "https://bit.ly/2glWxZF" target="_blank">aquí</a>
+        <div class = "descripcion-mexico">México es un país que se encuentra en la parte
+			meridional de América del Norte. Su nombre completo es Estados Unidos Mexicanos. Más información:<a href = "https://bit.ly/2glWxZF" target="_blank">aquí</a>
+
             <h4>FILTRAR POR:</h4>
-            <button class="boton-populationMex" type="button">POBLACIÓN</button>
-            <button class="boton-violenceMex" type="button">VIOLENCIA</button>
-            <button class="boton-educationMex" type="button">EDUCACIÓN</button>
-            <button class="boton-jobMex" type="button">TRABAJO</button>
-            <button class="boton-unemploymentMex" type="button">DESEMPLEO</button>
-            <button class="boton-alfabetizacionMex" type="button">ALFABETIZACIÓN</button>
+            <button id = "boton-populationMex" type="button">POBLACIÓN</button>
+            <button id = "boton-violenceMex" type="button">VIOLENCIA</button>
+            <button id = "boton-educationMex" type="button">EDUCACIÓN</button>
+            <button id = "boton-unemploymentMex" type="button">DESEMPLEO</button>
+            <button id = "boton-alfabetizacionMex" type="button">ALFABETIZACIÓN</button>
         </div>
-         <form id = "order" name="formulario" method="post">
+
+         <form id = "order-2" name="formulario" method="post">
+            Ordenar por:
+            <select name="ordenar">
+               <option value="1" selected>Ascendente</option>
+               <option value="2">Descendente</option>
+            </select>
+               </form>
+
+               <div id="table-mexPop"></div>
+               <div id="table-mexVio"></div>
+               <div id="table-mexEdu"></div>
+               <div id="table-mexUnem"></div>
+               <div id="table-mexAlf"></div>
+
+      </section>
+
+
+<!-- PAGINA DE LA BASE DE DATOS DE CHILE-->
+      <section id = "pagina-chile">
+          <div class = "lateral-bar"></div>
+          <div class = "texto-chile">CHILE</div>
+          <img class = "bandera-chile" src="https://i.ibb.co/92p83qY/chile.jpg" alt="chile">
+          <div class = "descripcion-chile">Chile es un país ubicado en el extremo sudoeste
+			  América del Sur. Su nombre oficial es República de Chile y su capital es la
+			  ciudad de Santiago.
+			  Más información: <a href = "http://bit.ly/2QQKlpY" target="_blank">aquí</a>
+              <h4>FILTRAR POR:</h4>
+              <button id = "boton-populationChil" type="button">POBLACIÓN</button>
+              <button id = "boton-violenceChil" type="button">VIOLENCIA</button>
+              <button id = "boton-educationChil" type="button">EDUCACIÓN</button>
+              <button id = "boton-unemploymentChil" type="button">DESEMPLEO</button>
+              <button id = "boton-alfabetizacionChil" type="button">ALFABETIZACIÓN</button>
+          </div>
+           <form id = "order-3" name="formulario" method="post">
+              Ordenar por:
+              <select name="ordenar">
+                 <option value="1" selected>Ascendente</option>
+                 <option value="2">Descendente</option>
+              </select>
+           </form>
+
+           <div id="table-popCh"></div>
+           <div id="table-vioCh"></div>
+           <div id="table-eduCh"></div>
+           <div id="table-unemCh"></div>
+           <div id="table-alfCh"></div>
+
+      </section>
+
+
+      <!-- PAGINA DE LA BASE DE DATOS DE BRASIL-->
+      <section id = "pagina-brasil">
+
+         <div class = "lateral-bar"></div>
+         <div class = "texto-brasil">BRASIL</div>
+         <img class = "bandera-brasil" src="https://i.ibb.co/XssjnrS/brasil.png" alt="brasil">
+         <div class = "descripcion-brasil">Es un país soberano de América del Sur que comprende la mitad oriental del
+              subcontinente y algunos grupos de pequeñas islas en el océano Atlántico. Más información: <a href = " http://bit.ly/2rXOqd7" target="_blank">aquí</a>
+
+              <h4>FILTRAR POR:</h4>
+              <button id = "boton-populationBra" type="button">POBLACIÓN</button>
+              <button id = "boton-violenceBra" type="button">VIOLENCIA</button>
+              <button id = "boton-educationBra" type="button">EDUCACIÓN</button>
+              <button id = "boton-unemploymentBra" type="button">DESEMPLEO</button>
+              <button id = "boton-alfabetizacionBra" type="button">ALFABETIZACIÓN</button>
+         </div>
+
+         <form id = "order-4" name="formulario" method="post">
             Ordenar por:
             <select name="ordenar">
                <option value="1" selected>Ascendente</option>
                <option value="2">Descendente</option>
             </select>
          </form>
-         <div id="table-containerMex"></div>
+
+         <div id="table-braPop"></div>
+         <div id="table-braVio"></div>
+         <div id="table-braEdu"></div>
+         <div id="table-braUnem"></div>
+         <div id="table-braAlf"></div>
+
       </section>
-      <!-- PAGINA DE LA BASE DE DATOS DE CHILE-->
-      <section id = 'pagina-chile' >
-          <div class = "lateral-bar"></div>
-          <div class = "texto-chile">CHILE</div>
-          <img class = "bandera-chile" src="https://i.ibb.co/92p83qY/chile.jpg" alt="chile">
-          <div class = "descripcion-chile">Chile es un país ubicado en el extremo sudoeste América del Sur. Su nombre
-              oficial es República de Chile y su capital es la ciudad de Santiago. Más información: <a href = "http://bit.ly/2QQKlpY" target="_blank">aquí</a>
-              <h4>FILTRAR POR:</h4>
-              <button class="boton-populationChil" type="button">POBLACIÓN</button>
-              <button class="boton-violenceChil" type="button">VIOLENCIA</button>
-              <button class="boton-educationChil" type="button">EDUCACIÓN</button>
-              <button class="boton-jobChil" type="button">TRABAJO</button>
-              <button class="boton-unemploymentChil" type="button">DESEMPLEO</button>
-              <button class="boton-alfabetizacionChil" type="button">ALFABETIZACIÓN</button>
-          </div>
-           <form id = "order" name="formulario" method="post">
-              Ordenar por:
-              <select name="ordenar">
-                 <option value="1" selected>Ascendente</option>
-                 <option value="2">Descendente</option>
-              </select>
-           </form>
-           <div id="table-containerChile"></div>
-      </section>
-      <!-- PAGINA DE LA BASE DE DATOS DE BRASIL-->
-      <section id = 'pagina-brasil'>
-          <div class = "lateral-bar"></div>
-          <div class = "texto-chile">BRASIL</div>
-          <img class = "bandera-chile" src="https://i.ibb.co/XssjnrS/brasil.png" alt="brasil">
-          <div class = "descripcion-chile">Es un país soberano de América del Sur que comprende la mitad oriental del
-              subcontinente y algunos grupos de pequeñas islas en el océano Atlántico. Más información: <a href = " http://bit.ly/2rXOqd7" target="_blank">aquí</a>
-              <h4>FILTRAR POR:</h4>
-              <button class="boton-populationBra" type="button">POBLACIÓN</button>
-              <button class="boton-violenceBra" type="button">VIOLENCIA</button>
-              <button class="boton-educationBra" type="button">EDUCACIÓN</button>
-              <button class="boton-jobBra" type="button">TRABAJO</button>
-              <button class="boton-unemploymentBra" type="button">DESEMPLEO</button>
-              <button class="boton-alfabetizacionBra" type="button">ALFABETIZACIÓN</button>
-          </div>
-           <form id = "order" name="formulario" method="post">
-              Ordenar por:
-              <select name="ordenar">
-                 <option value="1" selected>Ascendente</option>
-                 <option value="2">Descendente</option>
-              </select>
-           </form>
-           <div id="table-containerBra"></div>
-      </section>
-      <!-- PIE DE PÁGINA -->
+
+<!-- PIE DE PÁGINA -->
       <footer>
-         <section id= 'pie-de-pagina'>
-            <img class = 'icon-footer' width="220" height="53" src="https://i.ibb.co/yNPP88w/logo-white.png" alt="icon">
-            <div class = 'texto-footer'>© 2018 Fuente Informativa de Desarrollo Latinoamericano.</div>
+         <section id= "pie-de-pagina">
+			        <img class = "icon-footer" width="220" height="53"	src="https://i.ibb.co/yNPP88w/logo-white.png" alt="icon">
+              <div class = "texto-footer">© 2018 Fuente Informativa de Desarrollo Latinoamericano.</div>
          </section>
       </footer>
-      <!-- ENLACES A BASE DE DATOS Y JAVASCRIPT-->
+
+
+<!-- ENLACES A BASE DE DATOS Y JAVASCRIPT-->
       <script src="./data/worldbank/worldbank.js"></script>
       <script src="data.js"></script>
       <script src="main.js"></script>
