@@ -1,35 +1,87 @@
 @import url('https://fonts.googleapis.com/css?family=Asap');
-.logo-worldbank{
-    position: absolute;
-    width: 30%;
-    height: 13%;
-    left: 1%;
-    top: -1%;
-    mix-blend-mode: normal;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.bar-2 {
+.margin-top-bottom-0{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+.menu {
+    font-family: Arial;
+}
+
+.navbar {
+    width: 100%;
+    z-index: 100;
     position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 87%;
-    background: #FFFFFF;
-    border: 1px solid #B8B8B8;
+    font-size: 18px;
+    background: white;
+    border: 1px solid #e4e4e4;
+}
+
+.main-nav {
+    background: white;
+    list-style-type: none;
+    display: none;
+}
+
+#inicio, #peru-menu, #chile-menu,
+#mexico-menu, #brasil-menu {
+    margin-left: 40px;
+    text-decoration: none;
+    color: #1b80c3;
+    padding: 28px;
+    font-family: Asap;
+    font-size: 21px;
+}
+
+#inicio:hover, #peru-menu:hover, #chile-menu:hover,
+#mexico-menu:hover, #brasil-menu:hover {
+    color: #0e2f53;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    width: 18em;
+    height: 4em;
+    margin-left: 1%;
+}
+
+.navbar-toggle {
+    margin-top: 2.5%;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+}
+
+.active {
+    display: block;
 }
 
 .bar-3 {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     width: 40%;
     height: 12%;
     left: 0%;
     bottom: 55%;
-    background: rgba(0, 0, 0, 0.82);
+    background: black;
 }
 
 .text-bar-3 {
-    z-index: 3;
+    z-index: 4;
     position: absolute;
     width: 55%;
     height: 11%;
@@ -41,155 +93,19 @@
     opacity: 1;
 }
 
-#inicio {
-    position: absolute;
-    left: 37.5%;
-    right: 57.89%;
-    top: 4.5%;
-    bottom: 36.84%;
-    font-family: Asap;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    font-size: 18px;
-    color: #0071BC;
-
-    mix-blend-mode: normal;
-}
-
-#brasil-menu {
-    position: absolute;
-    left: 71.09%;
-    right: 24.06%;
-    top: 4.5%;
-    bottom: 36.84%;
-    font-family: Asap;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    font-size: 18px;
-    color: #0071BC;
-}
-
-#chile-menu {
-    position: absolute;
-    left: 62.89%;
-    right: 32.89%;
-    top: 4.5%;
-    bottom: 36.84%;
-    font-family: Asap;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    font-size: 18px;
-    color: #0071BC;
-}
-
-#mexico-menu {
-    position: absolute;
-    left: 53.12%;
-    right: 41.17%;
-    top: 4.5%;
-    bottom: 36.84%;
-    font-family: Asap;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    font-size: 18px;
-    color: #0071BC;
-}
-
-#peru-menu {
-    position: absolute;
-    left: 45.31%;
-    right: 50.86%;
-    top: 4.5%;
-    bottom: 36.84%;
-    font-family: Asap;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    font-size: 18px;
-    color: #0071BC;
-}
-
-#table-container {
-    position: absolute;
-    top: 13%;
-    right: 0%;
-    width: 77%;
-    height: 130%;
-    background: #e4e4e4;
-    font-family: arial;
-}
-
-.search-box {
-    position: relative;
-    right: 0%;
-    top: 3%;
-    height: 24%;
-    background: gray;
-}
-
-.search-icon {
-    z-index: 4;
-    position: absolute;
-    width: 2%;
-    height: 3.5%;
-    left: 96%;
-    top: 3.44%;
-    bottom: 92.78%;
-}
-
 .image-banner {
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     width: 100%;
     height: 35%;
     left: 0px;
-    top: 13%;
+    top: 10.7%;
     background: url(https://i.ibb.co/xMM20hy/sentisis-inside-feb17-grano01.png);
 }
 
-.inicio:hover {
-    color: #0e2f53;
-    transition: 1.5s;
-}
-
-.peru-menu:hover {
-    color: #0e2f53;
-    transition: 1.5s;
-}
-
-.chile-menu:hover {
-    color: #0e2f53;
-    transition: 1.5s;
-}
-
-.mexico-menu:hover {
-    color: #0e2f53;
-    transition: 1.5s;
-}
-
-.brasil-menu:hover {
-    color: #0e2f53;
-    transition: 1.5s;
-}
-.mision-container {
-    background-color: #009fda;
-    bottom: 37%;
-    left: 0%;
-    position: absolute;
-    width: 100%;
-    height: 20%;
-    font-size: 33px;
-    text-align: center;
-    font-family: Asap;
-    color: white;
-
-}
 .objetivo {
-    bottom: 30%;
+    z-index: 100;
+    bottom: 31%;
     left: 0%;
     position: absolute;
     width: 100%;
@@ -199,9 +115,26 @@
     font-family: Asap;
     color: white;
 }
-.text-mision {
-    bottom: 38%;
+
+.mision-container {
+    z-index: 100;
+    background-color: #009fda;
+    top: 46%;
     left: 0%;
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    font-size: 28px;
+    text-align: center;
+    font-family: Asap;
+    color: white;
+}
+
+.text-mision {
+    z-index: 100;
+    bottom: 34%;
+    left: 0.2%;
+    right: 0.2%;
     position: absolute;
     width: 100%;
     font-size: 19px;
@@ -210,16 +143,331 @@
     color: white;
 }
 
-.pagina-peru {
-    display: none;
-}
-
 .collage-image {
     position: absolute;
     width: 100%;
     height: 80%;
     top: 63%;
     left: 0%;
+}
+
+body {
+    font-family: Arial;
+    margin: 0px;
+    background-color: #EBEBEB;
+  }
+header{
+    height: 70px;
+    left:0px;
+    background-color : #07354D;
+}
+
+.center{
+    text-align: center;
+}
+
+.padding-top-40{
+    padding-top:40px;
+
+}
+.padding-left-bottom-80{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.padding-top-bottom-25{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.padding-content{
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 38px;
+}
+
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+}
+
+.color-light-blue{
+    background-color: #EDF4FB;
+}
+
+  .color-white{
+    background-color: #fff;
+}
+
+.color-blue{
+    color: #083b50;
+}
+
+.text-color-dark-blue{
+    color:#5dbee9;
+}
+
+.text-color-white{
+    color: #fff;
+}
+
+.text-color-gris-7{
+    color:#777777;
+}
+
+.color-green{
+    color: #01b99d;
+}
+
+  .color-gris{
+    background-color: #0b3545;
+}
+
+  #flag-bra{
+    background-image: url(img/flags/br.png);
+  }
+  #flag-chl{
+    background-image: url(img/flags/cl.png);
+  }
+  #flag-mex{
+    background-image: url(img/flags/mx.png);
+  }
+  #flag-per{
+    background-image: url(img/flags/pe.png);
+  }
+
+  .style-img-flag{
+    width:120px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .padding-center{
+
+    padding-left: 25%;
+    padding-bottom: 25px;
+
+  }
+  .propety-button-flag{
+  width: 170px;
+  height: 116px;
+  }
+  .panel-select{
+    margin: 30px;
+    height: auto;
+  }
+
+  #panel-average {
+      text-align: center;
+  }
+
+  #btn-sort-data-down {
+      float: initial;
+  }
+  .margin-bottom-30{
+    margin-bottom:30px;
+
+  }
+  .panel-select-indicators{
+
+    margin: 30px;
+
+  }
+
+  .font-weight-bold{
+   font-weight: bold;
+  }
+
+
+
+  .panel-select-content{
+    padding-top: 25px;
+  }
+  .title{
+    font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 50px;
+
+  }
+
+  .content{
+    font-family: 'Tahoma';
+    font-size: 14px;
+    line-height: 20px;
+
+  }
+
+  .text-color-morado{
+    color: #083b50;
+  }
+  .container-left{
+    width: 100%;
+  }
+  .container-right{
+    width: 100%;
+  }
+  .button-img{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4eb5f1;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999
+  }
+  .button-img:hover {background-color: #4095c6}
+  .button-img:active {
+    background-color: #4095c6;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .panel-select-title{
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+
+  }
+  .title-panel-dashboard{
+    padding-bottom: 10px;
+  }
+  .color-celeste {
+    background-color: #03A9F4;
+  }
+   .font-Prompt {
+      font-family: 'Prompt', sans-serif;
+    }
+    .fomt-size-18{
+      font-size: 18px;
+    }
+    .fomt-size-14{
+      font-size: 14px;
+    }
+
+    .content-panel-dashboard{
+      text-align: right;
+    }
+  /*****************/
+  h1 {
+    font-size: 2.5em;
+    color: #1F618D;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-left: 1em;
+  }
+
+  .intro {
+    font-size: 1.1em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    text-align: center;
+    line-height: 1.5em;
+  }
+
+  .indicador {
+    font-weight: bold;
+  }
+
+  .padding-25{
+    padding: 25px;
+  }
+  .cursor-pointer{
+  cursor: pointer;
+  }
+  .barra {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    background: #1F618D;
+    line-height: 3.1em;
+    overflow: auto;
+  }
+
+  .navegar {
+    width: 18em;
+    float: left;
+    text-align: center;
+  }
+
+  .enlace {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 1.5em;
+  }
+
+  a:hover {
+    background: #121F25;
+    color: #1CADE7;
+  }
+
+  label {
+    margin-left: 2em;
+  }
+
+
+.boton-population, .boton-violence, .boton-unemployment,
+.boton-alfabetizacion, .boton-job,
+.boton-education, .boton-populationMex,
+.boton-violenceMex, .boton-unemploymentMex,
+.boton-alfabetizacionMex, .boton-jobMex,
+.boton-educationMex, .boton-populationChil,
+.boton-violenceChil, .boton-unemploymentChil,
+.boton-alfabetizacionChil, .boton-jobChil,
+.boton-educationChil, .boton-populationBra,
+.boton-violenceBra, .boton-unemploymentBra,
+.boton-alfabetizacionBra, .boton-jobBra,
+.boton-educationBra {
+    margin: 30px 1px 6px;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #0071BC;
+    border-radius: 6px; border: 2px;
+}
+
+.bar-3 {
+    position: absolute;
+    z-index: 3;
+    width: 40%;
+    height: 12%;
+    left: 0%;
+    bottom: 55%;
+    background: rgba(0, 0, 0, 0.82);
+}
+
+.text-bar-3 {
+    z-index: 4;
+    position: absolute;
+    width: 55%;
+    height: 11%;
+    left: 1%;
+    top: 35%;
+    font-family: Arial;
+    font-size: 25px;
+    color: white;
+    opacity: 1;
+}
+
+.image-banner {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    left: 0px;
+    top: 10.7%;
+    background: url(https://i.ibb.co/xMM20hy/sentisis-inside-feb17-grano01.png);
 }
 
 .lateral-bar {
@@ -233,7 +481,7 @@
 
 }
 
-.bandera-peru, .bandera-mexico, 
+.bandera-peru, .bandera-mexico,
 .bandera-chile, .bandera-brasil {
     position: absolute;
     width: 207px;
@@ -258,58 +506,11 @@
     font-size: 24px;
 }
 
-.texto-mexico {
-    position: absolute;
-    width: 20%;
-    height: 29px;
-    left: 122px;
-    top: 258px;
-    color: white;
-    font-family: Asap;
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-    font-size: 24px;
-}
-.descripcion-peru, .descripcion-mexico, 
-.descripcion-chile, .descripcion-brasil {
-    position: absolute;
-    width: 278px;
-    height: 94px;
-    left: 13px;
-    top: 297px;
-    color: white;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
-    font-size: 16px;
-    text-align: center;
-}
-
-#catg {
-    position: absolute;
-    color: white;
-    top: 60%;
-    left: 4%;
-    font-family: arial;
-}
-
-#order {
-    position: absolute;
-    color: white;
-    top: 120%;
-    left: 4%;
-    font-family: arial;
-}
-
 #pie-de-pagina {
-    position: absolute;
     width: 100%;
     height: 8%;
     left: 0%;
     bottom: 0%;
-    top: 140%;
     background: #000000;
 }
 
@@ -318,12 +519,86 @@
 }
 
 .texto-footer {
-    z-index: 5;
-    bottom: 40%;
+    z-index: 100;
     left: 70%;
-    position: absolute;
     color: white;
     font-size: 12px;
     font-family: Arial;
     right: 0%;
 }
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+}
+
+
+@media screen  and (min-width:480px) and (max-width:780px) {
+    .container-left{
+      width: 50%;
+    }
+    .container-right{
+      width: 50%;
+    }
+  }
+
+  @media screen and (min-width:780px) and (max-width:1024px){
+    .container-left{
+      width: 50%;
+    }
+    .container-right{
+      width: 50%;
+    }
+  }
+
+  @media screen and (min-width:1024px) and (max-width:1316px) {
+    .container-left{
+      width: 50%;
+    }
+    .container-right{
+      width: 50%;
+    }
+  }
+  @media screen and (min-width:1316px) and (max-width:1440px)  {
+    .container-left{
+      width: 50%;
+    }
+    .container-right{
+      width: 50%;
+    }
+  }
+  @media screen and (min-width:1440px)  {
+    .container-left{
+      width: 50%;
+    }
+    .container-right{
+      width: 50%;
+    }
+  }

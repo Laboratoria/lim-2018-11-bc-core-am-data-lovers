@@ -1,161 +1,182 @@
 <!DOCTYPE html>
-<html lang= "es">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>FIDL - Fuente Informativa de Desarrollo Latinoamericano</title>
-      <link rel="stylesheet" href="style.css" />
-   </head>
-   <body>
-      <section class = "encabezado">
-         <div class = 'bar-2'></div>
-         <img src ="https://i.ibb.co/KWCqSQK/logo-wordbank.png" class ='logo-worldbank'alt='logo'>
-         <nav>
-            <ul>
-               <li><a href= '#' id = 'inicio'>INICIO</a></li>
-               <li><a href= '#' id ='peru-menu'>PERÚ</a></li>
-               <li><a href= '#' id = 'mexico-menu'>MÉXICO</a></li>
-               <li><a href= '#' id = 'chile-menu'>CHILE</a></li>
-               <li><a href= '#' id = 'brasil-menu'>BRASIL</a></li>
-            </ul>
-         </nav>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  </head>
+  <body>
+<!---------- MENÚ DE LA PÁGINA ---------->
+    <header>
+      <section id = "menu">
+        <nav class="navbar">
+           <span class="navbar-toggle" id="js-navbar-toggle">
+              <img src="https://i.ibb.co/Jtcb7kh/navbar.png" alt = "navbar" width = "30" height = "30">
+           </span>
+           <img src="https://i.ibb.co/KWCqSQK/logo-wordbank.png" class = "logo" alt = "logotype">
+           <ul class="main-nav" id="js-menu">
+              <li>
+                 <a href="#" id = "inicio">INICIO</a>
+              </li>
+              <li>
+                 <a href="#" id = "peru-menu">PERÚ</a>
+              </li>
+              <li>
+                 <a href="#" id = "mexico-menu">MÉXICO</a>
+              </li>
+              <li>
+                 <a href="#" id = "chile-menu">CHILE</a>
+              </li>
+              <li>
+                 <a href="#" id = "brasil-menu">BRASIL</a>
+              </li>
+           </ul>
+        </nav>
       </section>
-      <section id = "pagina-inicio">
-         <div class = "bar-3"></div>
-         <div class = "text-bar-3">INDICADORES DE DESARROLLO <br> HUMANO</div>
-         <div class = "image-banner"></div>
-         <div class = "mision-container"><br><strong>Nuestra Misión</strong></div>
-         <div class = "objetivo"><strong><br>Tenemos como objetivo:</strong></div>
-         <div class = "text-mision">Brindar datos actualizados sobre los indicadores de Desarrollo Humano.</div>
-         <img class = "collage-image" src="https://i.ibb.co/GpDkvL9/collage-new.jpg" alt = 'collage'>
-      </section>
-      <section id = "pagina-peru" >
-        <div class = "lateral-bar"></div>
-         <img class = "bandera-peru" src="https://i.ibb.co/6gsDZWF/peru.jpg" alt="peru" >
-         <div class = "texto-peru">PERÚ</div>
-         <div class = "descripcion-peru">Es una Nación situada en el lado
-            correspondiente al occidente del
-            continente americano, más
-            precisamente en América del Sur.
-            Más información: <a href = "http://bit.ly/2AhZ5E2" target="_blank">aquí</a>
-         </div>
-         <form id = "catg" name="formulario" method="post">
-            Filtrar por:
-            <select name="categorias">
-               <option value="1" selected>Población</option>
-               <option value="2">Educación</option>
-               <option value="3">Violencia</option>
-               <option value="4">Trabajo</option>
-               <option value="5">Desempleo</option>
-               <option value="6">Alfabetización</option>
+    </header>
+<!---------- PÁGINA PRINCIPAL ---------->
+    <section id = "pagina-inicio">
+      <div class = "bar-3"></div>
+      <div class = "text-bar-3">INDICADORES DE DESARROLLO <br> HUMANO</div>
+      <div class = "image-banner"></div>
+      <div class = "mision-container"><strong><br>NUESTRA MISIÓN</strong></div>
+      <div class = "objetivo"><strong><br>Tenemos como objetivo:</strong></div>
+      <div class = "text-mision">Brindar datos actuales sobre los indicadores de Desarrollo Humano, ya que el desarrollo
+        de un país no puede ser entendido desde la perspectiva única del crecimiento económico.
+        El propósito final del desarrollo se encuentra en cada uno de sus habitantes y
+        en las posibilidades que ellos tienen para elegir una vida en la que puedan realizar
+        a plenitud su potencial como seres humanos.</div>
+      <img class = "collage-image" src= "https://i.ibb.co/GpDkvL9/collage-new.jpg" alt = "collage">
+    </section>
+    <section id = "all-data">
+      <main>
+        <section id="one" class="panel-select color-white">
+          <div class="panel-select-title color-celeste text-color-white font-Prompt fomt-size-14 font-weight-bold">
+             Tipo de Indicadores </div>
+          <div class="panel-select-content center">
+            <label for="select-indicator">Filtrar por categoría</label>
+            <select id ="select-indicator" class="margin-bottom-30">
+              <option >Población</option>
+              <option >Educación primaria</option>
+              <option >Educación secundaria</option>
+              <option >Educación terciaria</option>
+              <option >Violencia</option>
+              <option >Empleo</option>
+              <option >Desempleo</option>
+              <option >Alfabetización</option>
             </select>
-            <br><br><br><br><br><br>
-         <form id = "orderOne" name="formulario" method="post">
-            Ordenar por:
-            <select name="ordenar">
-               <option value="1" selected>Ascendente</option>
-               <option value="2">Descendente</option>
-            </select>
-         </form>
-         <div id = "table-container">
+          </div>
+     <!-- <ul class="padre">
+        <li><a href="#" class="hijo">Link1</a></li>
+        <li><a href="#" class="hijo">Link2</a></li>
+        <li><a href="#" class="hijo">Link3</a></li>
+    </ul>-->
+    </section>
+<!---------- CÁLCULOS DE DATA (promedio y ordenado)---------->
+    <section id="section-data">
 
-         </div>
-      </section>
-      <section id = "pagina-mexico" >
-        <div class = "lateral-bar"></div>
-        <div class = "texto-mexico">MÉXICO</div>
-        <img class = "bandera-mexico" src="https://i.ibb.co/8mtJNQR/mexico.png" alt="mexico">
-        <div class = "descripcion-mexico">México es un país que se encuentra en
-            la parte meridional de América del
-            Norte. Su nombre completo es
-            Estados Unidos Mexicanos.
-            Más información:<a href = "https://bit.ly/2glWxZF" target="_blank">aquí</a>
+        <div class="panel-select-indicators color-white" >
+          <p class = "indicador panel-select-title color-celeste text-color-white font-Prompt fomt-size-14">Indicadores de Desempleo:</p>
+          <p id="panel-average">El promedio es: <span id="show-average"></span> </p>
+          <button id="btn-sort-data-down" >Descendente</button>
+          <div id = "static-data" class="padding-25">
+          </div>
+          <div id = "desc-data" class="padding-25">
+          </div>
         </div>
-        <form id = "catg2" name="formulario" method="post">
-            Filtrar por:
-            <select name="categorias">
-               <option value="1" selected>Población</option>
-               <option value="2">Educación</option>
-               <option value="3">Violencia</option>
-               <option value="4">Trabajo</option>
-               <option value="5">Desempleo</option>
-               <option value="6">Alfabetización</option>
-            </select>
-            <br><br><br><br><br><br>
-         <form id = "orderTwo" name="formulario" method="post">
-            Ordenar por:
-            <select name="ordenar">
-               <option value="1" selected>Ascendente</option>
-               <option value="2">Descendente</option>
-            </select>
-         </form>
       </section>
-      <section id = "pagina-chile" >
-          <div class = "lateral-bar"></div>
-          <div class = "texto-chile">CHILE</div>
-          <img class = "bandera-chile" src="https://i.ibb.co/92p83qY/chile.jpg" alt="chile">
-          <div class = "descripcion-chile">Chile es un país ubicado en el sudoeste
-              América del Sur. Su nombre oficial es República de Chile y su capital
-              es Santiago.
-              Más información: <a href = "http://bit.ly/2QQKlpY" target="_blank">aquí</a>
-          </div>
-          <form id = "catg" name="formulario" method="post">
-              Filtrar por:
-              <select name="categorias">
-                 <option value="1" selected>Población</option>
-                 <option value="2">Educación</option>
-                 <option value="3">Violencia</option>
-                 <option value="4">Trabajo</option>
-                 <option value="5">Desempleo</option>
-                 <option value="6">Alfabetización</option>
-              </select>
-              <br><br><br><br><br><br>
-           <form id = "orderThree" name="formulario" method="post">
-              Ordenar por:
-              <select name="ordenar">
-                 <option value="1" selected>Ascendente</option>
-                 <option value="2">Descendente</option>
-              </select>
-           </form>
+<!---------- PANELES DE LA LISTA DE CADA CATEGORÍA ---------->
+      <section id="two">
+        <div class="panel-select-indicators color-white">
+          <p class = "indicador panel-select-title color-celeste text-color-white font-Prompt fomt-size-14">Indicadores de Población:</p>
+          <p class="center font-Prompt fomt-size-18 padding-top-bottom-25">RELACIÓN DE LOS TIPO DE INDICADORES DE POBLACIÓN</p>
+          <ol id = "population-container" class="padre padding-center"></ol>
+        </div>
       </section>
-      <section id = "pagina-brasil">
-          <div class = "lateral-bar"></div>
-          <div class = "texto-chile">BRASIL</div>
-          <img class = "bandera-chile" src="https://i.ibb.co/XssjnrS/brasil.png" alt="brasil">
-          <div class = "descripcion-chile">Es un país soberano de América del Sur,
-              comprende mitad oriental del
-              y algunos grupos de pequeñas
-              islas en el Atlántico.
-              Más información: <a href = " http://bit.ly/2rXOqd7" target="_blank">aquí</a>
-          </div>
 
-          <form id = "catg" name="formulario" method="post">
-              Filtrar por:
-              <select name="categorias">
-                 <option value="1" selected>Población</option>
-                 <option value="2">Educación</option>
-                 <option value="3">Violencia</option>
-                 <option value="4">Trabajo</option>
-                 <option value="5">Desempleo</option>
-                 <option value="6">Alfabetización</option>
-              </select>
-              <br><br><br><br><br><br>
-           <form id = "orderFour" name="formulario" method="post">
-              Ordenar por:
-              <select name="ordenar">
-                 <option value="1" selected>Ascendente</option>
-                 <option value="2">Descendente</option>
-              </select>
-           </form>
+      <section id="three">
+        <div class="panel-select-indicators color-white">
+            <p class = "indicador panel-select-title color-celeste text-color-white font-Prompt fomt-size-14">Indicadores de Educación Nivel Terciaria</p>
+            <p class="center font-Prompt fomt-size-18 padding-top-bottom-25">INDICADORES DE EDUCACION NIVEL PRIMARIA</p>
+            <ol id = "education-container" class="padre padding-center"></ol>
+        </div>
       </section>
-      <footer>
-         <section id = "pie-de-pagina">
-            <img class = "icon-footer" width="220" height="53" src="https://i.ibb.co/yNPP88w/logo-white.png" alt="icon">
-            <div class = "texto-footer">© 2018 Fuente Informativa de Desarrollo Latinoamericano.</div>
-         </section>
-      </footer>
-      <script src="./data/worldbank/worldbank.js"></script>
-      <script src="data.js"></script>
-      <script src="main.js"></script>
-   </body>
+
+      <section id="four">
+        <div class = "panel-select-indicators color-white">
+            <p class = "indicador panel-select-title color-celeste text-color-white font-Prompt fomt-size-14">Indicadores de Educación Nivel Secundaria</p>
+            <p class = "center font-Prompt fomt-size-18 padding-top-bottom-25">INDICADORES DE EDUCACIÓN NIVEL SECUNDARIA</p>
+            <ol id = "second-education-container"  class="padre padding-center"></ol>
+        </div>
+      </section>
+
+      <section id="five">
+        <div class="panel-select-indicators color-white">
+            <p class = "indicador panel-select-title color-celeste text-color-white font-Prompt fomt-size-14">Indicadores de Educación Nivel Terciario:</p>
+            <p class="center font-Prompt fomt-size-18 padding-top-bottom-25">INDICADORES DE EDUCACIÓN NIVEL TERCIARIA</p>
+            <ol id = "third-education-container"  class = "padre padding-center"></ol>
+        </div>
+      </section>
+      <section id = "six">
+        <div class="panel-select-indicators color-white">
+            <p class = "indicador panel-select-title color-celeste text-color-white font-Prompt fomt-size-14">Indicadores de Violencia:</p>
+            <p class="center font-Prompt fomt-size-18 padding-top-bottom-25">INDICADORES DE VIOLENCIA</p>
+            <ol id = "violence-container"  class = "padre padding-center"></ol>
+        </div>
+      </section>
+      <section id="seven">
+        <div class="panel-select-indicators color-white">
+            <p class = "indicador panel-select-title color-celeste text-color-white font-Prompt fomt-size-14">Indicadores de Empleo:</p>
+            <p class="center font-Prompt fomt-size-18 padding-top-bottom-25">INDICADORES DE EMPLEO</p>
+            <ol id = "job-container"  class = "padre padding-center"></ol>
+        </div>
+      </section>
+
+      <section id="eight">
+          <div class="panel-select-indicators color-white">
+              <p class = "indicador panel-select-title color-celeste text-color-white font-Prompt fomt-size-14">Indicadores de Desempleo:</p>
+              <p class="center font-Prompt fomt-size-18 padding-top-bottom-25">INDICADORES DE DESEMPLEO</p>
+              <ol id = "unemployment-container"  class = "padre padding-center"></ol>
+          </div>
+      </section>
+
+      <section id="nine">
+          <div class="panel-select-indicators color-white">
+              <p class = "indicador panel-select-title color-celeste text-color-white font-Prompt fomt-size-14">Indicadores de Alfabetización:</p>
+              <p class="center font-Prompt fomt-size-18 padding-top-bottom-25">INDICADORES DE ALFABETIZACIÓN</p>
+              <ol id = "literacy-container"  class = "padre padding-center"></ol>
+          </div>
+      </section>
+
+      <section id="countries" class="panel-select color-white">
+        <div class="panel-select-title color-celeste text-color-white font-Prompt fomt-size-14 font-weight-bold
+         "> Tipo de Indicador: <span id="name-type-indicator"> </span>
+        </div>
+
+        <div class="panel-select-content center">
+         <p class="margin-bottom-30">Seleccione un país:</p>
+         <div id="group-flags" class="panel-flag padding-25">
+         <button id="flag-bra" class="button-img style-img-flag propety-button-flag" type="button"  value="BRA"></button>
+         <button id="flag-chl" class="button-img style-img-flag propety-button-flag" type="button" value="CHL"></button>
+         <button id="flag-mex" class="button-img style-img-flag propety-button-flag" type="button" value="MEX"></button>
+         <button id="flag-per" class="button-img style-img-flag propety-button-flag" type="button"  value="PER"></button>
+        </div>
+        </div>
+      </section>
+
+    </main>
+  </section>
+<!-- PIE DE PÁGINA -->
+  <footer>
+    <section id= "pie-de-pagina">
+        <img class = "icon-footer" width="220" height="53"	src="https://i.ibb.co/yNPP88w/logo-white.png" alt="icon">
+        <div class = "texto-footer">© 2018 Fuente Informativa de Desarrollo Latinoamericano.</div>
+    </section>
+  </footer>
+    <script src="./data/worldbank/worldbank.js"></script>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
