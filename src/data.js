@@ -1,94 +1,265 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
-const arrayDatos = Object.entries(WORLDBANK);
-const valoresData = Object.values(arrayDatos);
 
-const PERU = Object.values(valoresData[0]);
-const valuePeru = Object.values(PERU[1]);
-const MEXICO = Object.values(valoresData[1]);
-const valueMex = Object.values(MEXICO[1])
-const CHILE = Object.values(valoresData[3]);
-const valueChil = Object.values(CHILE[1]);
+// FILTRO DE INDICADORES EN PERÚ POR CATEGORIA: POBLACIÓN, VIOLENCIA, EDUCACIÓN Y EMPLEO.
 
-const indicadoresPER = Object.values(valuePeru[0]);
-const data = Object.values(indicadoresPER[0]);
-const dataForYear = Object.entries(data[0]);
-
-const dataxYear = Object.values(data[0]);
-let resultsPERU = dataxYear.filter(number => number > 1);
-
-const indicatorName = WORLDBANK.PER.indicators.map(indicator => indicator.indicatorName);
-indicatorName.forEach((elemento) => {
-    document.getElementById("table-container").innerHTML = elemento;
-return elemento.indicatorCode.slice(0,6) === 'SP.POP';
+const population = WORLDBANK.PER.indicators.filter((pop) => {
+  return pop.indicatorCode.slice(0, 6) === 'SP.POP';
 });
 
+for (indicador of population) {
+  document.getElementById('table-container').innerHTML += indicador.indicatorName;
+}
+for (indicador of violence) {
+  document.getElementById('table-container').innerHTML += indicador.indicatorName;
+}
 
-const population = WORLDBANK.PER.indicators.filter(function filter(pop) {
- return pop.indicatorCode.slice(0,6) === 'SP.POP';
-});
-const arrPopulation = Object.values(population);
-
-const violence = WORLDBANK.PER.indicators.filter(pop => {
- return pop.indicatorCode.slice(0,6) === 'SG.VAW';
-});
 const primaryEducation = WORLDBANK.PER.indicators.filter(pop => {
- return pop.indicatorCode.slice(0,6) === 'SE.PRM';
+  return pop.indicatorCode.slice(0, 6) === 'SE.PRM';
 });
+
+for (indicador of primaryEducation) {
+  document.getElementById('table-container').innerHTML += indicador.indicatorName;
+}
+
 const thirdEducation = WORLDBANK.PER.indicators.filter(pop => {
- return pop.indicatorCode.slice(0,6) === 'SE.TER';
+  return pop.indicatorCode.slice(0, 6) === 'SE.TER';
 });
+
+for (indicador of thirdEducation) {
+  document.getElementById('table-container').innerHTML += indicador.indicatorName;
+}
 
 const secondEducation = WORLDBANK.PER.indicators.filter(pop => {
- return pop.indicatorCode.slice(0,6) === 'SE.SEC';
+  return pop.indicatorCode.slice(0, 6) === 'SE.SEC';
 });
+
+for (indicador of secondEducation) {
+  document.getElementById('table-container').innerHTML += indicador.indicatorName;
+}
+
 const inscriptionsEducation = WORLDBANK.PER.indicators.filter(pop => {
- return pop.indicatorCode.slice(0,6) === 'SE.ENR';
+  return pop.indicatorCode.slice(0, 6) === 'SE.ENR';
 });
+
+for (indicador of inscriptionsEducation) {
+  document.getElementById('table-container').innerHTML += indicador.indicatorName;
+}
+
 const unemployment = WORLDBANK.PER.indicators.filter(pop => {
- return pop.indicatorCode.slice(0,6) === 'SL.UEM'
+  return pop.indicatorCode.slice(0, 6) === 'SL.UEM';
 });
+
+for (indicador of unemployment) {
+  document.getElementById('table-container').innerHTML += indicador.indicatorName;
+}
+
+// FILTRO DE INDICADORES POR MEXICO
 
 const populationMex = WORLDBANK.MEX.indicators.filter(pop => {
- return pop.indicatorCode.slice(0,6) === 'SP.POP'
-});
-const violenceMex = WORLDBANK.MEX.indicators.filter(pop => {
- return pop.indicatorCode.slice(0,6) === 'SG.VAW'
-});
-const primaryEducationMex = WORLDBANK.MEX.indicators.filter(pop => {
- return pop.indicatorCode.slice(0,6) === 'SE.PRM'
-});
-const secondEducationMex = WORLDBANK.MEX.indicators.filter(pop => {
- return pop.indicatorCode.slice(0,6) === 'SE.SEC'
-});
-const thirdEducationMex = WORLDBANK.MEX.indicators.filter(pop => {
- return pop.indicatorCode.slice(0,6) === 'SE.TER'
-});
-const inscriptionsEducationMex = WORLDBANK.MEX.indicators.filter(pop => {
- return pop.indicatorCode.slice(0,6) === 'SE.ENR'
-});
-const unemploymentMex = WORLDBANK.MEX.indicators.filter(pop => {
- return pop.indicatorCode.slice(0,6) === 'SL.UEM'
+  return pop.indicatorCode.slice(0, 6) === 'SP.POP';
 });
 
+for (indicador of populationMex) {
+  document.getElementById('table-containerMex').innerHTML += indicador.indicatorName;
+}
+
+const violenceMex = WORLDBANK.MEX.indicators.filter(pop => {
+  return pop.indicatorCode.slice(0, 6) === 'SG.VAW';
+});
+
+for (indicador of violenceMex) {
+  document.getElementById('table-containerMex').innerHTML += indicador.indicatorName;
+}
+
+const primaryEducationMex = WORLDBANK.MEX.indicators.filter(pop => {
+  return pop.indicatorCode.slice(0, 6) === 'SE.PRM';
+});
+
+for (indicador of primaryEducationMex) {
+  document.getElementById('table-containerMex').innerHTML += indicador.indicatorName;
+}
+
+const secondEducationMex = WORLDBANK.MEX.indicators.filter(pop => {
+  return pop.indicatorCode.slice(0, 6) === 'SE.SEC';
+});
+
+for (indicador of secondEducationMex) {
+  document.getElementById('table-containerMex').innerHTML += indicador.indicatorName;
+}
+
+const thirdEducationMex = WORLDBANK.MEX.indicators.filter(pop => {
+  return pop.indicatorCode.slice(0, 6) === 'SE.TER';
+});
+
+for (indicador of thirdEducationMex) {
+  document.getElementById('table-containerMex').innerHTML += indicador.indicatorName;
+}
+
+const inscriptionsEducationMex = WORLDBANK.MEX.indicators.filter(pop => {
+  return pop.indicatorCode.slice(0, 6) === 'SE.ENR';
+});
+
+for (indicador of inscriptionsEducationMex) {
+  document.getElementById('table-containerMex').innerHTML += indicador.indicatorName;
+}
+
+const unemploymentMex = WORLDBANK.MEX.indicators.filter(pop => {
+  return pop.indicatorCode.slice(0, 6) === 'SL.UEM';
+});
+
+for (indicador of unemploymentMex) {
+  document.getElementById('table-containerMex').innerHTML += indicador.indicatorName;
+}
+
+// FILTRO DE INDICADORES EN CHILE
+
+
 const populationChl = WORLDBANK.CHL.indicators.filter(pop => {
- return pop.indicatorCode.slice(0,6) === 'SP.POP'
+  return pop.indicatorCode.slice(0, 6) === 'SP.POP';
 });
+
+for (indicador of populationChl) {
+  document.getElementById('table-containerChile').innerHTML += indicador.indicatorName;
+}
+
 const violenceChl = WORLDBANK.CHL.indicators.filter(pop => {
- return pop.indicatorCode.slice(0,6) === 'SG.VAW'
+  return pop.indicatorCode.slice(0, 6) === 'SG.VAW';
 });
+
+for (indicador of violenceChl) {
+  document.getElementById('table-containerChile').innerHTML += indicador.indicatorName;
+}
+
 const primaryEducationChl = WORLDBANK.CHL.indicators.filter(pop => {
- return pop.indicatorCode.slice(0,6) === 'SE.PRM'
+  return pop.indicatorCode.slice(0, 6) === 'SE.PRM';
 });
-const secondEducationChl= WORLDBANK.CHL.indicators.filter(pop => {
- return pop.indicatorCode.slice(0,6) === 'SE.SEC'
+
+for (indicador of primaryEducationChl) {
+  document.getElementById('table-containerChile').innerHTML += indicador.indicatorName;
+}
+
+const secondEducationChl = WORLDBANK.CHL.indicators.filter(pop => {
+  return pop.indicatorCode.slice(0, 6) === 'SE.SEC';
 });
+
+for (indicador of secondEducationChl) {
+  document.getElementById('table-containerChile').innerHTML += indicador.indicatorName;
+}
+
 const thirdEducationChl = WORLDBANK.CHL.indicators.filter(pop => {
- return pop.indicatorCode.slice(0,6) === 'SE.TER'
+  return pop.indicatorCode.slice(0, 6) === 'SE.TER';
 });
+
+for (indicador of thirdEducationChl) {
+  document.getElementById('table-containerChile').innerHTML += indicador.indicatorName;
+}
+
 const inscriptionsEducationChl = WORLDBANK.CHL.indicators.filter(pop => {
- return pop.indicatorCode.slice(0,6) === 'SE.ENR'
+  return pop.indicatorCode.slice(0, 6) === 'SE.ENR';
 });
+
+for (indicador of inscriptionsEducationChl) {
+  document.getElementById('table-containerChile').innerHTML += indicador.indicatorName;
+}
+
 const unemploymentChl = WORLDBANK.CHL.indicators.filter(pop => {
- return pop.indicatorCode.slice(0,6) === 'SL.UEM'
+  return pop.indicatorCode.slice(0, 6) === 'SL.UEM';
 });
+
+for (indicador of unemploymentChl) {
+  document.getElementById('table-containerChile').innerHTML += indicador.indicatorName;
+}
+
+// FILTRO DE INDICADORES EN BRASIL
+
+const populationBrasil = WORLDBANK.BRA.indicators.filter(pop => {
+  return pop.indicatorCode.slice(0, 6) === 'SP.POP';
+});
+
+for (indicador of populationBrasil) {
+  document.getElementById('table-containerBra').innerHTML += indicador.indicatorName;
+}
+
+const violenceBrasil = WORLDBANK.BRA.indicators.filter(pop => {
+  return pop.indicatorCode.slice(0, 6) === 'SG.VAW';
+});
+
+for (indicador of violenceBrasil) {
+  document.getElementById('table-containerBra').innerHTML += indicador.indicatorName;
+}
+
+const primaryEducationBrasil = WORLDBANK.BRA.indicators.filter(pop => {
+  return pop.indicatorCode.slice(0, 6) === 'SE.PRM';
+});
+
+for (indicador of primaryEducationBrasil) {
+  document.getElementById('table-containerBra').innerHTML += indicador.indicatorName;
+}
+
+const secondEducationBrasil = WORLDBANK.BRA.indicators.filter(pop => {
+  return pop.indicatorCode.slice(0, 6) === 'SE.SEC';
+});
+
+for (indicador of secondEducationBrasil) {
+  document.getElementById('table-containerBra').innerHTML += indicador.indicatorName;
+}
+
+const thirdEducationBrasil = WORLDBANK.BRA.indicators.filter(pop => {
+  return pop.indicatorCode.slice(0, 6) === 'SE.TER';
+});
+
+for (indicador of thirdEducationBrasil) {
+  document.getElementById('table-containerBra').innerHTML += indicador.indicatorName;
+}
+
+const inscriptionsEducationBrasil = WORLDBANK.BRA.indicators.filter(pop => {
+  return pop.indicatorCode.slice(0, 6) === 'SE.ENR';
+});
+
+for (indicador of inscriptionsEducationBrasil) {
+  document.getElementById('table-containerBra').innerHTML += indicador.indicatorName;
+}
+
+const unemploymentBrasil = WORLDBANK.BRA.indicators.filter(pop => {
+  return pop.indicatorCode.slice(0, 6) === 'SL.UEM';
+});
+
+for (indicador of unemploymentBrasil) {
+  document.getElementById('table-containerBra').innerHTML += indicador.indicatorName;
+}
+
+// INTENTO DE FUNCION PROMEDIO //
+
+    /*const getAverageByCountry =(code, order) => {
+    const country = getCountryByCode(code);
+
+  let averages = [];
+
+    let data = convertObjectToArray(data);
+    const length = data.length;
+
+    let average = sum / length
+    average = Math.round(average * 100) / 100;
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+window.example = {
+
+
+};
