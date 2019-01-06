@@ -1,133 +1,102 @@
 @import url('https://fonts.googleapis.com/css?family=Asap');
-
-.logo-worldbank{
+.menu, .navbar, .main-nav li, .logo, 
+.navbar-toggle, .active {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.menu {
+    font-family: Asap;
+}
+  
+.navbar {
+    width: 100%;
+    z-index: 100;
     position: absolute;
-    width: 30%;
-    height: 13%;
-    left: 1%;
-    top: -1%;
-    mix-blend-mode: normal;
+    font-size: 18px;
+    background: white;
+    border: 1px solid #e4e4e4;
 }
 
-.bar {
-    position: absolute;
-    right: 0px;
-    bottom: 805px;
+.main-nav {
+    background: white;
+    list-style-type: none;
+    display: none;
+}
+  
+#inicio, #peru-menu, #chile-menu, 
+#mexico-menu, #brasil-menu {
+    text-decoration: none;
+    color: #1b80c3;
+    padding: 28px;
+    font-family: Asap;
+    font-size: 21px;
 }
 
-.bar-2 {
+#inicio:hover, #peru-menu:hover, #chile-menu:hover, 
+#mexico-menu:hover, #brasil-menu:hover {
+    color: #0e2f53;
+}
+  
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+  
+.logo {
+    display: inline-block;
+    width: 18em;
+    height: 4em;
+    margin-left: 1%;
+}
+  
+.navbar-toggle {
+    margin-top: 2.5%;
     position: absolute;
-    left: 0%;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+}
+  
+.active {
+    display: block;
+}
+    
+#table-containerPer, #table-containerMex, #table-containerBra, #table-containerChile {
+    position: absolute;
+    bottom: 28%;
+    left: 20%;
     right: 0%;
-    top: 0%;
-    bottom: 87%;
-    background: #FFFFFF;
-    border: 1px solid #B8B8B8;
+    width: 76%;
 }
 
-#inicio {
-    position: absolute;
-    left: 37.5%;
-    right: 57.89%;
-    top: 4.5%;
-    bottom: 36.84%;
-    font-family: Asap;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    font-size: 18px;
-    color: #0071BC;
-    mix-blend-mode: normal;
-}
-
-#brasil-menu {
-    position: absolute;
-    left: 71.09%;
-    right: 24.06%;
-    top: 4.5%;
-    bottom: 36.84%;
-    font-family: Asap;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    font-size: 18px;
-    color: #0071BC;
-}
-
-#chile-menu {
-    position: absolute;
-    left: 62.89%;
-    right: 32.89%;
-    top: 4.5%;
-    bottom: 36.84%;
-    font-family: Asap;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    font-size: 18px;
-    color: #0071BC;
-}
-
-#mexico-menu {
-    position: absolute;
-    left: 53.12%;
-    right: 41.17%;
-    top: 4.5%;
-    bottom: 36.84%;
-    font-family: Asap;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    font-size: 18px;
-    color: #0071BC;
-}
-
-#peru-menu {
-    position: absolute;
-    left: 45.31%;
-    right: 50.86%;
-    top: 4.5%;
-    bottom: 36.84%;
-    font-family: Asap;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    font-size: 18px;
-    color: #0071BC;
-}
-
-#inicio:hover, #peru-menu:hover, #mexico-menu:hover,
-#chile-menu:hover, #brasil-menu:hover {
-   color: #0e2f53;
-}
-
-#table-container, #table-containerMex, #table-containerBra, #table-containerChile {
-  position: absolute;
-  top: 13%;
-  right: 0%;
-  width: 76%;
-  height: 130%;
-  padding-left: 2%;
-  padding-top: 2%;
-}
-
-#boton-population, #boton-violence, #boton-unemployment, #boton-alfabetizacion, #boton-education,
-#boton-populationMex, #boton-violenceMex, #boton-unemploymentMex, #boton-alfabetizacionMex, #boton-educationMex,
-#boton-populationChil, #boton-violenceChil, #boton-unemploymentChil, #boton-alfabetizacionChil, #boton-educationChil,
-#boton-populationBra, #boton-violenceBra, #boton-unemploymentBra, #boton-alfabetizacionBra, #boton-educationBra {
-  margin: 30px 1px 6px;
-  text-decoration: none;
-  padding: 15px;
-  font-weight: 500;
-  font-size: 12px;
-  color: #ffffff;
-  background-color: #0071BC;
-  border-radius: 6px; border: 2px;
+.boton-population, .boton-violence, .boton-unemployment, 
+.boton-alfabetizacion, .boton-job, 
+.boton-education, .boton-populationMex, 
+.boton-violenceMex, .boton-unemploymentMex, 
+.boton-alfabetizacionMex, .boton-jobMex, 
+.boton-educationMex, .boton-populationChil, 
+.boton-violenceChil, .boton-unemploymentChil, 
+.boton-alfabetizacionChil, .boton-jobChil, 
+.boton-educationChil, .boton-populationBra, 
+.boton-violenceBra, .boton-unemploymentBra, 
+.boton-alfabetizacionBra, .boton-jobBra, 
+.boton-educationBra {
+    margin: 30px 1px 6px;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #0071BC;
+    border-radius: 6px; border: 2px;
 }
 
 .bar-3 {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     width: 40%;
     height: 12%;
     left: 0%;
@@ -136,7 +105,7 @@
 }
 
 .text-bar-3 {
-    z-index: 3;
+    z-index: 4;
     position: absolute;
     width: 55%;
     height: 11%;
@@ -149,29 +118,15 @@
 }
 
 .image-banner {
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     width: 100%;
     height: 35%;
     left: 0px;
-    top: 13%;
+    top: 10.7%;
     background: url(https://i.ibb.co/xMM20hy/sentisis-inside-feb17-grano01.png);
 }
 
-
-.mision-container {
-    background-color: #009fda;
-    bottom: 37%;
-    left: 0%;
-    position: absolute;
-    width: 100%;
-    height: 20%;
-    font-size: 33px;
-    text-align: center;
-    font-family: Asap;
-    color: white;
-
-}
 .objetivo {
     bottom: 30%;
     left: 0%;
@@ -194,10 +149,6 @@
     color: white;
 }
 
-.pagina-peru {
-    display: none;
-}
-
 .collage-image {
     position: absolute;
     width: 100%;
@@ -217,7 +168,7 @@
 
 }
 
-.bandera-peru, .bandera-mexico,
+.bandera-peru, .bandera-mexico, 
 .bandera-chile, .bandera-brasil {
     position: absolute;
     width: 207px;
@@ -242,7 +193,7 @@
     font-size: 24px;
 }
 
-.descripcion-peru, .descripcion-mexico,
+.descripcion-peru, .descripcion-mexico, 
 .descripcion-chile, .descripcion-brasil {
     position: absolute;
     width: 278px;
@@ -266,13 +217,50 @@
     font-family: arial;
 }
 
-#order, #order-2, #order-3, #order-4 {
+#order, #order-2, #order-3, 
+#order-4 {
+    z-index: 5;
     position: absolute;
     color: white;
     top: 105%;
-    top: 120%;
+    bottom: 120%;
     left: 4%;
     font-family: arial;
+}
+
+
+#boton-population, #boton-violence, #boton-unemployment, 
+#boton-alfabetizacion, #boton-education,
+#boton-populationMex, #boton-violenceMex, 
+#boton-unemploymentMex, #boton-alfabetizacionMex, 
+#boton-educationMex, #boton-populationChil, 
+#boton-violenceChil, #boton-unemploymentChil, 
+#boton-alfabetizacionChil, #boton-educationChil,
+#boton-populationBra, #boton-violenceBra, 
+#boton-unemploymentBra, #boton-alfabetizacionBra, 
+#boton-educationBra {
+  margin: 30px 1px 6px;
+  text-decoration: none;
+  padding: 15px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #0071BC;
+  border-radius: 6px; border: 2px;
+}
+
+.mision-container {
+    background-color: #009fda;
+    bottom: 37%;
+    left: 0%;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    font-size: 33px;
+    text-align: center;
+    font-family: Asap;
+    color: white;
+
 }
 
 #pie-de-pagina {
@@ -298,4 +286,96 @@
     font-size: 12px;
     font-family: Arial;
     right: 0%;
+}
+
+
+/* RESPONSIVE */
+  
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+  
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+  
+    .main-nav li {
+        margin: 0;
+    }
+  
+    #inicio, #peru-menu, #mexico-menu, 
+    #chile-menu, #brasil-menu {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+  
+    .navbar-toggle {
+        display: none;
+    }
+
+@media only screen and (min-device-width: 220px) and (max-device-width: 768px) {
+    .banner {
+        top: 10%;
+    }
+
+    .image-banner {
+        background: url(https://i.ibb.co/PTYSsZK/banner-responsive.jpg);
+        background-repeat: no-repeat;
+    }
+
+    .bar-3 {
+        top: 22%;
+        height: 10%;
+    }
+
+    .text-bar-3 {
+        top: 23%;
+        font-size: 18px;
+    }
+
+    .mision-container {
+        background-color: #009fda;
+        top: 35%;
+        left: 0%;
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        font-size: 28px;
+        text-align: center;
+        font-family: Asap;
+        color: white;
+    }
+    .objetivo {
+        bottom: 30%;
+        left: 0%;
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        font-size: 23px;
+        text-align: center;
+        font-family: Asap;
+        color: white;
+    }
+    .text-mision {
+        bottom: 38%;
+        left: 0%;
+        position: absolute;
+        width: 100%;
+        font-size: 19px;
+        text-align: center;
+        font-family: Arial;
+        color: white;
+    }
+  }
 }
